@@ -1,4 +1,6 @@
-﻿using Models;
+﻿using DinHatt_CodeFirst.ArtikelMeny;
+using DinHatt_CodeFirst.KundMeny;
+using Models;
 using System;
 using System.Windows.Forms;
 
@@ -64,5 +66,37 @@ namespace DinHatt_CodeFirst
                 listKunder.Refresh();
             }
         }
+
+        private void tabKunder_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch ((sender as TabControl).SelectedIndex)
+            {
+                //Alla Kunder Tabben
+                case 0:
+
+                    break;
+
+                //Ny Kund Tabb
+                case 1:
+
+                    NyKundTabUserControl nyKundTabUserControl = new NyKundTabUserControl();
+                    tabNyKund.Controls.Add(nyKundTabUserControl);
+
+                    break;
+
+                //Visa Kund tab
+                case 2:
+
+                    VisaKundTabUserControl visaKundTabUserControl = new VisaKundTabUserControl();
+
+                    tabVisaKund.Controls.Add(visaKundTabUserControl);
+
+                    break;
+
+
+            }
+        }
+
+
     }
 }
