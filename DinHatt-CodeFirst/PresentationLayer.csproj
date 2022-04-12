@@ -93,6 +93,12 @@
     <Compile Include="ArtikelMeny\ArtikelForm.Designer.cs">
       <DependentUpon>ArtikelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ArtikelMeny\NyArtikelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArtikelMeny\NyArtikelUserControl.Designer.cs">
+      <DependentUpon>NyArtikelUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExportMeny\ExportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </Compile>
     <EmbeddedResource Include="ArtikelMeny\ArtikelForm.resx">
       <DependentUpon>ArtikelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArtikelMeny\NyArtikelUserControl.resx">
+      <DependentUpon>NyArtikelUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExportMeny\ExportForm.resx">
       <DependentUpon>ExportForm.cs</DependentUpon>

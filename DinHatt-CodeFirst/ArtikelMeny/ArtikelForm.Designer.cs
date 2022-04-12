@@ -32,12 +32,12 @@
             this.tabAllaArtiklar = new System.Windows.Forms.TabPage();
             this.btnVisaArtiklar = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.tabNyArtikel = new System.Windows.Forms.TabPage();
             this.colArtikelNamn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colArtikelID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colBeskrivning = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colStorlek = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPris = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabNyArtikel = new System.Windows.Forms.TabPage();
             this.tabArtikel.SuspendLayout();
             this.tabAllaArtiklar.SuspendLayout();
             this.SuspendLayout();
@@ -48,21 +48,20 @@
             this.tabArtikel.Controls.Add(this.tabNyArtikel);
             this.tabArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabArtikel.Location = new System.Drawing.Point(0, 0);
-            this.tabArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabArtikel.Name = "tabArtikel";
             this.tabArtikel.SelectedIndex = 0;
-            this.tabArtikel.Size = new System.Drawing.Size(1146, 555);
+            this.tabArtikel.Size = new System.Drawing.Size(764, 361);
             this.tabArtikel.TabIndex = 0;
+            this.tabArtikel.SelectedIndexChanged += new System.EventHandler(this.tabArtikel_SelectedIndexChanged);
             // 
             // tabAllaArtiklar
             // 
             this.tabAllaArtiklar.Controls.Add(this.btnVisaArtiklar);
             this.tabAllaArtiklar.Controls.Add(this.listView1);
-            this.tabAllaArtiklar.Location = new System.Drawing.Point(4, 29);
-            this.tabAllaArtiklar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabAllaArtiklar.Location = new System.Drawing.Point(4, 22);
             this.tabAllaArtiklar.Name = "tabAllaArtiklar";
-            this.tabAllaArtiklar.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAllaArtiklar.Size = new System.Drawing.Size(1138, 522);
+            this.tabAllaArtiklar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAllaArtiklar.Size = new System.Drawing.Size(756, 335);
             this.tabAllaArtiklar.TabIndex = 0;
             this.tabAllaArtiklar.Text = "Alla Artiklar";
             this.tabAllaArtiklar.UseVisualStyleBackColor = true;
@@ -70,9 +69,10 @@
             // 
             // btnVisaArtiklar
             // 
-            this.btnVisaArtiklar.Location = new System.Drawing.Point(973, 62);
+            this.btnVisaArtiklar.Location = new System.Drawing.Point(649, 40);
+            this.btnVisaArtiklar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVisaArtiklar.Name = "btnVisaArtiklar";
-            this.btnVisaArtiklar.Size = new System.Drawing.Size(146, 39);
+            this.btnVisaArtiklar.Size = new System.Drawing.Size(97, 25);
             this.btnVisaArtiklar.TabIndex = 1;
             this.btnVisaArtiklar.Text = "Visa Artiklar";
             this.btnVisaArtiklar.UseVisualStyleBackColor = true;
@@ -88,23 +88,13 @@
             this.colPris});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(4, 5);
+            this.listView1.Location = new System.Drawing.Point(3, 3);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1130, 512);
+            this.listView1.Size = new System.Drawing.Size(750, 329);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // tabNyArtikel
-            // 
-            this.tabNyArtikel.Location = new System.Drawing.Point(4, 29);
-            this.tabNyArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabNyArtikel.Name = "tabNyArtikel";
-            this.tabNyArtikel.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabNyArtikel.Size = new System.Drawing.Size(1138, 522);
-            this.tabNyArtikel.TabIndex = 1;
-            this.tabNyArtikel.Text = "Ny Artikel";
-            this.tabNyArtikel.UseVisualStyleBackColor = true;
             // 
             // colArtikelNamn
             // 
@@ -131,14 +121,23 @@
             this.colPris.Text = "Pris";
             this.colPris.Width = 67;
             // 
+            // tabNyArtikel
+            // 
+            this.tabNyArtikel.Location = new System.Drawing.Point(4, 22);
+            this.tabNyArtikel.Name = "tabNyArtikel";
+            this.tabNyArtikel.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabNyArtikel.Size = new System.Drawing.Size(756, 335);
+            this.tabNyArtikel.TabIndex = 1;
+            this.tabNyArtikel.Text = "Ny Artikel";
+            this.tabNyArtikel.UseVisualStyleBackColor = true;
+            // 
             // Artikelform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1146, 555);
+            this.ClientSize = new System.Drawing.Size(764, 361);
             this.Controls.Add(this.tabArtikel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Artikelform";
             this.ShowIcon = false;
             this.Text = "Artiklar";

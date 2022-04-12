@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DinHatt_CodeFirst.ArtikelMeny;
+using System;
 using System.Windows.Forms;
 
 namespace DinHatt_CodeFirst
@@ -37,6 +38,28 @@ namespace DinHatt_CodeFirst
         private void btnVisaArtiklar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tabArtikel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+                switch ((sender as TabControl).SelectedIndex)
+            {
+                //Alla Artiklar Tabben
+                case 0:
+
+                    break;
+
+                    //Ny Artikel Tabb
+                    case 1:
+
+                    NyArtikelUserControl nyArtikelUserControl = new NyArtikelUserControl();
+                    
+                    tabNyArtikel.Controls.Add(nyArtikelUserControl);
+
+                    break;
+
+
+            }
         }
     }
 }
