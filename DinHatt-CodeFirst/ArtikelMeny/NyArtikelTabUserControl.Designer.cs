@@ -1,6 +1,6 @@
 ﻿namespace DinHatt_CodeFirst.ArtikelMeny
 {
-    partial class NyArtikelUserControl
+    partial class NyArtikelTabUserControl
     {
         /// <summary> 
         /// Required designer variable.

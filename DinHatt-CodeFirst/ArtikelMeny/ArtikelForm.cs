@@ -42,21 +42,29 @@ namespace DinHatt_CodeFirst
 
         private void tabArtikel_SelectedIndexChanged(object sender, EventArgs e)
         {
-                switch ((sender as TabControl).SelectedIndex)
-            {
-                //Alla Artiklar Tabben
-                case 0:
+			switch ((sender as TabControl).SelectedIndex)
+			{
+				//Alla Artiklar Tab
+				case 0:
+                    //Gör inget eftersom det är default tab som öppnas just nu.
+					break;
 
-                    break;
+				//Ny Artikel Tab
+				case 1:
 
-                    //Ny Artikel Tabb
-                    case 1:
+					NyArtikelTabUserControl nyArtikelUserControl = new NyArtikelTabUserControl();
+					tabNyArtikel.Controls.Add(nyArtikelUserControl);
 
-                    NyArtikelUserControl nyArtikelUserControl = new NyArtikelUserControl();
-                    
-                    tabNyArtikel.Controls.Add(nyArtikelUserControl);
+					break;
 
-                    break;
+
+				//Visa Artikel tab
+				case 2:
+
+					VisaArtikelTabUserControl visaArtikelTabUserControl = new VisaArtikelTabUserControl();
+					tabVisaArtikel.Controls.Add(visaArtikelTabUserControl);
+
+					break;
 
 
             }
