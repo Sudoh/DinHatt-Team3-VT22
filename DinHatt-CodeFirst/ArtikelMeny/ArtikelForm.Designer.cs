@@ -42,7 +42,7 @@
             this.tabArtikel.Location = new System.Drawing.Point(0, 0);
             this.tabArtikel.Name = "tabArtikel";
             this.tabArtikel.SelectedIndex = 0;
-            this.tabArtikel.Size = new System.Drawing.Size(800, 450);
+            this.tabArtikel.Size = new System.Drawing.Size(764, 361);
             this.tabArtikel.TabIndex = 0;
             // 
             // tabNyArtikel
@@ -50,7 +50,7 @@
             this.tabNyArtikel.Location = new System.Drawing.Point(4, 22);
             this.tabNyArtikel.Name = "tabNyArtikel";
             this.tabNyArtikel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNyArtikel.Size = new System.Drawing.Size(792, 424);
+            this.tabNyArtikel.Size = new System.Drawing.Size(756, 335);
             this.tabNyArtikel.TabIndex = 0;
             this.tabNyArtikel.Text = "Ny Artikel";
             this.tabNyArtikel.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(764, 361);
             this.Controls.Add(this.tabArtikel);
             this.Name = "Artikelform";
             this.ShowIcon = false;

@@ -42,7 +42,7 @@
             this.tabOrder.Location = new System.Drawing.Point(0, 0);
             this.tabOrder.Name = "tabOrder";
             this.tabOrder.SelectedIndex = 0;
-            this.tabOrder.Size = new System.Drawing.Size(800, 450);
+            this.tabOrder.Size = new System.Drawing.Size(764, 361);
             this.tabOrder.TabIndex = 0;
             // 
             // tabAllaOrder
@@ -50,7 +50,7 @@
             this.tabAllaOrder.Location = new System.Drawing.Point(4, 22);
             this.tabAllaOrder.Name = "tabAllaOrder";
             this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAllaOrder.Size = new System.Drawing.Size(792, 424);
+            this.tabAllaOrder.Size = new System.Drawing.Size(756, 335);
             this.tabAllaOrder.TabIndex = 0;
             this.tabAllaOrder.Text = "Alla Order";
             this.tabAllaOrder.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(764, 361);
             this.Controls.Add(this.tabOrder);
             this.Name = "OrderForm";
             this.Text = "Order";

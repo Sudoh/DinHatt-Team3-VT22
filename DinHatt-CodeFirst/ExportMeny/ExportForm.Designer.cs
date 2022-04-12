@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(899, 602);
+            this.ClientSize = new System.Drawing.Size(764, 361);
             this.Name = "ExportForm";
             this.Text = "Export";
             this.ResumeLayout(false);
