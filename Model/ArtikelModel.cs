@@ -9,11 +9,17 @@ namespace Models
         public int Id { get; set; }
         public string Name { get; set; }
 
+        public string BildNamn { get; set; }
+
         public string Description { get; set; }
 
-        public double HeadSize { get; set; }
+        //public double HeadSize { get; set; }
 
         public double Pris { get; set; }
+
+        public int AntalILager { get; set; }
+
+        public bool Begagnad { get; set; }
 
         //Kod för många-till-många i databsen.
         public virtual ICollection<Order> Order { get; set; }

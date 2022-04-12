@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,28 @@ namespace DinHatt_CodeFirst.ArtikelMeny
         public NyArtikelTabUserControl()
         {
             InitializeComponent();
+        }
+
+
+        private void btnSparaNyArtikel_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+
+                Artikel nyArtikel = new Artikel()
+                {
+                    Name = txtArtikelNamn.Text,
+                    Description = txtBeskrivning.Text,
+                    AntalILager = int.Parse(txtAntalILager.Text),
+                    Begagnad = chkBegagnad.Checked,
+                    Pris = double.Parse(txtPris.Text)
+
+                };
+
+                db.Artiklar.Add(nyArtikel);
+                db.SaveChanges();
+
+            }
         }
     }
 }
