@@ -39,6 +39,10 @@
             this.txtAntalILager = new System.Windows.Forms.TextBox();
             this.chkBegagnad = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnLaddaInBild = new System.Windows.Forms.Button();
+            this.txtBildNamn = new System.Windows.Forms.TextBox();
+            this.picboxArtikel = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxArtikel)).BeginInit();
             this.SuspendLayout();
             // 
             // txtArtikelNamn
@@ -50,7 +54,7 @@
             // 
             // btnSparaNyArtikel
             // 
-            this.btnSparaNyArtikel.Location = new System.Drawing.Point(196, 244);
+            this.btnSparaNyArtikel.Location = new System.Drawing.Point(196, 270);
             this.btnSparaNyArtikel.Name = "btnSparaNyArtikel";
             this.btnSparaNyArtikel.Size = new System.Drawing.Size(151, 23);
             this.btnSparaNyArtikel.TabIndex = 1;
@@ -135,10 +139,39 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Begagnad";
             // 
+            // btnLaddaInBild
+            // 
+            this.btnLaddaInBild.Location = new System.Drawing.Point(196, 241);
+            this.btnLaddaInBild.Name = "btnLaddaInBild";
+            this.btnLaddaInBild.Size = new System.Drawing.Size(151, 23);
+            this.btnLaddaInBild.TabIndex = 11;
+            this.btnLaddaInBild.Text = "Välj bild";
+            this.btnLaddaInBild.UseVisualStyleBackColor = true;
+            this.btnLaddaInBild.Click += new System.EventHandler(this.btnLaddaInBild_Click);
+            // 
+            // txtBildNamn
+            // 
+            this.txtBildNamn.Location = new System.Drawing.Point(97, 244);
+            this.txtBildNamn.Name = "txtBildNamn";
+            this.txtBildNamn.Size = new System.Drawing.Size(93, 20);
+            this.txtBildNamn.TabIndex = 12;
+            // 
+            // picboxArtikel
+            // 
+            this.picboxArtikel.Location = new System.Drawing.Point(354, 23);
+            this.picboxArtikel.Name = "picboxArtikel";
+            this.picboxArtikel.Size = new System.Drawing.Size(206, 180);
+            this.picboxArtikel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picboxArtikel.TabIndex = 13;
+            this.picboxArtikel.TabStop = false;
+            // 
             // NyArtikelTabUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.picboxArtikel);
+            this.Controls.Add(this.txtBildNamn);
+            this.Controls.Add(this.btnLaddaInBild);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.chkBegagnad);
             this.Controls.Add(this.label3);
@@ -152,6 +185,7 @@
             this.Controls.Add(this.txtArtikelNamn);
             this.Name = "NyArtikelTabUserControl";
             this.Size = new System.Drawing.Size(703, 489);
+            ((System.ComponentModel.ISupportInitialize)(this.picboxArtikel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +204,8 @@
         private System.Windows.Forms.TextBox txtAntalILager;
         private System.Windows.Forms.CheckBox chkBegagnad;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnLaddaInBild;
+        private System.Windows.Forms.TextBox txtBildNamn;
+        private System.Windows.Forms.PictureBox picboxArtikel;
     }
 }

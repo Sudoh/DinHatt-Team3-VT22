@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,16 @@ namespace DinHatt_CodeFirst.ArtikelMeny
 
         private void btnSparaNyArtikel_Click(object sender, EventArgs e)
         {
+            Random random = new Random();
+            string bildNamn = random.Next(1000,9999).ToString()+".jpg";
+            string bildMapp = "..\\..\\Bilder";
+            string pathstring = System.IO.Path.Combine(bildMapp, bildNamn);
+
+   
+
+            File.Copy(txtBildNamn.Text,pathstring);
+           
+
             using (var db = new DinHatt())
             {
 
@@ -30,6 +41,7 @@ namespace DinHatt_CodeFirst.ArtikelMeny
                     Description = txtBeskrivning.Text,
                     AntalILager = int.Parse(txtAntalILager.Text),
                     Begagnad = chkBegagnad.Checked,
+                    BildNamn = bildNamn,
                     Pris = double.Parse(txtPris.Text)
 
                 };
@@ -38,6 +50,29 @@ namespace DinHatt_CodeFirst.ArtikelMeny
                 db.SaveChanges();
 
             }
+        }
+
+        private void btnLaddaInBild_Click(object sender, EventArgs e)
+        {
+
+
+
+            OpenFileDialog fileOpen = new OpenFileDialog();
+            fileOpen.Title = "Open Image file";
+            fileOpen.Filter = "JPG Files (*.jpg)| *.jpg";
+
+            if (fileOpen.ShowDialog() == DialogResult.OK)
+            {
+                picboxArtikel.Image = Image.FromFile(fileOpen.FileName);
+                txtBildNamn.Text = fileOpen.FileName;
+            }
+            fileOpen.Dispose();
+
+        }
+
+        private void saveArtikelBild_FileOk(object sender, CancelEventArgs e)
+        {
+           
         }
     }
 }
