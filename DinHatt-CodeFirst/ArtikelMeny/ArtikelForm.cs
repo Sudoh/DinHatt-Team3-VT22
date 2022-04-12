@@ -33,5 +33,10 @@ namespace DinHatt_CodeFirst
 
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnVisaArtiklar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
