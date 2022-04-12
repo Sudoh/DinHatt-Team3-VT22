@@ -57,7 +57,7 @@
             this.btnSparaNyArtikel.Location = new System.Drawing.Point(196, 270);
             this.btnSparaNyArtikel.Name = "btnSparaNyArtikel";
             this.btnSparaNyArtikel.Size = new System.Drawing.Size(151, 23);
-            this.btnSparaNyArtikel.TabIndex = 1;
+            this.btnSparaNyArtikel.TabIndex = 6;
             this.btnSparaNyArtikel.Text = "Spara ny artikel";
             this.btnSparaNyArtikel.UseVisualStyleBackColor = true;
             this.btnSparaNyArtikel.Click += new System.EventHandler(this.btnSparaNyArtikel_Click);
@@ -86,7 +86,7 @@
             this.txtBeskrivning.Multiline = true;
             this.txtBeskrivning.Name = "txtBeskrivning";
             this.txtBeskrivning.Size = new System.Drawing.Size(241, 102);
-            this.txtBeskrivning.TabIndex = 3;
+            this.txtBeskrivning.TabIndex = 1;
             // 
             // label2
             // 
@@ -102,7 +102,7 @@
             this.txtPris.Location = new System.Drawing.Point(106, 157);
             this.txtPris.Name = "txtPris";
             this.txtPris.Size = new System.Drawing.Size(241, 20);
-            this.txtPris.TabIndex = 5;
+            this.txtPris.TabIndex = 2;
             // 
             // label3
             // 
@@ -118,7 +118,7 @@
             this.txtAntalILager.Location = new System.Drawing.Point(106, 183);
             this.txtAntalILager.Name = "txtAntalILager";
             this.txtAntalILager.Size = new System.Drawing.Size(241, 20);
-            this.txtAntalILager.TabIndex = 7;
+            this.txtAntalILager.TabIndex = 3;
             // 
             // chkBegagnad
             // 
@@ -126,7 +126,7 @@
             this.chkBegagnad.Location = new System.Drawing.Point(106, 209);
             this.chkBegagnad.Name = "chkBegagnad";
             this.chkBegagnad.Size = new System.Drawing.Size(37, 17);
-            this.chkBegagnad.TabIndex = 9;
+            this.chkBegagnad.TabIndex = 4;
             this.chkBegagnad.Text = "Ja";
             this.chkBegagnad.UseVisualStyleBackColor = true;
             // 
@@ -144,7 +144,7 @@
             this.btnLaddaInBild.Location = new System.Drawing.Point(196, 241);
             this.btnLaddaInBild.Name = "btnLaddaInBild";
             this.btnLaddaInBild.Size = new System.Drawing.Size(151, 23);
-            this.btnLaddaInBild.TabIndex = 11;
+            this.btnLaddaInBild.TabIndex = 5;
             this.btnLaddaInBild.Text = "Välj bild";
             this.btnLaddaInBild.UseVisualStyleBackColor = true;
             this.btnLaddaInBild.Click += new System.EventHandler(this.btnLaddaInBild_Click);
@@ -160,7 +160,7 @@
             // 
             this.picboxArtikel.Location = new System.Drawing.Point(354, 23);
             this.picboxArtikel.Name = "picboxArtikel";
-            this.picboxArtikel.Size = new System.Drawing.Size(206, 180);
+            this.picboxArtikel.Size = new System.Drawing.Size(206, 270);
             this.picboxArtikel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxArtikel.TabIndex = 13;
             this.picboxArtikel.TabStop = false;
