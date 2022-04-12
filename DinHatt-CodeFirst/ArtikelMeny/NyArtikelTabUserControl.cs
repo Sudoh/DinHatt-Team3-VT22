@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DinHatt_CodeFirst.ArtikelMeny
 {
-    public partial class NyArtikelUserControl : UserControl
+    public partial class NyArtikelTabUserControl : UserControl
     {
-        public NyArtikelUserControl()
+        public NyArtikelTabUserControl()
         {
             InitializeComponent();
         }

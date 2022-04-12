@@ -38,6 +38,7 @@
             this.colStorlek = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPris = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabNyArtikel = new System.Windows.Forms.TabPage();
+            this.tabVisaArtikel = new System.Windows.Forms.TabPage();
             this.tabArtikel.SuspendLayout();
             this.tabAllaArtiklar.SuspendLayout();
             this.SuspendLayout();
@@ -46,6 +47,7 @@
             // 
             this.tabArtikel.Controls.Add(this.tabAllaArtiklar);
             this.tabArtikel.Controls.Add(this.tabNyArtikel);
+            this.tabArtikel.Controls.Add(this.tabVisaArtikel);
             this.tabArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabArtikel.Location = new System.Drawing.Point(0, 0);
             this.tabArtikel.Name = "tabArtikel";
@@ -60,7 +62,7 @@
             this.tabAllaArtiklar.Controls.Add(this.listView1);
             this.tabAllaArtiklar.Location = new System.Drawing.Point(4, 22);
             this.tabAllaArtiklar.Name = "tabAllaArtiklar";
-            this.tabAllaArtiklar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAllaArtiklar.Padding = new System.Windows.Forms.Padding(3);
             this.tabAllaArtiklar.Size = new System.Drawing.Size(756, 335);
             this.tabAllaArtiklar.TabIndex = 0;
             this.tabAllaArtiklar.Text = "Alla Artiklar";
@@ -70,7 +72,7 @@
             // btnVisaArtiklar
             // 
             this.btnVisaArtiklar.Location = new System.Drawing.Point(649, 40);
-            this.btnVisaArtiklar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVisaArtiklar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVisaArtiklar.Name = "btnVisaArtiklar";
             this.btnVisaArtiklar.Size = new System.Drawing.Size(97, 25);
             this.btnVisaArtiklar.TabIndex = 1;
@@ -89,7 +91,7 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(3, 3);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(750, 329);
             this.listView1.TabIndex = 0;
@@ -125,11 +127,21 @@
             // 
             this.tabNyArtikel.Location = new System.Drawing.Point(4, 22);
             this.tabNyArtikel.Name = "tabNyArtikel";
-            this.tabNyArtikel.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabNyArtikel.Padding = new System.Windows.Forms.Padding(3);
             this.tabNyArtikel.Size = new System.Drawing.Size(756, 335);
             this.tabNyArtikel.TabIndex = 1;
             this.tabNyArtikel.Text = "Ny Artikel";
             this.tabNyArtikel.UseVisualStyleBackColor = true;
+            // 
+            // tabVisaArtikel
+            // 
+            this.tabVisaArtikel.Location = new System.Drawing.Point(4, 22);
+            this.tabVisaArtikel.Name = "tabVisaArtikel";
+            this.tabVisaArtikel.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVisaArtikel.Size = new System.Drawing.Size(756, 335);
+            this.tabVisaArtikel.TabIndex = 2;
+            this.tabVisaArtikel.Text = "Visa Artikel";
+            this.tabVisaArtikel.UseVisualStyleBackColor = true;
             // 
             // Artikelform
             // 
@@ -162,5 +174,6 @@
         private System.Windows.Forms.ColumnHeader colBeskrivning;
         private System.Windows.Forms.ColumnHeader colStorlek;
         private System.Windows.Forms.ColumnHeader colPris;
+        private System.Windows.Forms.TabPage tabVisaArtikel;
     }
 }
