@@ -130,6 +130,12 @@
     <Compile Include="KundMeny\VisaKundTabUserControl.Designer.cs">
       <DependentUpon>VisaKundTabUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderMeny\NyOrderTabUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderMeny\NyOrderTabUserControl.Designer.cs">
+      <DependentUpon>NyOrderTabUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderMeny\OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KundMeny\VisaKundTabUserControl.resx">
       <DependentUpon>VisaKundTabUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderMeny\NyOrderTabUserControl.resx">
+      <DependentUpon>NyOrderTabUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderMeny\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>

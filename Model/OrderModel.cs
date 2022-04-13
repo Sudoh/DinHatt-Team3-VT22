@@ -8,9 +8,11 @@ namespace Models
         //Attribut i databasen
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
+        public int TotalPrice { get; set; }
         public bool Delivered { get; set; }
         public bool Payed { get; set; }
         public bool Canceled { get; set; }
+        public string Description { get; set; }
 
         //1-till-många samband. Varje order måste ha en kund.
         public Kund Kund { get; set; }
