@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNamn = new System.Windows.Forms.TextBox();
+            this.txtKundID = new System.Windows.Forms.TextBox();
             this.btnSok = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTaBort = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtLand = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,25 +49,25 @@
             this.txtAdress = new System.Windows.Forms.TextBox();
             this.txtOrt = new System.Windows.Forms.TextBox();
             this.txtPostnr = new System.Windows.Forms.TextBox();
-            this.btnTaBort = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtNamn
+            // txtKundID
             // 
-            this.txtNamn.Location = new System.Drawing.Point(70, 132);
-            this.txtNamn.Name = "txtNamn";
-            this.txtNamn.Size = new System.Drawing.Size(121, 20);
-            this.txtNamn.TabIndex = 2;
+            this.txtKundID.Location = new System.Drawing.Point(70, 158);
+            this.txtKundID.Name = "txtKundID";
+            this.txtKundID.Size = new System.Drawing.Size(121, 20);
+            this.txtKundID.TabIndex = 2;
             // 
             // btnSok
             // 
-            this.btnSok.Location = new System.Drawing.Point(70, 216);
+            this.btnSok.Location = new System.Drawing.Point(70, 204);
             this.btnSok.Name = "btnSok";
             this.btnSok.Size = new System.Drawing.Size(121, 23);
             this.btnSok.TabIndex = 3;
             this.btnSok.Text = "Sök Kund";
             this.btnSok.UseVisualStyleBackColor = true;
+            this.btnSok.Click += new System.EventHandler(this.btnSok_Click);
             // 
             // groupBox1
             // 
@@ -94,6 +95,16 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kundinformation";
+            // 
+            // btnTaBort
+            // 
+            this.btnTaBort.Location = new System.Drawing.Point(86, 274);
+            this.btnTaBort.Name = "btnTaBort";
+            this.btnTaBort.Size = new System.Drawing.Size(100, 23);
+            this.btnTaBort.TabIndex = 17;
+            this.btnTaBort.Text = "Ta bort kund";
+            this.btnTaBort.UseVisualStyleBackColor = true;
+            this.btnTaBort.Click += new System.EventHandler(this.btnTaBort_Click);
             // 
             // label8
             // 
@@ -180,6 +191,7 @@
             this.btnAndra.TabIndex = 8;
             this.btnAndra.Text = "Ändra kund";
             this.btnAndra.UseVisualStyleBackColor = true;
+            this.btnAndra.Click += new System.EventHandler(this.btnAndra_Click);
             // 
             // label1
             // 
@@ -196,6 +208,7 @@
             this.txtFnamn.Name = "txtFnamn";
             this.txtFnamn.Size = new System.Drawing.Size(100, 20);
             this.txtFnamn.TabIndex = 0;
+            this.txtFnamn.TextChanged += new System.EventHandler(this.txtFnamn_TextChanged);
             // 
             // txtEnamn
             // 
@@ -232,25 +245,16 @@
             this.txtPostnr.Size = new System.Drawing.Size(100, 20);
             this.txtPostnr.TabIndex = 3;
             // 
-            // btnTaBort
-            // 
-            this.btnTaBort.Location = new System.Drawing.Point(86, 274);
-            this.btnTaBort.Name = "btnTaBort";
-            this.btnTaBort.Size = new System.Drawing.Size(100, 23);
-            this.btnTaBort.TabIndex = 17;
-            this.btnTaBort.Text = "Ta bort kund";
-            this.btnTaBort.UseVisualStyleBackColor = true;
-            // 
             // VisaKundTabUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSok);
-            this.Controls.Add(this.txtNamn);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.txtKundID);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VisaKundTabUserControl";
-            this.Size = new System.Drawing.Size(597, 418);
+            this.Size = new System.Drawing.Size(683, 437);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -260,7 +264,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNamn;
+        private System.Windows.Forms.TextBox txtKundID;
         private System.Windows.Forms.Button btnSok;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnTaBort;
