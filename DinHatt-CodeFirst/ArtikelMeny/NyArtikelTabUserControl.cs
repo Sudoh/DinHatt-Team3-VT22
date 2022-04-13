@@ -74,5 +74,15 @@ namespace DinHatt_CodeFirst.ArtikelMeny
         {
            
         }
+
+        private void txtBeskrivning_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkBegagnad_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

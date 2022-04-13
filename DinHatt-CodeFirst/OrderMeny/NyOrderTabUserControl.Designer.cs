@@ -45,10 +45,10 @@
             // 
             // btnNyOrder
             // 
-            this.btnNyOrder.Location = new System.Drawing.Point(298, 419);
-            this.btnNyOrder.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnNyOrder.Location = new System.Drawing.Point(265, 335);
+            this.btnNyOrder.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNyOrder.Name = "btnNyOrder";
-            this.btnNyOrder.Size = new System.Drawing.Size(130, 52);
+            this.btnNyOrder.Size = new System.Drawing.Size(116, 42);
             this.btnNyOrder.TabIndex = 1;
             this.btnNyOrder.Text = "Skpa ny order";
             this.btnNyOrder.UseVisualStyleBackColor = true;
@@ -56,19 +56,19 @@
             // 
             // tbOrderNummer
             // 
-            this.tbOrderNummer.Location = new System.Drawing.Point(230, 20);
-            this.tbOrderNummer.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tbOrderNummer.Location = new System.Drawing.Point(204, 16);
+            this.tbOrderNummer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbOrderNummer.Name = "tbOrderNummer";
-            this.tbOrderNummer.Size = new System.Drawing.Size(226, 26);
+            this.tbOrderNummer.Size = new System.Drawing.Size(201, 22);
             this.tbOrderNummer.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 25);
+            this.label1.Location = new System.Drawing.Point(35, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 20);
+            this.label1.Size = new System.Drawing.Size(60, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Kund ID";
             // 
@@ -76,36 +76,36 @@
             // 
             this.lbOrderBeskrivning.AutoSize = true;
             this.lbOrderBeskrivning.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOrderBeskrivning.Location = new System.Drawing.Point(40, 214);
+            this.lbOrderBeskrivning.Location = new System.Drawing.Point(36, 171);
             this.lbOrderBeskrivning.Name = "lbOrderBeskrivning";
-            this.lbOrderBeskrivning.Size = new System.Drawing.Size(149, 20);
+            this.lbOrderBeskrivning.Size = new System.Drawing.Size(130, 16);
             this.lbOrderBeskrivning.TabIndex = 4;
             this.lbOrderBeskrivning.Text = "Order beskrivning";
             // 
             // tbxDescription
             // 
-            this.tbxDescription.Location = new System.Drawing.Point(231, 152);
-            this.tbxDescription.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tbxDescription.Location = new System.Drawing.Point(205, 122);
+            this.tbxDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxDescription.Name = "tbxDescription";
-            this.tbxDescription.Size = new System.Drawing.Size(392, 149);
+            this.tbxDescription.Size = new System.Drawing.Size(349, 120);
             this.tbxDescription.TabIndex = 5;
             this.tbxDescription.Text = "";
             // 
             // tbxPrice
             // 
-            this.tbxPrice.Location = new System.Drawing.Point(230, 326);
-            this.tbxPrice.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tbxPrice.Location = new System.Drawing.Point(204, 261);
+            this.tbxPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbxPrice.Name = "tbxPrice";
-            this.tbxPrice.Size = new System.Drawing.Size(229, 26);
+            this.tbxPrice.Size = new System.Drawing.Size(204, 22);
             this.tbxPrice.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(45, 331);
+            this.label2.Location = new System.Drawing.Point(40, 265);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.Size = new System.Drawing.Size(111, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Preliminärt pris";
             // 
@@ -113,9 +113,10 @@
             // 
             this.cbxPayed.AutoSize = true;
             this.cbxPayed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxPayed.Location = new System.Drawing.Point(478, 326);
+            this.cbxPayed.Location = new System.Drawing.Point(425, 261);
+            this.cbxPayed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxPayed.Name = "cbxPayed";
-            this.cbxPayed.Size = new System.Drawing.Size(85, 24);
+            this.cbxPayed.Size = new System.Drawing.Size(72, 20);
             this.cbxPayed.TabIndex = 9;
             this.cbxPayed.Text = "Betalad";
             this.cbxPayed.UseVisualStyleBackColor = true;
@@ -124,9 +125,10 @@
             // 
             this.cbxDelivered.AutoSize = true;
             this.cbxDelivered.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxDelivered.Location = new System.Drawing.Point(570, 328);
+            this.cbxDelivered.Location = new System.Drawing.Point(507, 262);
+            this.cbxDelivered.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxDelivered.Name = "cbxDelivered";
-            this.cbxDelivered.Size = new System.Drawing.Size(86, 24);
+            this.cbxDelivered.Size = new System.Drawing.Size(74, 20);
             this.cbxDelivered.TabIndex = 10;
             this.cbxDelivered.Text = "Skickad";
             this.cbxDelivered.UseVisualStyleBackColor = true;
@@ -134,9 +136,10 @@
             // rdBtnJudith
             // 
             this.rdBtnJudith.AutoSize = true;
-            this.rdBtnJudith.Location = new System.Drawing.Point(231, 82);
+            this.rdBtnJudith.Location = new System.Drawing.Point(205, 66);
+            this.rdBtnJudith.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdBtnJudith.Name = "rdBtnJudith";
-            this.rdBtnJudith.Size = new System.Drawing.Size(77, 24);
+            this.rdBtnJudith.Size = new System.Drawing.Size(63, 20);
             this.rdBtnJudith.TabIndex = 11;
             this.rdBtnJudith.TabStop = true;
             this.rdBtnJudith.Text = "Judith";
@@ -146,9 +149,10 @@
             // rdBtnOtto
             // 
             this.rdBtnOtto.AutoSize = true;
-            this.rdBtnOtto.Location = new System.Drawing.Point(332, 82);
+            this.rdBtnOtto.Location = new System.Drawing.Point(295, 66);
+            this.rdBtnOtto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdBtnOtto.Name = "rdBtnOtto";
-            this.rdBtnOtto.Size = new System.Drawing.Size(65, 24);
+            this.rdBtnOtto.Size = new System.Drawing.Size(52, 20);
             this.rdBtnOtto.TabIndex = 12;
             this.rdBtnOtto.TabStop = true;
             this.rdBtnOtto.Text = "Otto";
@@ -159,15 +163,15 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 82);
+            this.label3.Location = new System.Drawing.Point(36, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 20);
+            this.label3.Size = new System.Drawing.Size(116, 16);
             this.label3.TabIndex = 13;
             this.label3.Text = "Orderbeställare";
             // 
             // NyOrderTabUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rdBtnOtto);
@@ -181,9 +185,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbOrderNummer);
             this.Controls.Add(this.btnNyOrder);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "NyOrderTabUserControl";
-            this.Size = new System.Drawing.Size(750, 510);
+            this.Size = new System.Drawing.Size(667, 408);
             this.ResumeLayout(false);
             this.PerformLayout();
 

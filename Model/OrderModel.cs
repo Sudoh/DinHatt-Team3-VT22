@@ -7,7 +7,7 @@ namespace Models
     {
         //Attribut i databasen
         public int Id { get; set; }
-        public DateTime OrderDate { get; set; }
+        //public DateTime OrderDate { get; set; }
         public int PrelimPrice { get; set; }
         public bool Delivered { get; set; }
         public bool Payed { get; set; }
