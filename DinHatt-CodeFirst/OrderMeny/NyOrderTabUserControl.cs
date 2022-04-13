@@ -27,22 +27,29 @@ namespace DinHatt_CodeFirst.OrderMeny
                 {
                     Description = tbxDescription.Text,
 
-                    PrelimPrice = int.Parse(tbxPrice.Text),
+                    PrelimPrice = double.Parse(tbxPrice.Text),
 
                     Payed = cbxPayed.Checked,
 
                     Delivered = cbxDelivered.Checked,
 
+                    OrderDate = DateTime.Now,
+
                 };
+                //Orderbeställare = rb;
 
-                //if (rdBtnJudith.Checked)
+                //RadioButton rb = null;
+
+                //if (rdBtnJudith.Checked == true)
                 //{
-
-                //    rdBtnJudith.Text;
-
+                //    rb = rdBtnJudith;
                 //}
-
-
+                //else if (rdBtnOtto.Checked == true)
+                //{
+                //    rb = rdBtnOtto;
+                //}
+              
+                
 
 
                 db.Ordrar.Add(nyOrder);

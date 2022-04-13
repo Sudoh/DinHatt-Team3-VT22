@@ -41,6 +41,7 @@
             this.rdBtnJudith = new System.Windows.Forms.RadioButton();
             this.rdBtnOtto = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnNyOrder
@@ -169,10 +170,18 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Orderbeställare";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(451, 16);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 14;
+            // 
             // NyOrderTabUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rdBtnOtto);
             this.Controls.Add(this.rdBtnJudith);
@@ -207,5 +216,6 @@
         private System.Windows.Forms.RadioButton rdBtnJudith;
         private System.Windows.Forms.RadioButton rdBtnOtto;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
