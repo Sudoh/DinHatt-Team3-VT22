@@ -16,5 +16,10 @@ namespace DinHatt_CodeFirst.OrderMeny
         {
             InitializeComponent();
         }
+
+        private void btnNyOrder_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
