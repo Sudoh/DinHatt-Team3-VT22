@@ -33,7 +33,7 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                     Delivered = cbxDelivered.Checked,
 
-                    OrderDate = DateTime.Now,
+                    OrderDate = dateTimePicker1.Value.Date,
 
                 };
                 //Orderbeställare = rb;

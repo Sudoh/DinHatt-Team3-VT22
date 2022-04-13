@@ -30,5 +30,34 @@ namespace DinHatt_CodeFirst
             }
 
         }
+
+        private void btnLadda_Click(object sender, System.EventArgs e)
+        {
+             listViewOrder.BeginUpdate();
+            listViewOrder.Items.Clear();
+
+            using (var db = new DinHatt())
+            {
+
+                foreach (var item in db.Ordrar)
+                {
+                    ListViewItem rad = new ListViewItem();
+
+                    rad.SubItems.Add(item.Id.ToString());
+                   // rad.SubItems.Add(item.Kund.ToString());
+                    rad.SubItems.Add(item.OrderDate.ToShortDateString());
+                    rad.SubItems.Add(item.PrelimPrice.ToString());
+                    rad.SubItems.Add(item.Payed.ToString());
+                    rad.SubItems.Add(item.Canceled.ToString());
+                    rad.SubItems.Add(item.Delivered.ToString());
+
+
+                    listViewOrder.Items.Add(rad);
+                }
+
+                listViewOrder.EndUpdate();
+                listViewOrder.Refresh();
+            }
         }
+    }
 }
