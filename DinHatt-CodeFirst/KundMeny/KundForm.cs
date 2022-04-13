@@ -89,7 +89,7 @@ namespace DinHatt_CodeFirst
 
                     VisaKundTabUserControl visaKundTabUserControl = new VisaKundTabUserControl();
 
-                    tabVisaKund.Controls.Add(visaKundTabUserControl);
+                    tabSokKund.Controls.Add(visaKundTabUserControl);
 
                     break;
 
