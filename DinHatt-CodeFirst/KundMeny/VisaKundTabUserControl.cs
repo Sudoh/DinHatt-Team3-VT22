@@ -41,6 +41,7 @@ namespace DinHatt_CodeFirst.KundMeny
 
         }
 
+        //Metod för att kunna ändra kundinformation
         private void btnAndra_Click(object sender, EventArgs e)
         {
             using (var db = new DinHatt())
@@ -76,6 +77,7 @@ namespace DinHatt_CodeFirst.KundMeny
             }
         }
 
+        //Metod för att kunna ta bort en kund ur systemet
         private void btnTaBort_Click(object sender, EventArgs e)
         {
             using (var db = new DinHatt())
