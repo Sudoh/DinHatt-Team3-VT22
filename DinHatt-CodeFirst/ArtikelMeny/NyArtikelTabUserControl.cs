@@ -48,8 +48,8 @@ namespace DinHatt_CodeFirst.ArtikelMeny
 
                 db.Artiklar.Add(nyArtikel);
                 db.SaveChanges();
-
             }
+
         }
 
         private void btnLaddaInBild_Click(object sender, EventArgs e)
