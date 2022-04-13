@@ -14,7 +14,7 @@ namespace DinHatt_CodeFirst.KundMeny
         }
 
 
-        //collection.Where(t => t.Contains(searchString)).ToList()
+        //Metod för att kunna söka efter en specifik kund i systemet baserat på dess kund ID
         private void btnSok_Click(object sender, EventArgs e)
         {
             using (var db = new DinHatt())
@@ -43,12 +43,63 @@ namespace DinHatt_CodeFirst.KundMeny
 
         private void btnAndra_Click(object sender, EventArgs e)
         {
+            using (var db = new DinHatt())
+            {
+                int KundID = int.Parse(txtKundID.Text);
+                var Kund = (from k in db.Kunder
+                            where k.Id == KundID
+                            select k).ToList();
 
+                foreach (var item in Kund)
+                {
+                    item.FNamn = txtFnamn.Text;
+                    item.ENamn = txtEnamn.Text;
+                    item.Adress = txtAdress.Text;
+                    item.PostalCode = int.Parse(txtPostnr.Text);
+                    item.City = txtOrt.Text;
+                    item.TelephoneNumber = txtTele.Text;
+                    //txtLand.Text = item.Land;
+                    item.ePost = txtEpost.Text;
+
+                }
+
+                txtFnamn.Clear();
+                txtEnamn.Clear();
+                txtAdress.Clear();
+                txtPostnr.Clear();
+                txtOrt.Clear();
+                txtTele.Clear();
+                //txtLand.Clear();
+                txtEpost.Clear();
+
+                db.SaveChanges();
+            }
         }
 
         private void btnTaBort_Click(object sender, EventArgs e)
         {
+            using (var db = new DinHatt())
+            {
+                int KundID = int.Parse(txtKundID.Text);
+                var Kund = db.Kunder.FirstOrDefault(k => k.Id == KundID);
 
+                if (Kund != null)
+                {
+                    db.Kunder.Remove(Kund);
+                    db.SaveChanges();
+                }
+
+                txtFnamn.Clear();
+                txtEnamn.Clear();
+                txtAdress.Clear();
+                txtPostnr.Clear();
+                txtOrt.Clear();
+                txtTele.Clear();
+                //txtLand.Clear();
+                txtEpost.Clear();
+
+            }
+                
         }
 
         private void txtFnamn_TextChanged(object sender, EventArgs e)
