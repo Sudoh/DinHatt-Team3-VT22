@@ -15,7 +15,7 @@ namespace Models
         public bool Canceled { get; set; }
         public string Description { get; set; }
 
-        public bool Orderbeställare { get; set; }   
+        public string Orderbeställare { get; set; }   
 
         //1-till-många samband. Varje order måste ha en kund.
         public Kund Kund { get; set; }

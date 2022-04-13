@@ -42,6 +42,9 @@
             this.rdBtnOtto = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnNyOrder
@@ -137,7 +140,7 @@
             // rdBtnJudith
             // 
             this.rdBtnJudith.AutoSize = true;
-            this.rdBtnJudith.Location = new System.Drawing.Point(231, 82);
+            this.rdBtnJudith.Location = new System.Drawing.Point(6, 24);
             this.rdBtnJudith.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdBtnJudith.Name = "rdBtnJudith";
             this.rdBtnJudith.Size = new System.Drawing.Size(77, 24);
@@ -150,7 +153,7 @@
             // rdBtnOtto
             // 
             this.rdBtnOtto.AutoSize = true;
-            this.rdBtnOtto.Location = new System.Drawing.Point(332, 82);
+            this.rdBtnOtto.Location = new System.Drawing.Point(100, 24);
             this.rdBtnOtto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdBtnOtto.Name = "rdBtnOtto";
             this.rdBtnOtto.Size = new System.Drawing.Size(65, 24);
@@ -178,14 +181,23 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(224, 26);
             this.dateTimePicker1.TabIndex = 14;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdBtnOtto);
+            this.groupBox1.Controls.Add(this.rdBtnJudith);
+            this.groupBox1.Location = new System.Drawing.Point(230, 54);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(229, 65);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            // 
             // NyOrderTabUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.rdBtnOtto);
-            this.Controls.Add(this.rdBtnJudith);
             this.Controls.Add(this.cbxDelivered);
             this.Controls.Add(this.cbxPayed);
             this.Controls.Add(this.label2);
@@ -198,6 +210,8 @@
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "NyOrderTabUserControl";
             this.Size = new System.Drawing.Size(750, 510);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +232,7 @@
         private System.Windows.Forms.RadioButton rdBtnOtto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }

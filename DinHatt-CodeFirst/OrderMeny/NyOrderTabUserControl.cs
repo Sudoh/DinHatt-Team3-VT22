@@ -13,6 +13,7 @@ namespace DinHatt_CodeFirst.OrderMeny
 {
     public partial class NyOrderTabUserControl : UserControl
     {
+
         public NyOrderTabUserControl()
         {
             InitializeComponent();
@@ -20,8 +21,10 @@ namespace DinHatt_CodeFirst.OrderMeny
 
         private void btnNyOrder_Click(object sender, EventArgs e)
         {
+            string radionamn = FindOrderHandler();
             using (var db = new DinHatt())
             {
+
 
                 Order nyOrder = new Order()
                 {
@@ -35,26 +38,32 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                     OrderDate = dateTimePicker1.Value.Date,
 
+                    Orderbeställare = radionamn,
+
                 };
-                //Orderbeställare = rb;
-
-                //RadioButton rb = null;
-
-                //if (rdBtnJudith.Checked == true)
-                //{
-                //    rb = rdBtnJudith;
-                //}
-                //else if (rdBtnOtto.Checked == true)
-                //{
-                //    rb = rdBtnOtto;
-                //}
-              
-                
-
-
+               
                 db.Ordrar.Add(nyOrder);
                 db.SaveChanges();
             }
+        }
+
+        private string FindOrderHandler()
+        {
+            string radionamn = groupBox1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name;
+            switch (radionamn)
+            {
+                case "rdBtnJudith":
+                    radionamn = "Judith";
+                    break;
+                case "rdBtnOtto":
+                    radionamn = "Otto";
+                    break;
+                default:
+                    MessageBox.Show("Var vänlig och fyll in vem som skapar ordern.");
+                    break;
+            }
+
+            return radionamn;
         }
     }
 }
