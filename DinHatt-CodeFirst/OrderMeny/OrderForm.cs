@@ -43,8 +43,7 @@ namespace DinHatt_CodeFirst
                 {
                     ListViewItem rad = new ListViewItem();
 
-                    //rad.SubItems.Add(item.KundId.ToString());
-                    // rad.SubItems.Add(item.Kund.ToString());
+                    rad.SubItems.Add(item.KundId.ToString());
                     rad.SubItems.Add(item.Orderbeställare.ToString());
                     rad.SubItems.Add(item.PrelimPrice.ToString());
                     rad.SubItems.Add(item.Description.ToString());
