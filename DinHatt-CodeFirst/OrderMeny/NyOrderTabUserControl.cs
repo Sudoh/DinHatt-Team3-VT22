@@ -75,8 +75,14 @@ namespace DinHatt_CodeFirst.OrderMeny
                 var Kund = (from k in db.Kunder
                             where k.Id == KundID
                             select k).ToList();
+
+                foreach (var item in Kund)
+                {
+                    tbKundNamn.Text = item.FNamn + item.ENamn;
+                  
+                }
             }
 
-            }
+        }
     }
 }

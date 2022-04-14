@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnNyOrder = new System.Windows.Forms.Button();
-            this.tbKundID = new System.Windows.Forms.TextBox();
+            this.tbKundNamn = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbOrderBeskrivning = new System.Windows.Forms.Label();
             this.tbxDescription = new System.Windows.Forms.RichTextBox();
@@ -61,13 +61,13 @@
             this.btnNyOrder.UseVisualStyleBackColor = true;
             this.btnNyOrder.Click += new System.EventHandler(this.btnNyOrder_Click);
             // 
-            // tbKundID
+            // tbKundNamn
             // 
-            this.tbKundID.Location = new System.Drawing.Point(204, 16);
-            this.tbKundID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbKundID.Name = "tbKundID";
-            this.tbKundID.Size = new System.Drawing.Size(201, 22);
-            this.tbKundID.TabIndex = 2;
+            this.tbKundNamn.Location = new System.Drawing.Point(204, 16);
+            this.tbKundNamn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbKundNamn.Name = "tbKundNamn";
+            this.tbKundNamn.Size = new System.Drawing.Size(201, 22);
+            this.tbKundNamn.TabIndex = 2;
             // 
             // label1
             // 
@@ -75,9 +75,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(35, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.Size = new System.Drawing.Size(82, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Kund ID";
+            this.label1.Text = "Kund namn";
             // 
             // lbOrderBeskrivning
             // 
@@ -202,7 +202,7 @@
             this.btnSökKund.Name = "btnSökKund";
             this.btnSökKund.Size = new System.Drawing.Size(116, 42);
             this.btnSökKund.TabIndex = 16;
-            this.btnSökKund.Text = "Sök kund personnummer";
+            this.btnSökKund.Text = "Sök kund ID";
             this.btnSökKund.UseVisualStyleBackColor = true;
             this.btnSökKund.Click += new System.EventHandler(this.btnSökKund_Click);
             // 
@@ -240,7 +240,7 @@
             this.Controls.Add(this.tbxDescription);
             this.Controls.Add(this.lbOrderBeskrivning);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbKundID);
+            this.Controls.Add(this.tbKundNamn);
             this.Controls.Add(this.btnNyOrder);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "NyOrderTabUserControl";
@@ -254,7 +254,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnNyOrder;
-        private System.Windows.Forms.TextBox tbKundID;
+        private System.Windows.Forms.TextBox tbKundNamn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbOrderBeskrivning;
         private System.Windows.Forms.RichTextBox tbxDescription;
