@@ -20,7 +20,7 @@ namespace DinHatt_CodeFirst
            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DinHatt>());
            
 
-            Application.Run(new StartMenyForm(true));
+            Application.Run(new StartMenyForm());
 
         }
     }
