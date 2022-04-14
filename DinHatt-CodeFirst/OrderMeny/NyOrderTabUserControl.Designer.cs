@@ -46,6 +46,7 @@
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.btnSökKund = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.txSökKund = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -196,12 +197,12 @@
             // 
             // btnSökKund
             // 
-            this.btnSökKund.Location = new System.Drawing.Point(482, 16);
+            this.btnSökKund.Location = new System.Drawing.Point(429, 29);
             this.btnSökKund.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSökKund.Name = "btnSökKund";
             this.btnSökKund.Size = new System.Drawing.Size(116, 42);
             this.btnSökKund.TabIndex = 16;
-            this.btnSökKund.Text = "Sök kund";
+            this.btnSökKund.Text = "Sök kund personnummer";
             this.btnSökKund.UseVisualStyleBackColor = true;
             this.btnSökKund.Click += new System.EventHandler(this.btnSökKund_Click);
             // 
@@ -215,10 +216,18 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Orderdatum";
             // 
+            // txSökKund
+            // 
+            this.txSökKund.Location = new System.Drawing.Point(569, 39);
+            this.txSökKund.Name = "txSökKund";
+            this.txSökKund.Size = new System.Drawing.Size(144, 22);
+            this.txSökKund.TabIndex = 18;
+            // 
             // NyOrderTabUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txSökKund);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSökKund);
             this.Controls.Add(this.groupBox1);
@@ -262,5 +271,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.Button btnSökKund;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txSökKund;
     }
 }

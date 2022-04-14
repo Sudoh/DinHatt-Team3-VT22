@@ -71,7 +71,7 @@ namespace DinHatt_CodeFirst.OrderMeny
         {
             using (var db = new DinHatt())
             {
-                int KundID = int.Parse(tbKundID.Text);
+                int KundID = int.Parse(txSökKund.Text);
                 var Kund = (from k in db.Kunder
                             where k.Id == KundID
                             select k).ToList();
