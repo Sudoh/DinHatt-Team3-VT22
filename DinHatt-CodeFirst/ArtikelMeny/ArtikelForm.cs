@@ -34,10 +34,42 @@ namespace DinHatt_CodeFirst
 
             this.WindowState = FormWindowState.Minimized;
         }
-
+           //
         private void btnVisaArtiklar_Click(object sender, EventArgs e)
         {
+            listArtikel.BeginUpdate();
+            listArtikel.Items.Clear();
 
+            using (var db = new DinHatt())
+            {
+                foreach (var item in db.Artiklar)
+                {
+                    ListViewItem rad = new ListViewItem();
+
+                    rad.SubItems.Add(item.Name);
+                    rad.SubItems.Add(item.Id.ToString());
+                    rad.SubItems.Add(item.Description);
+                    rad.SubItems.Add(item.HeadSize.ToString());
+                    rad.SubItems.Add(item.Pris.ToString());
+                    rad.SubItems.Add(item.BildNamn);
+                    rad.SubItems.Add(item.AntalILager.ToString());
+                    
+
+                    if
+                        (item.Begagnad == true)
+                    {
+                        rad.SubItems.Add("Ja");
+                            }
+                    else {
+                        rad.SubItems.Add("Nej");
+                    };
+                    
+
+                    listArtikel.Items.Add(rad);
+                }
+                listArtikel.EndUpdate();
+                listArtikel.Refresh();
+            }
         }
 
         private void tabArtikel_SelectedIndexChanged(object sender, EventArgs e)
@@ -68,6 +100,11 @@ namespace DinHatt_CodeFirst
 
 
             }
+        }
+
+        private void listArtikel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

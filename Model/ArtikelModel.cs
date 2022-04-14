@@ -13,7 +13,7 @@ namespace Models
 
         public string Description { get; set; }
 
-        //public double HeadSize { get; set; }
+        public double HeadSize { get; set; }
 
         public double Pris { get; set; }
 
