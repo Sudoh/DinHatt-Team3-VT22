@@ -49,6 +49,7 @@
             this.txtAdress = new System.Windows.Forms.TextBox();
             this.txtOrt = new System.Windows.Forms.TextBox();
             this.txtPostnr = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -245,10 +246,20 @@
             this.txtPostnr.Size = new System.Drawing.Size(100, 20);
             this.txtPostnr.TabIndex = 3;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(89, 135);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Sök på kund ID";
+            // 
             // VisaKundTabUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSok);
             this.Controls.Add(this.txtKundID);
@@ -285,5 +296,6 @@
         private System.Windows.Forms.TextBox txtAdress;
         private System.Windows.Forms.TextBox txtOrt;
         private System.Windows.Forms.TextBox txtPostnr;
+        private System.Windows.Forms.Label label9;
     }
 }
