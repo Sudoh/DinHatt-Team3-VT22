@@ -15,18 +15,14 @@ namespace DinHatt_CodeFirst
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartMenyForm());
+
+            //Tar bort och skapar en ny databas vid schema ändring
+           Database.SetInitializer(new DropCreateDatabaseIfModelChanges<DinHatt>());
+           
+
+            Application.Run(new StartMenyForm(true));
+
         }
     }
 
-
-    public class DinHatt : DbContext
-    {
-        //Här initialiseras alla tabeller i databasen när program körs. 
-        //Finns det något här så skapas det en tabell.
-        public DbSet<Artikel> Artiklar { get; set; }
-        public DbSet<Order> Ordrar { get; set; }
-        public DbSet<Kund> Kunder { get; set; }
-
-    }
 }

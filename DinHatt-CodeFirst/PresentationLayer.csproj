@@ -106,6 +106,7 @@
     <Compile Include="ArtikelMeny\VisaArtikelTabUserControl.Designer.cs">
       <DependentUpon>VisaArtikelTabUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DinHattDB.cs" />
     <Compile Include="ExportMeny\ExportForm.cs">
       <SubType>Form</SubType>
     </Compile>
