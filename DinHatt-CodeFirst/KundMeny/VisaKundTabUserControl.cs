@@ -31,7 +31,7 @@ namespace DinHatt_CodeFirst.KundMeny
                     txtAdress.Text = item.Adress;
                     txtPostnr.Text = Convert.ToString(item.PostalCode);
                     txtOrt.Text = item.City;
-                    txtTele.Text = Convert.ToString(item.TelephoneNumber);
+                    txtTele.Text = item.TelephoneNumber;
                     //txtLand.Text = item.Land;
                     txtEpost.Text = item.ePost;
                     
