@@ -28,6 +28,7 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                 Order nyOrder = new Order()
                 {
+
                     Description = tbxDescription.Text,
 
                     PrelimPrice = double.Parse(tbxPrice.Text),

@@ -43,13 +43,15 @@ namespace DinHatt_CodeFirst
                 {
                     ListViewItem rad = new ListViewItem();
 
-                    rad.SubItems.Add(item.Id.ToString());
-                   // rad.SubItems.Add(item.Kund.ToString());
-                    rad.SubItems.Add(item.OrderDate.ToShortDateString());
+                    //rad.SubItems.Add(item.KundId.ToString());
+                    // rad.SubItems.Add(item.Kund.ToString());
+                    rad.SubItems.Add(item.Orderbeställare.ToString());
                     rad.SubItems.Add(item.PrelimPrice.ToString());
+                    rad.SubItems.Add(item.Description.ToString());
                     rad.SubItems.Add(item.Payed.ToString());
-                    rad.SubItems.Add(item.Canceled.ToString());
+                    //rad.SubItems.Add(item.Canceled.ToString());
                     rad.SubItems.Add(item.Delivered.ToString());
+                    rad.SubItems.Add(item.OrderDate.ToShortDateString());
 
 
                     listViewOrder.Items.Add(rad);
@@ -58,6 +60,11 @@ namespace DinHatt_CodeFirst
                 listViewOrder.EndUpdate();
                 listViewOrder.Refresh();
             }
+        }
+
+        private void OrderForm_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

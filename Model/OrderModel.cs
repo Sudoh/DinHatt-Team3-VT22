@@ -18,7 +18,7 @@ namespace Models
         public string Orderbeställare { get; set; }   
 
         //1-till-många samband. Varje order måste ha en kund.
-        public Kund Kund { get; set; }
+        public Kund KundId { get; set; }
 
         //Säger till databasen att det ska vara FK
         public ICollection<Artikel> Artikel { get; set; }
