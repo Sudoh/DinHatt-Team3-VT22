@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,92 @@ namespace DinHatt_CodeFirst.OrderMeny
 {
     public partial class NyOrderTabUserControl : UserControl
     {
+
         public NyOrderTabUserControl()
         {
             InitializeComponent();
+        }
+
+        private void btnNyOrder_Click(object sender, EventArgs e)
+        {
+
+            if(!rdBtnJudith.Checked && !rdBtnOtto.Checked)
+            {
+                MessageBox.Show("Var vänlig och fyll in vem som skapar ordern.");
+            }
+
+            else
+            {
+
+                string radionamn = FindOrderHandler();
+
+                using (var db = new DinHatt())
+                {
+
+
+                    Order nyOrder = new Order()
+                    {
+
+                        Description = tbxDescription.Text,
+
+                        PrelimPrice = double.Parse(tbxPrice.Text),
+
+                        Payed = cbxPayed.Checked,
+
+                        Delivered = cbxDelivered.Checked,
+
+                        OrderDate = dateTimePicker1.Value.Date,
+
+                        Orderbeställare = radionamn,
+
+                        KundId = Convert.ToInt32(txSökKund.Text),
+
+                    };
+
+                    db.Ordrar.Add(nyOrder);
+                    db.SaveChanges();
+
+                }
+
+            }
+
+        }
+
+        private string FindOrderHandler()
+        {
+            string radionamn = groupBox1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Name;
+            switch (radionamn)
+            {
+                case "rdBtnJudith":
+                    radionamn = "Judith";
+                    break;
+                case "rdBtnOtto":
+                    radionamn = "Otto";
+                    break;
+                default:
+                    MessageBox.Show("Var vänlig och fyll in vem som skapar ordern.");
+                    break;
+            }
+
+            return radionamn;
+        }
+
+        private void btnSökKund_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int KundID = int.Parse(txSökKund.Text);
+                var Kund = (from k in db.Kunder
+                            where k.Id == KundID
+                            select k).ToList();
+
+                foreach (var item in Kund)
+                {
+                    tbKundNamn.Text = item.FNamn + item.ENamn;
+                  
+                }
+            }
+
         }
     }
 }
