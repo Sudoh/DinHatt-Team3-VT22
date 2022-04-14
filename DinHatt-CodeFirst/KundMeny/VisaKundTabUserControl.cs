@@ -108,5 +108,10 @@ namespace DinHatt_CodeFirst.KundMeny
         {
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
