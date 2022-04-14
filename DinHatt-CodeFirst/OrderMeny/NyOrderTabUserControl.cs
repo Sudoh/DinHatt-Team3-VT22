@@ -22,36 +22,46 @@ namespace DinHatt_CodeFirst.OrderMeny
         private void btnNyOrder_Click(object sender, EventArgs e)
         {
 
-            
-            string radionamn = FindOrderHandler();
-       
-            using (var db = new DinHatt())
+            if(!rdBtnJudith.Checked && !rdBtnOtto.Checked)
+            {
+                MessageBox.Show("Var vänlig och fyll in vem som skapar ordern.");
+            }
+
+            else
             {
 
+                string radionamn = FindOrderHandler();
 
-                Order nyOrder = new Order()
+                using (var db = new DinHatt())
                 {
 
-                    Description = tbxDescription.Text,
 
-                    PrelimPrice = double.Parse(tbxPrice.Text),
+                    Order nyOrder = new Order()
+                    {
 
-                    Payed = cbxPayed.Checked,
+                        Description = tbxDescription.Text,
 
-                    Delivered = cbxDelivered.Checked,
+                        PrelimPrice = double.Parse(tbxPrice.Text),
 
-                    OrderDate = dateTimePicker1.Value.Date,
+                        Payed = cbxPayed.Checked,
 
-                    Orderbeställare = radionamn,
+                        Delivered = cbxDelivered.Checked,
 
-                   KundId = Convert.ToInt32(txSökKund.Text),
+                        OrderDate = dateTimePicker1.Value.Date,
 
-                };
+                        Orderbeställare = radionamn,
 
-                db.Ordrar.Add(nyOrder);
-                db.SaveChanges();
+                        KundId = Convert.ToInt32(txSökKund.Text),
+
+                    };
+
+                    db.Ordrar.Add(nyOrder);
+                    db.SaveChanges();
+
+                }
 
             }
+
         }
 
         private string FindOrderHandler()
