@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.tabOrder = new System.Windows.Forms.TabControl();
             this.tabAllaOrder = new System.Windows.Forms.TabPage();
             this.btnLadda = new System.Windows.Forms.Button();
@@ -42,6 +40,7 @@
             this.colLeveransstatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDatum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabNyOrder = new System.Windows.Forms.TabPage();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabOrder.SuspendLayout();
             this.tabAllaOrder.SuspendLayout();
             this.SuspendLayout();
@@ -64,7 +63,7 @@
             this.tabAllaOrder.Controls.Add(this.listViewOrder);
             this.tabAllaOrder.Location = new System.Drawing.Point(4, 22);
             this.tabAllaOrder.Name = "tabAllaOrder";
-            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(3);
             this.tabAllaOrder.Size = new System.Drawing.Size(893, 335);
             this.tabAllaOrder.TabIndex = 0;
             this.tabAllaOrder.Text = "Alla Order";
@@ -84,6 +83,7 @@
             // listViewOrder
             // 
             this.listViewOrder.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
             this.colKund,
             this.colOrderbeställare,
             this.colPrelimPrice,
@@ -92,17 +92,11 @@
             this.colLeveransstatus,
             this.colDatum});
             this.listViewOrder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewOrder.FullRowSelect = true;
             this.listViewOrder.GridLines = true;
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup4";
-            this.listViewOrder.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2});
             this.listViewOrder.HideSelection = false;
             this.listViewOrder.Location = new System.Drawing.Point(3, 3);
-            this.listViewOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listViewOrder.Margin = new System.Windows.Forms.Padding(2);
             this.listViewOrder.Name = "listViewOrder";
             this.listViewOrder.Size = new System.Drawing.Size(887, 329);
             this.listViewOrder.TabIndex = 0;
@@ -154,11 +148,16 @@
             // 
             this.tabNyOrder.Location = new System.Drawing.Point(4, 22);
             this.tabNyOrder.Name = "tabNyOrder";
-            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(3);
             this.tabNyOrder.Size = new System.Drawing.Size(893, 335);
             this.tabNyOrder.TabIndex = 1;
             this.tabNyOrder.Text = "Ny Order";
             this.tabNyOrder.UseVisualStyleBackColor = true;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "-";
+            this.columnHeader1.Width = 13;
             // 
             // OrderForm
             // 
@@ -190,5 +189,6 @@
         private System.Windows.Forms.ColumnHeader colPayed;
         private System.Windows.Forms.ColumnHeader colLeveransstatus;
         private System.Windows.Forms.ColumnHeader colDatum;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }

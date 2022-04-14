@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Models
 {
@@ -15,12 +16,15 @@ namespace Models
         public bool Canceled { get; set; }
         public string Description { get; set; }
 
-        public string Orderbeställare { get; set; }   
+        public string Orderbeställare { get; set; }
 
         //1-till-många samband. Varje order måste ha en kund.
-        public Kund KundId { get; set; }
+        public virtual Kund Kund { get; set; }
 
-        //Säger till databasen att det ska vara FK
+        [ForeignKey("Kund")]
+        public int KundId { get; set; }
+
+         //Säger till databasen att det ska vara FK
         public ICollection<Artikel> Artikel { get; set; }
 
         //Kod för att Entityframwork ska förstå många-till-många samband

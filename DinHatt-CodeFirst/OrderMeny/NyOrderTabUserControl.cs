@@ -21,7 +21,10 @@ namespace DinHatt_CodeFirst.OrderMeny
 
         private void btnNyOrder_Click(object sender, EventArgs e)
         {
+
+            
             string radionamn = FindOrderHandler();
+       
             using (var db = new DinHatt())
             {
 
@@ -41,10 +44,13 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                     Orderbeställare = radionamn,
 
+                   KundId = Convert.ToInt32(txSökKund.Text),
+
                 };
-               
+
                 db.Ordrar.Add(nyOrder);
                 db.SaveChanges();
+
             }
         }
 
