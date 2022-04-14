@@ -66,5 +66,10 @@ namespace DinHatt_CodeFirst.OrderMeny
 
             return radionamn;
         }
+
+        private void btnSökKund_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
