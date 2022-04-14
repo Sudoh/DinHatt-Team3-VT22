@@ -69,7 +69,14 @@ namespace DinHatt_CodeFirst.OrderMeny
 
         private void btnSökKund_Click(object sender, EventArgs e)
         {
+            using (var db = new DinHatt())
+            {
+                int KundID = int.Parse(tbKundID.Text);
+                var Kund = (from k in db.Kunder
+                            where k.Id == KundID
+                            select k).ToList();
+            }
 
-        }
+            }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnNyOrder = new System.Windows.Forms.Button();
-            this.tbOrderNummer = new System.Windows.Forms.TextBox();
+            this.tbKundID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbOrderBeskrivning = new System.Windows.Forms.Label();
             this.tbxDescription = new System.Windows.Forms.RichTextBox();
@@ -60,13 +60,13 @@
             this.btnNyOrder.UseVisualStyleBackColor = true;
             this.btnNyOrder.Click += new System.EventHandler(this.btnNyOrder_Click);
             // 
-            // tbOrderNummer
+            // tbKundID
             // 
-            this.tbOrderNummer.Location = new System.Drawing.Point(204, 16);
-            this.tbOrderNummer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbOrderNummer.Name = "tbOrderNummer";
-            this.tbOrderNummer.Size = new System.Drawing.Size(201, 22);
-            this.tbOrderNummer.TabIndex = 2;
+            this.tbKundID.Location = new System.Drawing.Point(204, 16);
+            this.tbKundID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbKundID.Name = "tbKundID";
+            this.tbKundID.Size = new System.Drawing.Size(201, 22);
+            this.tbKundID.TabIndex = 2;
             // 
             // label1
             // 
@@ -231,7 +231,7 @@
             this.Controls.Add(this.tbxDescription);
             this.Controls.Add(this.lbOrderBeskrivning);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbOrderNummer);
+            this.Controls.Add(this.tbKundID);
             this.Controls.Add(this.btnNyOrder);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "NyOrderTabUserControl";
@@ -245,7 +245,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnNyOrder;
-        private System.Windows.Forms.TextBox tbOrderNummer;
+        private System.Windows.Forms.TextBox tbKundID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbOrderBeskrivning;
         private System.Windows.Forms.RichTextBox tbxDescription;
