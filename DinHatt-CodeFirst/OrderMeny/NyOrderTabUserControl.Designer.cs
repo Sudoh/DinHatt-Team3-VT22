@@ -47,15 +47,19 @@
             this.btnSökKund = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txSökKund = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnNyOrder
             // 
-            this.btnNyOrder.Location = new System.Drawing.Point(202, 295);
-            this.btnNyOrder.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnNyOrder.Location = new System.Drawing.Point(303, 492);
+            this.btnNyOrder.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnNyOrder.Name = "btnNyOrder";
-            this.btnNyOrder.Size = new System.Drawing.Size(87, 34);
+            this.btnNyOrder.Size = new System.Drawing.Size(130, 52);
             this.btnNyOrder.TabIndex = 1;
             this.btnNyOrder.Text = "Skapa ny order";
             this.btnNyOrder.UseVisualStyleBackColor = true;
@@ -63,20 +67,19 @@
             // 
             // tbKundNamn
             // 
-            this.tbKundNamn.Location = new System.Drawing.Point(153, 13);
-            this.tbKundNamn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tbKundNamn.Location = new System.Drawing.Point(230, 20);
+            this.tbKundNamn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tbKundNamn.Name = "tbKundNamn";
-            this.tbKundNamn.Size = new System.Drawing.Size(152, 20);
+            this.tbKundNamn.Size = new System.Drawing.Size(226, 26);
             this.tbKundNamn.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(39, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(99, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Kund namn";
             // 
@@ -84,39 +87,36 @@
             // 
             this.lbOrderBeskrivning.AutoSize = true;
             this.lbOrderBeskrivning.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOrderBeskrivning.Location = new System.Drawing.Point(26, 172);
-            this.lbOrderBeskrivning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbOrderBeskrivning.Location = new System.Drawing.Point(39, 335);
             this.lbOrderBeskrivning.Name = "lbOrderBeskrivning";
-            this.lbOrderBeskrivning.Size = new System.Drawing.Size(107, 13);
+            this.lbOrderBeskrivning.Size = new System.Drawing.Size(149, 20);
             this.lbOrderBeskrivning.TabIndex = 4;
             this.lbOrderBeskrivning.Text = "Order beskrivning";
             // 
             // tbxDescription
             // 
-            this.tbxDescription.Location = new System.Drawing.Point(153, 127);
-            this.tbxDescription.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tbxDescription.Location = new System.Drawing.Point(230, 265);
+            this.tbxDescription.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tbxDescription.Name = "tbxDescription";
-            this.tbxDescription.Size = new System.Drawing.Size(263, 98);
+            this.tbxDescription.Size = new System.Drawing.Size(392, 149);
             this.tbxDescription.TabIndex = 5;
             this.tbxDescription.Text = "";
             // 
             // tbxPrice
             // 
-            this.tbxPrice.Location = new System.Drawing.Point(157, 262);
-            this.tbxPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tbxPrice.Location = new System.Drawing.Point(236, 441);
+            this.tbxPrice.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tbxPrice.Name = "tbxPrice";
-            this.tbxPrice.Size = new System.Drawing.Size(154, 20);
+            this.tbxPrice.Size = new System.Drawing.Size(229, 26);
             this.tbxPrice.TabIndex = 6;
-            this.tbxPrice.Text = "0";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 267);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(45, 449);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.Size = new System.Drawing.Size(128, 20);
             this.label2.TabIndex = 8;
             this.label2.Text = "Preliminärt pris";
             // 
@@ -124,10 +124,9 @@
             // 
             this.cbxPayed.AutoSize = true;
             this.cbxPayed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxPayed.Location = new System.Drawing.Point(325, 262);
-            this.cbxPayed.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxPayed.Location = new System.Drawing.Point(488, 441);
             this.cbxPayed.Name = "cbxPayed";
-            this.cbxPayed.Size = new System.Drawing.Size(59, 17);
+            this.cbxPayed.Size = new System.Drawing.Size(85, 24);
             this.cbxPayed.TabIndex = 9;
             this.cbxPayed.Text = "Betalad";
             this.cbxPayed.UseVisualStyleBackColor = true;
@@ -136,10 +135,9 @@
             // 
             this.cbxDelivered.AutoSize = true;
             this.cbxDelivered.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxDelivered.Location = new System.Drawing.Point(396, 262);
-            this.cbxDelivered.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxDelivered.Location = new System.Drawing.Point(594, 441);
             this.cbxDelivered.Name = "cbxDelivered";
-            this.cbxDelivered.Size = new System.Drawing.Size(62, 17);
+            this.cbxDelivered.Size = new System.Drawing.Size(86, 24);
             this.cbxDelivered.TabIndex = 10;
             this.cbxDelivered.Text = "Skickad";
             this.cbxDelivered.UseVisualStyleBackColor = true;
@@ -147,10 +145,9 @@
             // rdBtnJudith
             // 
             this.rdBtnJudith.AutoSize = true;
-            this.rdBtnJudith.Location = new System.Drawing.Point(4, 15);
-            this.rdBtnJudith.Margin = new System.Windows.Forms.Padding(2);
+            this.rdBtnJudith.Location = new System.Drawing.Point(6, 23);
             this.rdBtnJudith.Name = "rdBtnJudith";
-            this.rdBtnJudith.Size = new System.Drawing.Size(53, 17);
+            this.rdBtnJudith.Size = new System.Drawing.Size(77, 24);
             this.rdBtnJudith.TabIndex = 11;
             this.rdBtnJudith.TabStop = true;
             this.rdBtnJudith.Text = "Judith";
@@ -160,10 +157,9 @@
             // rdBtnOtto
             // 
             this.rdBtnOtto.AutoSize = true;
-            this.rdBtnOtto.Location = new System.Drawing.Point(67, 15);
-            this.rdBtnOtto.Margin = new System.Windows.Forms.Padding(2);
+            this.rdBtnOtto.Location = new System.Drawing.Point(100, 23);
             this.rdBtnOtto.Name = "rdBtnOtto";
-            this.rdBtnOtto.Size = new System.Drawing.Size(45, 17);
+            this.rdBtnOtto.Size = new System.Drawing.Size(65, 24);
             this.rdBtnOtto.TabIndex = 12;
             this.rdBtnOtto.TabStop = true;
             this.rdBtnOtto.Text = "Otto";
@@ -174,39 +170,35 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 54);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(40, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.Size = new System.Drawing.Size(133, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "Orderbeställare";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 95);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(230, 216);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(224, 26);
             this.dateTimePicker1.TabIndex = 14;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rdBtnOtto);
             this.groupBox1.Controls.Add(this.rdBtnJudith);
-            this.groupBox1.Location = new System.Drawing.Point(153, 35);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(230, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(153, 42);
+            this.groupBox1.Size = new System.Drawing.Size(230, 65);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
             // btnSökKund
             // 
-            this.btnSökKund.Location = new System.Drawing.Point(322, 24);
-            this.btnSökKund.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSökKund.Location = new System.Drawing.Point(488, 5);
+            this.btnSökKund.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnSökKund.Name = "btnSökKund";
-            this.btnSökKund.Size = new System.Drawing.Size(87, 34);
+            this.btnSökKund.Size = new System.Drawing.Size(130, 52);
             this.btnSökKund.TabIndex = 16;
             this.btnSökKund.Text = "Sök kund ID";
             this.btnSökKund.UseVisualStyleBackColor = true;
@@ -216,25 +208,62 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 100);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(40, 224);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.Size = new System.Drawing.Size(104, 20);
             this.label4.TabIndex = 17;
             this.label4.Text = "Orderdatum";
             // 
             // txSökKund
             // 
-            this.txSökKund.Location = new System.Drawing.Point(427, 32);
-            this.txSökKund.Margin = new System.Windows.Forms.Padding(2);
+            this.txSökKund.Location = new System.Drawing.Point(645, 17);
             this.txSökKund.Name = "txSökKund";
-            this.txSökKund.Size = new System.Drawing.Size(109, 20);
+            this.txSökKund.Size = new System.Drawing.Size(162, 26);
             this.txSökKund.TabIndex = 18;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(645, 107);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(162, 26);
+            this.textBox1.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(488, 95);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 52);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Sök artikel";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(39, 84);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 20);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Artikel namn";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(230, 79);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(226, 26);
+            this.textBox2.TabIndex = 21;
             // 
             // NyOrderTabUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txSökKund);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSökKund);
@@ -250,9 +279,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbKundNamn);
             this.Controls.Add(this.btnNyOrder);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "NyOrderTabUserControl";
-            this.Size = new System.Drawing.Size(575, 386);
+            this.Size = new System.Drawing.Size(862, 594);
+            this.Load += new System.EventHandler(this.NyOrderTabUserControl_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -280,5 +310,9 @@
         private System.Windows.Forms.Button btnSökKund;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txSökKund;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

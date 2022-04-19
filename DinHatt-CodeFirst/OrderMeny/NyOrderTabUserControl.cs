@@ -114,5 +114,10 @@ namespace DinHatt_CodeFirst.OrderMeny
             }
 
         }
+
+        private void NyOrderTabUserControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
