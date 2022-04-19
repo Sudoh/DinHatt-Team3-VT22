@@ -74,6 +74,8 @@ namespace DinHatt_CodeFirst.KundMeny
                 txtEpost.Clear();
 
                 db.SaveChanges();
+
+                MessageBox.Show("Kundens information har uppdaterats!");
             }
         }
 
@@ -100,9 +102,13 @@ namespace DinHatt_CodeFirst.KundMeny
                 //txtLand.Clear();
                 txtEpost.Clear();
 
+                MessageBox.Show("Kunden har tagits bort!");
+
+
             }
-                
+
         }
+  
 
         private void txtFnamn_TextChanged(object sender, EventArgs e)
         {
