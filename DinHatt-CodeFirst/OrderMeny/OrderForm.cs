@@ -52,6 +52,8 @@ namespace DinHatt_CodeFirst
                     //rad.SubItems.Add(item.Canceled.ToString());
                     rad.SubItems.Add(item.Delivered.ToString());
                     rad.SubItems.Add(item.OrderDate.ToShortDateString());
+                    rad.SubItems.Add(item.Moms.ToString());
+
 
 
                     listViewOrder.Items.Add(rad);
@@ -61,6 +63,7 @@ namespace DinHatt_CodeFirst
                 listViewOrder.Refresh();
             }
         }
+
 
         private void OrderForm_Load(object sender, System.EventArgs e)
         {

@@ -32,6 +32,8 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                 string radionamn = FindOrderHandler();
 
+                float momssats = FindMomsSats();
+
                 using (var db = new DinHatt())
                 {
 
@@ -52,6 +54,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                         Orderbeställare = radionamn,
 
                         KundId = Convert.ToInt32(txSökKund.Text),
+
+                        Moms = momssats,
 
                     };
 
@@ -81,6 +85,16 @@ namespace DinHatt_CodeFirst.OrderMeny
             }
 
             return radionamn;
+        }
+
+        private float FindMomsSats()
+        {
+            float prePris = 0;
+            prePris = float.Parse(tbxPrice.Text);
+            float momssats = (prePris * 1.25F);
+
+            return momssats;
+
         }
 
         private void btnSökKund_Click(object sender, EventArgs e)

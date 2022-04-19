@@ -18,6 +18,8 @@ namespace Models
 
         public string Orderbeställare { get; set; }
 
+        public float Moms { get; set; }
+
         //1-till-många samband. Varje order måste ha en kund.
         public virtual Kund Kund { get; set; }
 
