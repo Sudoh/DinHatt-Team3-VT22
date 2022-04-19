@@ -45,6 +45,8 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                         PrelimPrice = double.Parse(tbxPrice.Text),
 
+                        ArtikelTd = int.Parse(txbSökArtikel.Text),
+
                         Payed = cbxPayed.Checked,
 
                         Delivered = cbxDelivered.Checked,
@@ -60,7 +62,26 @@ namespace DinHatt_CodeFirst.OrderMeny
                     };
 
                     db.Ordrar.Add(nyOrder);
+
+
+
+                    tbxDescription.Clear();
+                    tbxPrice.Clear();
+                    cbxDelivered.Checked= false;
+                    cbxPayed.Checked = false;
+                    rdBtnJudith.Checked= false;
+                    rdBtnOtto.Checked= false;
+                    dateTimePicker1.Value = DateTime.Now;
+                    txSökKund.Clear();
+                    tbKundNamn.Clear();
+                    txbSökArtikel.Clear();
+                    listBox1.Items.Clear();
+
+
+
                     db.SaveChanges();
+
+                    MessageBox.Show("Du har skapat ny order!");
 
                 }
 
@@ -118,6 +139,24 @@ namespace DinHatt_CodeFirst.OrderMeny
         private void NyOrderTabUserControl_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int ArtikelId = int.Parse(txbSökArtikel.Text);
+                var Artikel = (from k in db.Artiklar
+                            where k.Id == ArtikelId
+                            select k).ToList();
+
+                foreach (var item in Artikel)
+                {
+                    listBox1.Items.Add(item.Name);
+                    tbxPrice.Text = item.Pris.ToString();
+
+                }
+            }
         }
     }
 }

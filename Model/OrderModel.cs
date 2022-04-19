@@ -30,6 +30,11 @@ namespace Models
         public ICollection<Artikel> Artikel { get; set; }
 
         //Kod för att Entityframwork ska förstå många-till-många samband
+
+        [ForeignKey("Artikel")]
+        public int ArtikelTd { get; set; }
+
+
         public Order()
         {
             Artikel = new HashSet<Artikel>();
