@@ -41,9 +41,9 @@
             this.colLeveransstatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDatum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colMoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ArtikelId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabNyOrder = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.ArtikelId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabOrder.SuspendLayout();
             this.tabAllaOrder.SuspendLayout();
             this.SuspendLayout();
@@ -55,10 +55,10 @@
             this.tabOrder.Controls.Add(this.tabPage1);
             this.tabOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabOrder.Location = new System.Drawing.Point(0, 0);
-            this.tabOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabOrder.Name = "tabOrder";
             this.tabOrder.SelectedIndex = 0;
-            this.tabOrder.Size = new System.Drawing.Size(1202, 444);
+            this.tabOrder.Size = new System.Drawing.Size(1352, 555);
             this.tabOrder.TabIndex = 0;
             this.tabOrder.SelectedIndexChanged += new System.EventHandler(this.tabOrder_SelectedIndexChanged);
             // 
@@ -66,11 +66,11 @@
             // 
             this.tabAllaOrder.Controls.Add(this.btnLadda);
             this.tabAllaOrder.Controls.Add(this.listViewOrder);
-            this.tabAllaOrder.Location = new System.Drawing.Point(4, 25);
-            this.tabAllaOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabAllaOrder.Location = new System.Drawing.Point(4, 29);
+            this.tabAllaOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabAllaOrder.Name = "tabAllaOrder";
-            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabAllaOrder.Size = new System.Drawing.Size(1194, 415);
+            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabAllaOrder.Size = new System.Drawing.Size(1344, 522);
             this.tabAllaOrder.TabIndex = 0;
             this.tabAllaOrder.Text = "Alla Order";
             this.tabAllaOrder.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             // btnLadda
             // 
             this.btnLadda.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnLadda.Location = new System.Drawing.Point(677, 161);
-            this.btnLadda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLadda.Location = new System.Drawing.Point(762, 201);
+            this.btnLadda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLadda.Name = "btnLadda";
-            this.btnLadda.Size = new System.Drawing.Size(94, 28);
+            this.btnLadda.Size = new System.Drawing.Size(106, 35);
             this.btnLadda.TabIndex = 2;
             this.btnLadda.Text = "Visa ordrar";
             this.btnLadda.UseVisualStyleBackColor = true;
@@ -103,10 +103,10 @@
             this.listViewOrder.FullRowSelect = true;
             this.listViewOrder.GridLines = true;
             this.listViewOrder.HideSelection = false;
-            this.listViewOrder.Location = new System.Drawing.Point(4, 4);
+            this.listViewOrder.Location = new System.Drawing.Point(4, 5);
             this.listViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listViewOrder.Name = "listViewOrder";
-            this.listViewOrder.Size = new System.Drawing.Size(1188, 410);
+            this.listViewOrder.Size = new System.Drawing.Size(1336, 512);
             this.listViewOrder.TabIndex = 0;
             this.listViewOrder.UseCompatibleStateImageBehavior = false;
             this.listViewOrder.View = System.Windows.Forms.View.Details;
@@ -129,78 +129,72 @@
             // 
             // colPrelimPrice
             // 
-            this.colPrelimPrice.DisplayIndex = 4;
             this.colPrelimPrice.Text = "Order  PrelimPrice";
             this.colPrelimPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colPrelimPrice.Width = 98;
             // 
             // colDiscription
             // 
-            this.colDiscription.DisplayIndex = 5;
             this.colDiscription.Text = "Order discription";
             this.colDiscription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colDiscription.Width = 100;
             // 
             // colPayed
             // 
-            this.colPayed.DisplayIndex = 6;
             this.colPayed.Text = "Betald";
             this.colPayed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colPayed.Width = 46;
             // 
             // colLeveransstatus
             // 
-            this.colLeveransstatus.DisplayIndex = 7;
             this.colLeveransstatus.Text = "Leveransstatus";
             this.colLeveransstatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colLeveransstatus.Width = 86;
             // 
             // colDatum
             // 
-            this.colDatum.DisplayIndex = 8;
             this.colDatum.Text = "OrderDatum";
             this.colDatum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colDatum.Width = 108;
             // 
             // colMoms
             // 
-            this.colMoms.DisplayIndex = 9;
             this.colMoms.Text = "Moms";
             this.colMoms.Width = 85;
             // 
+            // ArtikelId
+            // 
+            this.ArtikelId.Text = "ArtikelId";
+            // 
             // tabNyOrder
             // 
-            this.tabNyOrder.Location = new System.Drawing.Point(4, 25);
-            this.tabNyOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabNyOrder.Location = new System.Drawing.Point(4, 29);
+            this.tabNyOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabNyOrder.Name = "tabNyOrder";
-            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabNyOrder.Size = new System.Drawing.Size(1194, 415);
+            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabNyOrder.Size = new System.Drawing.Size(1344, 522);
             this.tabNyOrder.TabIndex = 1;
             this.tabNyOrder.Text = "Ny Order";
             this.tabNyOrder.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1194, 415);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Size = new System.Drawing.Size(1344, 522);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Arikel order";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // ArtikelId
-            // 
-            this.ArtikelId.DisplayIndex = 3;
-            this.ArtikelId.Text = "ArtikelId";
-            // 
             // OrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 444);
+            this.ClientSize = new System.Drawing.Size(1352, 555);
             this.Controls.Add(this.tabOrder);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "OrderForm";
             this.Text = "Order";
             this.TopMost = true;

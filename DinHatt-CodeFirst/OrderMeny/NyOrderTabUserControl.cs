@@ -13,6 +13,10 @@ namespace DinHatt_CodeFirst.OrderMeny
 {
     public partial class NyOrderTabUserControl : UserControl
     {
+        private int counter = 0;
+
+        private double doSum = 0;
+       private double priset = 0;
 
         public NyOrderTabUserControl()
         {
@@ -37,6 +41,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                 using (var db = new DinHatt())
                 {
 
+                   
+                    
 
                     Order nyOrder = new Order()
                     {
@@ -60,6 +66,7 @@ namespace DinHatt_CodeFirst.OrderMeny
                         Moms = momssats,
 
                     };
+                    
 
                     db.Ordrar.Add(nyOrder);
 
@@ -75,7 +82,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                     txSökKund.Clear();
                     tbKundNamn.Clear();
                     txbSökArtikel.Clear();
-                    listBox1.Items.Clear();
+                    lstbxArtikel.Items.Clear();
+                    tbxAntalLager.Clear();  
 
 
 
@@ -141,27 +149,72 @@ namespace DinHatt_CodeFirst.OrderMeny
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+
+        private void button1_Click(object sender, EventArgs e, string sum, string summation)
         {
-            using (var db = new DinHatt())
-            {
-                int ArtikelId = int.Parse(txbSökArtikel.Text);
-                var Artikel = (from k in db.Artiklar
-                            where k.Id == ArtikelId
-                            select k).ToList();
 
-                foreach (var item in Artikel)
-                {
-                    listBox1.Items.Add(item.Name);
-                    tbxPrice.Text = item.Pris.ToString();
-
-                }
-            }
+          
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbxAntalLager_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            grbxAntalLager.Show();
+            counter++;
+
+            using (var db = new DinHatt())
+            {
+                int ArtikelId = int.Parse(txbSökArtikel.Text);
+                var Artikel = (from k in db.Artiklar
+                               where k.Id == ArtikelId
+                               select k).ToList();
+
+                foreach (var item in Artikel)
+                {
+                    string antalILag = "";
+                    antalILag = tbxAntalLager.Text = item.AntalILager.ToString();
+                    lstbxArtikel.Items.Add(item.Name);
+                  tbxPrice.Text = item.Pris.ToString();
+
+
+
+                    for (int i = 1; i < counter; i++)
+                    {
+
+                         priset = double.Parse(tbxPrice.Text);
+
+
+                      //  doSum = double.Parse(tbxTotPris.Text);
+
+                        priset =priset+priset ;
+                        tbxTotPris.Text = priset.ToString();
+
+                        int antalILagret = 0;
+                        antalILagret = int.Parse(antalILag);
+                        tbxAntalLager.Text = Convert.ToString(item.AntalILager - 1);
+                       
+
+                    }
+
+
+                   
+
+                }
+
+
+
+            }
         }
     }
 }

@@ -46,7 +46,6 @@ namespace DinHatt_CodeFirst
 
                     rad.SubItems.Add(item.KundId.ToString());
                     rad.SubItems.Add(item.Orderbeställare.ToString());
-                    rad.SubItems.Add(item.ArtikelTd.ToString());
                     rad.SubItems.Add(item.PrelimPrice.ToString());
                     rad.SubItems.Add(item.Description.ToString());
                     rad.SubItems.Add(item.Payed.ToString());
@@ -54,6 +53,8 @@ namespace DinHatt_CodeFirst
                     rad.SubItems.Add(item.Delivered.ToString());
                     rad.SubItems.Add(item.OrderDate.ToShortDateString());
                     rad.SubItems.Add(item.Moms.ToString());
+                    rad.SubItems.Add(item.ArtikelTd.ToString());
+
 
 
 
