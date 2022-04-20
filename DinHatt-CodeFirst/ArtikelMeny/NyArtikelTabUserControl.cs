@@ -41,7 +41,7 @@ namespace DinHatt_CodeFirst.ArtikelMeny
                     Description = txtBeskrivning.Text,
                     AntalILager = int.Parse(txtAntalILager.Text),
                     Begagnad = chkBegagnad.Checked,
-                    BildNamn = bildNamn.Text,
+                    BildNamn = bildNamn,
                     Pris = double.Parse(txtPris.Text)
 
                 };

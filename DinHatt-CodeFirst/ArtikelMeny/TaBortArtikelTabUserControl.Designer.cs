@@ -49,18 +49,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(396, 125);
+            this.label1.Location = new System.Drawing.Point(264, 81);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
+            this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Artikelnamn:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabortbtn
             // 
-            this.tabortbtn.Location = new System.Drawing.Point(505, 418);
+            this.tabortbtn.Location = new System.Drawing.Point(337, 272);
+            this.tabortbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabortbtn.Name = "tabortbtn";
-            this.tabortbtn.Size = new System.Drawing.Size(100, 41);
+            this.tabortbtn.Size = new System.Drawing.Size(67, 27);
             this.tabortbtn.TabIndex = 1;
             this.tabortbtn.Text = "Ta Bort";
             this.tabortbtn.UseVisualStyleBackColor = true;
@@ -68,17 +70,19 @@
             // 
             // tabortnamntxt
             // 
-            this.tabortnamntxt.Location = new System.Drawing.Point(505, 119);
+            this.tabortnamntxt.Location = new System.Drawing.Point(337, 77);
+            this.tabortnamntxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabortnamntxt.Name = "tabortnamntxt";
-            this.tabortnamntxt.Size = new System.Drawing.Size(100, 26);
+            this.tabortnamntxt.Size = new System.Drawing.Size(68, 20);
             this.tabortnamntxt.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(396, 170);
+            this.label2.Location = new System.Drawing.Point(264, 110);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
+            this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Storlek:";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -86,95 +90,107 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(396, 215);
+            this.label3.Location = new System.Drawing.Point(264, 140);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 20);
+            this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Pris:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(396, 261);
+            this.label4.Location = new System.Drawing.Point(264, 170);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 20);
+            this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Bildnamn:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(396, 316);
+            this.label5.Location = new System.Drawing.Point(264, 205);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 20);
+            this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 6;
             this.label5.Text = "Antal i Lager:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(396, 359);
+            this.label6.Location = new System.Drawing.Point(264, 233);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 7;
             this.label6.Text = "Begagnad:";
             // 
             // tabortstorlektxt
             // 
-            this.tabortstorlektxt.Location = new System.Drawing.Point(505, 164);
+            this.tabortstorlektxt.Location = new System.Drawing.Point(337, 107);
+            this.tabortstorlektxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabortstorlektxt.Name = "tabortstorlektxt";
-            this.tabortstorlektxt.Size = new System.Drawing.Size(100, 26);
+            this.tabortstorlektxt.Size = new System.Drawing.Size(68, 20);
             this.tabortstorlektxt.TabIndex = 8;
             // 
             // tabortpristxt
             // 
-            this.tabortpristxt.Location = new System.Drawing.Point(505, 209);
+            this.tabortpristxt.Location = new System.Drawing.Point(337, 136);
+            this.tabortpristxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabortpristxt.Name = "tabortpristxt";
-            this.tabortpristxt.Size = new System.Drawing.Size(100, 26);
+            this.tabortpristxt.Size = new System.Drawing.Size(68, 20);
             this.tabortpristxt.TabIndex = 9;
             // 
             // tabortbildtxt
             // 
-            this.tabortbildtxt.Location = new System.Drawing.Point(505, 255);
+            this.tabortbildtxt.Location = new System.Drawing.Point(337, 166);
+            this.tabortbildtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabortbildtxt.Name = "tabortbildtxt";
-            this.tabortbildtxt.Size = new System.Drawing.Size(100, 26);
+            this.tabortbildtxt.Size = new System.Drawing.Size(68, 20);
             this.tabortbildtxt.TabIndex = 10;
             // 
             // tabortantaltxt
             // 
-            this.tabortantaltxt.Location = new System.Drawing.Point(505, 316);
+            this.tabortantaltxt.Location = new System.Drawing.Point(337, 205);
+            this.tabortantaltxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabortantaltxt.Name = "tabortantaltxt";
-            this.tabortantaltxt.Size = new System.Drawing.Size(100, 26);
+            this.tabortantaltxt.Size = new System.Drawing.Size(68, 20);
             this.tabortantaltxt.TabIndex = 11;
             // 
             // tabortbegtxt
             // 
-            this.tabortbegtxt.Location = new System.Drawing.Point(505, 359);
+            this.tabortbegtxt.Location = new System.Drawing.Point(337, 233);
+            this.tabortbegtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabortbegtxt.Name = "tabortbegtxt";
-            this.tabortbegtxt.Size = new System.Drawing.Size(100, 26);
+            this.tabortbegtxt.Size = new System.Drawing.Size(68, 20);
             this.tabortbegtxt.TabIndex = 12;
             // 
             // visatabortarttxt
             // 
-            this.visatabortarttxt.Location = new System.Drawing.Point(123, 208);
+            this.visatabortarttxt.Location = new System.Drawing.Point(82, 135);
+            this.visatabortarttxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.visatabortarttxt.Name = "visatabortarttxt";
-            this.visatabortarttxt.Size = new System.Drawing.Size(100, 26);
+            this.visatabortarttxt.Size = new System.Drawing.Size(68, 20);
             this.visatabortarttxt.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(123, 164);
+            this.label7.Location = new System.Drawing.Point(82, 107);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 20);
+            this.label7.Size = new System.Drawing.Size(27, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "Visa";
             // 
             // visatabortbtn
             // 
-            this.visatabortbtn.Location = new System.Drawing.Point(127, 255);
+            this.visatabortbtn.Location = new System.Drawing.Point(85, 166);
+            this.visatabortbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.visatabortbtn.Name = "visatabortbtn";
-            this.visatabortbtn.Size = new System.Drawing.Size(75, 23);
+            this.visatabortbtn.Size = new System.Drawing.Size(50, 20);
             this.visatabortbtn.TabIndex = 15;
             this.visatabortbtn.Text = "Visa artikel";
             this.visatabortbtn.UseVisualStyleBackColor = true;
@@ -182,7 +198,7 @@
             // 
             // TaBortArtikelTabUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.visatabortbtn);
             this.Controls.Add(this.label7);
@@ -200,8 +216,9 @@
             this.Controls.Add(this.tabortnamntxt);
             this.Controls.Add(this.tabortbtn);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TaBortArtikelTabUserControl";
-            this.Size = new System.Drawing.Size(1054, 648);
+            this.Size = new System.Drawing.Size(703, 421);
             this.Load += new System.EventHandler(this.TaBortArtikelTabUserControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

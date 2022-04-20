@@ -32,9 +32,9 @@ namespace Models
             Order = new HashSet<Order>();
         }
 
-        public static implicit operator Artikel(Artikel v)
+        /*public static implicit operator Artikel(Artikel v)
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }
