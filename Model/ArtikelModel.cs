@@ -21,7 +21,6 @@ namespace Models
 
         public bool Begagnad { get; set; }
 
-        public string testaArtikelMoms { get; set; }
 
         //Kod för många-till-många i databsen.
         public virtual ICollection<Order> Order { get; set; }
