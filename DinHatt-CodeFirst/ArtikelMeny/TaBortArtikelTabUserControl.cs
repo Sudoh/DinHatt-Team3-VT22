@@ -27,14 +27,23 @@ namespace DinHatt_CodeFirst.ArtikelMeny
         {
             using (var db = new DinHatt())
             {
-                Artikel nyArtikel = new Artikel()
+                int ArtikelID = int.Parse(visatabortarttxt.Text);
+                var artikel = db.Artiklar.FirstOrDefault(a => a.Id == ArtikelID);
+
+                if (artikel != null)
                 {
-                    Name = tabortnamntxt.Text
+                    db.Artiklar.Remove(artikel);
+                    db.SaveChanges();
+                }
 
-                };
-
-                db.Artiklar.Remove(nyArtikel);
-                db.SaveChanges();
+                visatabortarttxt.Clear();
+                tabortnamntxt.Clear();
+                tabortstorlektxt.Clear();
+                tabortpristxt.Clear();
+                tabortbildtxt.Clear();
+                tabortantaltxt.Clear();
+                tabortbegtxt.Clear();
+                MessageBox.Show("Vald artikel är nu bortagen!");
 
             }
         }
@@ -61,14 +70,30 @@ namespace DinHatt_CodeFirst.ArtikelMeny
                 foreach (var item in artikel)
                 {
                     tabortnamntxt.Text = item.Name;
-                    /*Int Pris = double.Parse(tabortpristxt.Text);
+                    tabortpristxt.Text = Convert.ToString(item.Pris);
                     tabortbildtxt.Text = item.BildNamn;
-                    item.AntalILager = int.Parse(tabortantaltxt.Text);
-                    tabortbegtxt.Text = item.Begagnad;*/
+                    tabortantaltxt.Text = Convert.ToString(item.AntalILager);
+                    tabortbegtxt.Text = Convert.ToString(item.Begagnad);
+                    tabortstorlektxt.Text = Convert.ToString(item.HeadSize);
+                    if
+                        (item.Begagnad == true)
+                    {
+                        tabortbegtxt.Text = "Ja";
+                    }
+                    else
+                    {
+                        tabortbegtxt.Text = "Nej";
+                    };
+                    //Hur fixar man storleken?
 
                 }
 
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

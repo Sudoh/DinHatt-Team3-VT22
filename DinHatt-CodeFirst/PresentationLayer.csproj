@@ -220,6 +220,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="PresentationLayer_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Models.Artikel.datasource" />
     <None Include="Properties\DataSources\Models.Kund.datasource" />
     <None Include="Properties\DataSources\Program1.datasource" />
     <None Include="Properties\Settings.settings">
