@@ -32,6 +32,7 @@
             this.tabAllaArtiklar = new System.Windows.Forms.TabPage();
             this.btnVisaArtiklar = new System.Windows.Forms.Button();
             this.listArtikel = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colArtikelNamn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colArtikelID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colBeskrivning = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,7 +43,7 @@
             this.colBegagnad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabNyArtikel = new System.Windows.Forms.TabPage();
             this.tabVisaArtikel = new System.Windows.Forms.TabPage();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colMoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabArtikel.SuspendLayout();
             this.tabAllaArtiklar.SuspendLayout();
             this.SuspendLayout();
@@ -96,7 +97,8 @@
             this.colPris,
             this.colBildNamn,
             this.colAntalILager,
-            this.colBegagnad});
+            this.colBegagnad,
+            this.colMoms});
             this.listArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listArtikel.HideSelection = false;
             this.listArtikel.Location = new System.Drawing.Point(4, 5);
@@ -106,6 +108,11 @@
             this.listArtikel.UseCompatibleStateImageBehavior = false;
             this.listArtikel.View = System.Windows.Forms.View.Details;
             this.listArtikel.SelectedIndexChanged += new System.EventHandler(this.listArtikel_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = " ";
+            this.columnHeader1.Width = 0;
             // 
             // colArtikelNamn
             // 
@@ -169,10 +176,10 @@
             this.tabVisaArtikel.Text = "Visa Artikel";
             this.tabVisaArtikel.UseVisualStyleBackColor = true;
             // 
-            // columnHeader1
+            // colMoms
             // 
-            this.columnHeader1.Text = " ";
-            this.columnHeader1.Width = 0;
+            this.colMoms.Text = "Moms %";
+            this.colMoms.Width = 79;
             // 
             // Artikelform
             // 
@@ -211,5 +218,6 @@
         private System.Windows.Forms.ColumnHeader colAntalILager;
         private System.Windows.Forms.ColumnHeader colBegagnad;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader colMoms;
     }
 }
