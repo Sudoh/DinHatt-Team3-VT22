@@ -71,12 +71,23 @@ namespace DinHatt_CodeFirst
                     {
                         rad.SubItems.Add("Ja");
                         
-                            }
+                    }
+                    
                     else {
                         rad.SubItems.Add("Nej");
                         
                     };
-                    
+
+                    if(item.Begagnad == true)
+                    {
+                        item.Moms = item.Moms + 12.5;
+                        rad.SubItems.Add(item.Moms.ToString());
+                    }
+                    else
+                    {
+                        item.Moms = item.Moms + 25;
+                        rad.SubItems.Add(item.Moms.ToString());
+                    }
 
                     listArtikel.Items.Add(rad);
                 }
