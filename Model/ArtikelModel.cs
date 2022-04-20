@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Models
@@ -29,6 +30,11 @@ namespace Models
         public Artikel()
         {
             Order = new HashSet<Order>();
+        }
+
+        public static implicit operator Artikel(Artikel v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
