@@ -24,6 +24,8 @@ namespace Models
 
         public string Moms { get; set; }
 
+        public bool Aktiv { get; set; }
+
 
         //Kod för många-till-många i databsen.
         public virtual ICollection<Order> Order { get; set; }

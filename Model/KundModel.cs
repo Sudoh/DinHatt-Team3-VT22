@@ -17,6 +17,8 @@
         //public string Land { get; set; }
         public string ePost { get; set; }
 
+        public bool Aktiv { get; set; }
+
     }
 
 }

@@ -34,7 +34,9 @@ namespace Models
         [ForeignKey("Artikel")]
         public int ArtikelTd { get; set; }
 
-        public string ArtikelTitle { get; set; }    
+        public string ArtikelTitle { get; set; }
+
+        public bool Aktiv { get; set; }
 
 
         public Order()
