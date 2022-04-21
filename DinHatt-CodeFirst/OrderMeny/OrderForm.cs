@@ -46,14 +46,15 @@ namespace DinHatt_CodeFirst
 
                     rad.SubItems.Add(item.KundId.ToString());
                     rad.SubItems.Add(item.Orderbeställare.ToString());
-                    rad.SubItems.Add(item.PrelimPrice.ToString());
+                    rad.SubItems.Add(item.ArtikelTitle.ToString());
                     rad.SubItems.Add(item.Description.ToString());
+                    rad.SubItems.Add(item.PrelimPrice.ToString());
                     rad.SubItems.Add(item.Payed.ToString());
                     //rad.SubItems.Add(item.Canceled.ToString());
                     rad.SubItems.Add(item.Delivered.ToString());
                     rad.SubItems.Add(item.OrderDate.ToShortDateString());
                     rad.SubItems.Add(item.Moms.ToString());
-                    rad.SubItems.Add(item.ArtikelTitle.ToString());
+                    
 
 
 

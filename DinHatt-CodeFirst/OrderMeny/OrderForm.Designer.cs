@@ -35,7 +35,7 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colKund = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colOrderbeställare = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colPrelimPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTotalPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDiscription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPayed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colLeveransstatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -58,7 +58,7 @@
             this.tabOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabOrder.Name = "tabOrder";
             this.tabOrder.SelectedIndex = 0;
-            this.tabOrder.Size = new System.Drawing.Size(1202, 444);
+            this.tabOrder.Size = new System.Drawing.Size(1396, 444);
             this.tabOrder.TabIndex = 0;
             this.tabOrder.SelectedIndexChanged += new System.EventHandler(this.tabOrder_SelectedIndexChanged);
             // 
@@ -70,7 +70,7 @@
             this.tabAllaOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabAllaOrder.Name = "tabAllaOrder";
             this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabAllaOrder.Size = new System.Drawing.Size(1194, 415);
+            this.tabAllaOrder.Size = new System.Drawing.Size(1388, 415);
             this.tabAllaOrder.TabIndex = 0;
             this.tabAllaOrder.Text = "Alla Order";
             this.tabAllaOrder.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@
             // btnLadda
             // 
             this.btnLadda.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnLadda.Location = new System.Drawing.Point(851, 233);
+            this.btnLadda.Location = new System.Drawing.Point(1177, 45);
             this.btnLadda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLadda.Name = "btnLadda";
             this.btnLadda.Size = new System.Drawing.Size(94, 28);
@@ -95,7 +95,7 @@
             this.colOrderbeställare,
             this.ArtikelId,
             this.colDiscription,
-            this.colPrelimPrice,
+            this.colTotalPrice,
             this.colPayed,
             this.colLeveransstatus,
             this.colDatum,
@@ -106,7 +106,7 @@
             this.listViewOrder.Location = new System.Drawing.Point(-2, 3);
             this.listViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listViewOrder.Name = "listViewOrder";
-            this.listViewOrder.Size = new System.Drawing.Size(1188, 410);
+            this.listViewOrder.Size = new System.Drawing.Size(1394, 410);
             this.listViewOrder.TabIndex = 0;
             this.listViewOrder.UseCompatibleStateImageBehavior = false;
             this.listViewOrder.View = System.Windows.Forms.View.Details;
@@ -127,23 +127,23 @@
             this.colOrderbeställare.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colOrderbeställare.Width = 88;
             // 
-            // colPrelimPrice
+            // colTotalPrice
             // 
-            this.colPrelimPrice.Text = "Order  PrelimPrice";
-            this.colPrelimPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colPrelimPrice.Width = 98;
+            this.colTotalPrice.Text = "TotalPrice";
+            this.colTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colTotalPrice.Width = 107;
             // 
             // colDiscription
             // 
-            this.colDiscription.Text = "Order discription";
+            this.colDiscription.Text = "SpecialOrder discription";
             this.colDiscription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDiscription.Width = 119;
+            this.colDiscription.Width = 152;
             // 
             // colPayed
             // 
             this.colPayed.Text = "Betald";
             this.colPayed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colPayed.Width = 46;
+            this.colPayed.Width = 70;
             // 
             // colLeveransstatus
             // 
@@ -160,13 +160,13 @@
             // colMoms
             // 
             this.colMoms.Text = "Moms";
-            this.colMoms.Width = 85;
+            this.colMoms.Width = 50;
             // 
             // ArtikelId
             // 
             this.ArtikelId.Text = "ArtikelId";
             this.ArtikelId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ArtikelId.Width = 78;
+            this.ArtikelId.Width = 142;
             // 
             // tabNyOrder
             // 
@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 444);
+            this.ClientSize = new System.Drawing.Size(1396, 444);
             this.Controls.Add(this.tabOrder);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OrderForm";
@@ -213,7 +213,7 @@
         private System.Windows.Forms.TabPage tabNyOrder;
         private System.Windows.Forms.ColumnHeader colKund;
         private System.Windows.Forms.ColumnHeader colOrderbeställare;
-        private System.Windows.Forms.ColumnHeader colPrelimPrice;
+        private System.Windows.Forms.ColumnHeader colTotalPrice;
         private System.Windows.Forms.ColumnHeader colDiscription;
         private System.Windows.Forms.ListView listViewOrder;
         private System.Windows.Forms.Button btnLadda;

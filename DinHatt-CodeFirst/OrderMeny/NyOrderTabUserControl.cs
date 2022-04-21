@@ -51,7 +51,7 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                         Description = tbxDescription.Text,
 
-                        PrelimPrice = double.Parse(tbxPrice.Text),
+                        PrelimPrice = double.Parse(tbxTotPris.Text),
 
                         ArtikelTitle = allItems,
 
