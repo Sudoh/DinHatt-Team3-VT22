@@ -56,5 +56,31 @@ namespace DinHatt_CodeFirst.ArtikelMeny
         {
 
         }
+
+        private void btnTaBortArtikel_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int ArtikelID = int.Parse(txtSokArtikelId.Text);
+                var artikel = db.Artiklar.FirstOrDefault(a => a.Id == ArtikelID);
+
+                if (artikel != null)
+                {
+                    db.Artiklar.Remove(artikel);
+                    db.SaveChanges();
+                }
+
+                txtSokArtikelId.Clear();
+                txtNyArtikelNamn.Clear();
+                txtNyBeskrivning.Clear();
+                txtNyPris.Clear();
+                txtNyAntalILager.Clear();
+                chkNyBegagnad.Checked = false;
+                txtNyBildNamn.Clear();
+                picboxNyArtikelbild.Image = null;
+                MessageBox.Show("Vald artikel är nu bortagen!");
+
+            }
+        }
     }
 }

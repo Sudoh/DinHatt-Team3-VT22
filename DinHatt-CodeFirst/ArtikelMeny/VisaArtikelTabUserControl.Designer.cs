@@ -54,26 +54,29 @@
             // 
             // picboxNyArtikelbild
             // 
-            this.picboxNyArtikelbild.Location = new System.Drawing.Point(340, 19);
+            this.picboxNyArtikelbild.Location = new System.Drawing.Point(510, 29);
+            this.picboxNyArtikelbild.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picboxNyArtikelbild.Name = "picboxNyArtikelbild";
-            this.picboxNyArtikelbild.Size = new System.Drawing.Size(206, 270);
+            this.picboxNyArtikelbild.Size = new System.Drawing.Size(309, 415);
             this.picboxNyArtikelbild.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxNyArtikelbild.TabIndex = 27;
             this.picboxNyArtikelbild.TabStop = false;
             // 
             // txtNyBildNamn
             // 
-            this.txtNyBildNamn.Location = new System.Drawing.Point(83, 240);
+            this.txtNyBildNamn.Location = new System.Drawing.Point(124, 369);
+            this.txtNyBildNamn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNyBildNamn.Name = "txtNyBildNamn";
-            this.txtNyBildNamn.Size = new System.Drawing.Size(93, 20);
+            this.txtNyBildNamn.Size = new System.Drawing.Size(138, 26);
             this.txtNyBildNamn.TabIndex = 26;
             this.txtNyBildNamn.Visible = false;
             // 
             // btnNyLaddaInBild
             // 
-            this.btnNyLaddaInBild.Location = new System.Drawing.Point(182, 237);
+            this.btnNyLaddaInBild.Location = new System.Drawing.Point(273, 365);
+            this.btnNyLaddaInBild.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNyLaddaInBild.Name = "btnNyLaddaInBild";
-            this.btnNyLaddaInBild.Size = new System.Drawing.Size(151, 23);
+            this.btnNyLaddaInBild.Size = new System.Drawing.Size(226, 35);
             this.btnNyLaddaInBild.TabIndex = 21;
             this.btnNyLaddaInBild.Text = "Byt bild";
             this.btnNyLaddaInBild.UseVisualStyleBackColor = true;
@@ -82,18 +85,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 209);
+            this.label4.Location = new System.Drawing.Point(20, 322);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(83, 20);
             this.label4.TabIndex = 25;
             this.label4.Text = "Begagnad";
             // 
             // chkNyBegagnad
             // 
             this.chkNyBegagnad.AutoSize = true;
-            this.chkNyBegagnad.Location = new System.Drawing.Point(92, 209);
+            this.chkNyBegagnad.Location = new System.Drawing.Point(138, 322);
+            this.chkNyBegagnad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkNyBegagnad.Name = "chkNyBegagnad";
-            this.chkNyBegagnad.Size = new System.Drawing.Size(37, 17);
+            this.chkNyBegagnad.Size = new System.Drawing.Size(52, 24);
             this.chkNyBegagnad.TabIndex = 19;
             this.chkNyBegagnad.Text = "Ja";
             this.chkNyBegagnad.UseVisualStyleBackColor = true;
@@ -101,67 +106,75 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 186);
+            this.label3.Location = new System.Drawing.Point(10, 286);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 24;
             this.label3.Text = "Antal i lager";
             // 
             // txtNyAntalILager
             // 
-            this.txtNyAntalILager.Location = new System.Drawing.Point(92, 179);
+            this.txtNyAntalILager.Location = new System.Drawing.Point(138, 275);
+            this.txtNyAntalILager.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNyAntalILager.Name = "txtNyAntalILager";
-            this.txtNyAntalILager.Size = new System.Drawing.Size(241, 20);
+            this.txtNyAntalILager.Size = new System.Drawing.Size(360, 26);
             this.txtNyAntalILager.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 160);
+            this.label2.Location = new System.Drawing.Point(68, 246);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.Size = new System.Drawing.Size(35, 20);
             this.label2.TabIndex = 22;
             this.label2.Text = "Pris";
             // 
             // txtNyPris
             // 
-            this.txtNyPris.Location = new System.Drawing.Point(92, 153);
+            this.txtNyPris.Location = new System.Drawing.Point(138, 235);
+            this.txtNyPris.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNyPris.Name = "txtNyPris";
-            this.txtNyPris.Size = new System.Drawing.Size(241, 20);
+            this.txtNyPris.Size = new System.Drawing.Size(360, 26);
             this.txtNyPris.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 48);
+            this.label1.Location = new System.Drawing.Point(10, 74);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.Size = new System.Drawing.Size(90, 20);
             this.label1.TabIndex = 20;
             this.label1.Text = "Beskrivning";
             // 
             // txtNyBeskrivning
             // 
-            this.txtNyBeskrivning.Location = new System.Drawing.Point(92, 45);
+            this.txtNyBeskrivning.Location = new System.Drawing.Point(138, 69);
+            this.txtNyBeskrivning.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNyBeskrivning.Multiline = true;
             this.txtNyBeskrivning.Name = "txtNyBeskrivning";
-            this.txtNyBeskrivning.Size = new System.Drawing.Size(241, 102);
+            this.txtNyBeskrivning.Size = new System.Drawing.Size(360, 155);
             this.txtNyBeskrivning.TabIndex = 15;
             this.txtNyBeskrivning.TextChanged += new System.EventHandler(this.txtBeskrivning_TextChanged);
             // 
             // artikelNamn
             // 
             this.artikelNamn.AutoSize = true;
-            this.artikelNamn.Location = new System.Drawing.Point(34, 26);
+            this.artikelNamn.Location = new System.Drawing.Point(51, 40);
+            this.artikelNamn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.artikelNamn.Name = "artikelNamn";
-            this.artikelNamn.Size = new System.Drawing.Size(35, 13);
+            this.artikelNamn.Size = new System.Drawing.Size(51, 20);
             this.artikelNamn.TabIndex = 17;
             this.artikelNamn.Text = "Namn";
             // 
             // btnUppdateraArtikel
             // 
-            this.btnUppdateraArtikel.Location = new System.Drawing.Point(182, 266);
+            this.btnUppdateraArtikel.Location = new System.Drawing.Point(273, 409);
+            this.btnUppdateraArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUppdateraArtikel.Name = "btnUppdateraArtikel";
-            this.btnUppdateraArtikel.Size = new System.Drawing.Size(151, 23);
+            this.btnUppdateraArtikel.Size = new System.Drawing.Size(226, 35);
             this.btnUppdateraArtikel.TabIndex = 23;
             this.btnUppdateraArtikel.Text = "Uppdatera Artikel";
             this.btnUppdateraArtikel.UseVisualStyleBackColor = true;
@@ -169,16 +182,18 @@
             // 
             // txtNyArtikelNamn
             // 
-            this.txtNyArtikelNamn.Location = new System.Drawing.Point(92, 19);
+            this.txtNyArtikelNamn.Location = new System.Drawing.Point(138, 29);
+            this.txtNyArtikelNamn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNyArtikelNamn.Name = "txtNyArtikelNamn";
-            this.txtNyArtikelNamn.Size = new System.Drawing.Size(241, 20);
+            this.txtNyArtikelNamn.Size = new System.Drawing.Size(360, 26);
             this.txtNyArtikelNamn.TabIndex = 14;
             // 
             // btnSokArtikelId
             // 
-            this.btnSokArtikelId.Location = new System.Drawing.Point(112, 17);
+            this.btnSokArtikelId.Location = new System.Drawing.Point(168, 26);
+            this.btnSokArtikelId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSokArtikelId.Name = "btnSokArtikelId";
-            this.btnSokArtikelId.Size = new System.Drawing.Size(127, 23);
+            this.btnSokArtikelId.Size = new System.Drawing.Size(190, 35);
             this.btnSokArtikelId.TabIndex = 28;
             this.btnSokArtikelId.Text = "Hämta Artikel";
             this.btnSokArtikelId.UseVisualStyleBackColor = true;
@@ -186,9 +201,10 @@
             // 
             // txtSokArtikelId
             // 
-            this.txtSokArtikelId.Location = new System.Drawing.Point(6, 19);
+            this.txtSokArtikelId.Location = new System.Drawing.Point(9, 29);
+            this.txtSokArtikelId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSokArtikelId.Name = "txtSokArtikelId";
-            this.txtSokArtikelId.Size = new System.Drawing.Size(100, 20);
+            this.txtSokArtikelId.Size = new System.Drawing.Size(148, 26);
             this.txtSokArtikelId.TabIndex = 29;
             // 
             // grpbxVisaArtikel
@@ -208,41 +224,48 @@
             this.grpbxVisaArtikel.Controls.Add(this.artikelNamn);
             this.grpbxVisaArtikel.Controls.Add(this.btnUppdateraArtikel);
             this.grpbxVisaArtikel.Controls.Add(this.txtNyArtikelNamn);
-            this.grpbxVisaArtikel.Location = new System.Drawing.Point(9, 62);
+            this.grpbxVisaArtikel.Location = new System.Drawing.Point(14, 95);
+            this.grpbxVisaArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpbxVisaArtikel.Name = "grpbxVisaArtikel";
-            this.grpbxVisaArtikel.Size = new System.Drawing.Size(563, 355);
+            this.grpbxVisaArtikel.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpbxVisaArtikel.Size = new System.Drawing.Size(844, 546);
             this.grpbxVisaArtikel.TabIndex = 30;
             this.grpbxVisaArtikel.TabStop = false;
             this.grpbxVisaArtikel.Text = "Artikel";
             // 
             // btnTaBortArtikel
             // 
-            this.btnTaBortArtikel.Location = new System.Drawing.Point(182, 295);
+            this.btnTaBortArtikel.Location = new System.Drawing.Point(273, 454);
+            this.btnTaBortArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTaBortArtikel.Name = "btnTaBortArtikel";
-            this.btnTaBortArtikel.Size = new System.Drawing.Size(151, 23);
+            this.btnTaBortArtikel.Size = new System.Drawing.Size(226, 35);
             this.btnTaBortArtikel.TabIndex = 28;
             this.btnTaBortArtikel.Text = "Ta Bort Artikel";
             this.btnTaBortArtikel.UseVisualStyleBackColor = true;
+            this.btnTaBortArtikel.Click += new System.EventHandler(this.btnTaBortArtikel_Click);
             // 
             // grpboxSokArtikel
             // 
             this.grpboxSokArtikel.Controls.Add(this.txtSokArtikelId);
             this.grpboxSokArtikel.Controls.Add(this.btnSokArtikelId);
-            this.grpboxSokArtikel.Location = new System.Drawing.Point(3, 3);
+            this.grpboxSokArtikel.Location = new System.Drawing.Point(4, 5);
+            this.grpboxSokArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpboxSokArtikel.Name = "grpboxSokArtikel";
-            this.grpboxSokArtikel.Size = new System.Drawing.Size(250, 53);
+            this.grpboxSokArtikel.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpboxSokArtikel.Size = new System.Drawing.Size(375, 82);
             this.grpboxSokArtikel.TabIndex = 31;
             this.grpboxSokArtikel.TabStop = false;
             this.grpboxSokArtikel.Text = "Sök Artikel";
             // 
             // VisaArtikelTabUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.grpboxSokArtikel);
             this.Controls.Add(this.grpbxVisaArtikel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "VisaArtikelTabUserControl";
-            this.Size = new System.Drawing.Size(730, 567);
+            this.Size = new System.Drawing.Size(1095, 872);
             ((System.ComponentModel.ISupportInitialize)(this.picboxNyArtikelbild)).EndInit();
             this.grpbxVisaArtikel.ResumeLayout(false);
             this.grpbxVisaArtikel.PerformLayout();
