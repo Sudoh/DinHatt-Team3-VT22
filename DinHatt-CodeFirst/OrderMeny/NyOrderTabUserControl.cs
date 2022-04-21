@@ -13,7 +13,11 @@ namespace DinHatt_CodeFirst.OrderMeny
 {
     public partial class NyOrderTabUserControl : UserControl
     {
+        private int counter = 0;
 
+       
+       private double priset = 0;
+        string allItems = "";
         public NyOrderTabUserControl()
         {
             InitializeComponent();
@@ -32,16 +36,24 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                 string radionamn = FindOrderHandler();
 
+                float momssats = FindMomsSats();
+
+                string allItems = Hamta();
+
                 using (var db = new DinHatt())
                 {
 
+                   
+                    
 
                     Order nyOrder = new Order()
                     {
 
                         Description = tbxDescription.Text,
 
-                        PrelimPrice = double.Parse(tbxPrice.Text),
+                        PrelimPrice = double.Parse(tbxTotPris.Text),
+
+                        ArtikelTitle = allItems,
 
                         Payed = cbxPayed.Checked,
 
@@ -53,10 +65,34 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                         KundId = Convert.ToInt32(txSökKund.Text),
 
+                        Moms = momssats,
+
                     };
+                    
 
                     db.Ordrar.Add(nyOrder);
+
+
+
+                    tbxDescription.Clear();
+                    tbxPrice.Clear();
+                    cbxDelivered.Checked= false;
+                    cbxPayed.Checked = false;
+                    rdBtnJudith.Checked= false;
+                    rdBtnOtto.Checked= false;
+                    dateTimePicker1.Value = DateTime.Now;
+                    txSökKund.Clear();
+                    tbKundNamn.Clear();
+                    txbSökArtikel.Clear();
+                    lstbxArtikel.Items.Clear();
+                    tbxAntalLager.Clear();
+                    tbxTotPris.Clear();
+
+
+
                     db.SaveChanges();
+
+                    MessageBox.Show("Du har skapat ny order!");
 
                 }
 
@@ -83,6 +119,18 @@ namespace DinHatt_CodeFirst.OrderMeny
             return radionamn;
         }
 
+        
+
+        private float FindMomsSats()
+        {
+            float prePris = 0;
+            prePris = float.Parse(tbxPrice.Text);
+            float momssats = (prePris * 1.25F);
+
+            return momssats;
+
+        }
+
         private void btnSökKund_Click(object sender, EventArgs e)
         {
             using (var db = new DinHatt())
@@ -99,6 +147,97 @@ namespace DinHatt_CodeFirst.OrderMeny
                 }
             }
 
+        }
+
+        private string Hamta()
+        {
+            foreach (var item in lstbxArtikel.Items)
+            {
+
+      
+                 allItems = string.Join(" , ", lstbxArtikel.Items.OfType<object>());
+
+            }
+            return allItems;
+        }
+
+        private void NyOrderTabUserControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+
+        private void button1_Click(object sender, EventArgs e, string sum, string summation)
+        {
+
+          
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxAntalLager_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            grbxAntalLager.Show();
+            counter++;
+
+            using (var db = new DinHatt())
+            {
+                int ArtikelId = int.Parse(txbSökArtikel.Text);
+                var Artikel = (from k in db.Artiklar
+                               where k.Id == ArtikelId
+                               select k).ToList();
+
+               
+
+                foreach (var item in Artikel)
+                {
+                    string antalILag = "";
+                    antalILag = tbxAntalLager.Text = item.AntalILager.ToString();
+                    lstbxArtikel.Items.Add(item.Name);
+                  tbxPrice.Text = item.Pris.ToString();
+
+
+
+                    for (int i = 1; i < counter; i++)
+                    {
+
+                         priset = double.Parse(tbxPrice.Text);
+
+                        double sum = double.Parse(tbxTotPris.Text);
+
+                      //  doSum = double.Parse(tbxTotPris.Text);
+
+                        sum = priset + sum;
+                        tbxTotPris.Text = sum.ToString();
+
+                        int antalILagret = 0;
+                        antalILagret = int.Parse(antalILag);
+                        tbxAntalLager.Text = Convert.ToString(item.AntalILager - 1);
+
+                        item.AntalILager = int.Parse(tbxAntalLager.Text);
+
+
+
+                    }
+
+                   
+
+
+                }
+
+
+
+            }
         }
     }
 }

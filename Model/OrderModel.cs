@@ -18,6 +18,8 @@ namespace Models
 
         public string Orderbeställare { get; set; }
 
+        public float Moms { get; set; }
+
         //1-till-många samband. Varje order måste ha en kund.
         public virtual Kund Kund { get; set; }
 
@@ -28,6 +30,13 @@ namespace Models
         public ICollection<Artikel> Artikel { get; set; }
 
         //Kod för att Entityframwork ska förstå många-till-många samband
+
+        [ForeignKey("Artikel")]
+        public int ArtikelTd { get; set; }
+
+        public string ArtikelTitle { get; set; }    
+
+
         public Order()
         {
             Artikel = new HashSet<Artikel>();
