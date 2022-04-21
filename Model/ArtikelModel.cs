@@ -22,6 +22,9 @@ namespace Models
 
         public bool Begagnad { get; set; }
 
+        public string Moms { get; set; }
+
+
         //Kod för många-till-många i databsen.
         public virtual ICollection<Order> Order { get; set; }
 

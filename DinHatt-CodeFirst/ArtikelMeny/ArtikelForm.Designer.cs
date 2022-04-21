@@ -44,6 +44,7 @@
             this.tabNyArtikel = new System.Windows.Forms.TabPage();
             this.tabVisaArtikel = new System.Windows.Forms.TabPage();
             this.tabTaBortArtikel = new System.Windows.Forms.TabPage();
+            this.colMoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabArtikel.SuspendLayout();
             this.tabAllaArtiklar.SuspendLayout();
             this.SuspendLayout();
@@ -98,7 +99,8 @@
             this.colPris,
             this.colBildNamn,
             this.colAntalILager,
-            this.colBegagnad});
+            this.colBegagnad,
+            this.colMoms});
             this.listArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listArtikel.HideSelection = false;
             this.listArtikel.Location = new System.Drawing.Point(4, 5);
@@ -185,6 +187,10 @@
             this.tabTaBortArtikel.TabIndex = 3;
             this.tabTaBortArtikel.Text = "Ta bort Artikel";
             this.tabTaBortArtikel.UseVisualStyleBackColor = true;
+            // colMoms
+            // 
+            this.colMoms.Text = "Moms %";
+            this.colMoms.Width = 79;
             // 
             // Artikelform
             // 
@@ -224,5 +230,6 @@
         private System.Windows.Forms.ColumnHeader colBegagnad;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.TabPage tabTaBortArtikel;
+        private System.Windows.Forms.ColumnHeader colMoms;
     }
 }

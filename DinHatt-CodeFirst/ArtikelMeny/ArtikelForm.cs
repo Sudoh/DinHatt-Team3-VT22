@@ -50,7 +50,18 @@ namespace DinHatt_CodeFirst
                     rad.SubItems.Add(item.Id.ToString());
                     rad.SubItems.Add(item.Description);
                     rad.SubItems.Add(item.HeadSize.ToString());
-                    rad.SubItems.Add(item.Pris.ToString());
+                    if(item.Begagnad == true)
+                    {
+                        item.Pris = (item.Pris * 1.125);
+                        rad.SubItems.Add(item.Pris.ToString());
+
+                    }
+                    else if(item.Begagnad == false)
+                    {
+                        item.Pris = (item.Pris * 1.25);
+                        rad.SubItems.Add(item.Pris.ToString());
+                    }
+                    
                     rad.SubItems.Add(item.BildNamn);
                     rad.SubItems.Add(item.AntalILager.ToString());
                     
@@ -59,11 +70,24 @@ namespace DinHatt_CodeFirst
                         (item.Begagnad == true)
                     {
                         rad.SubItems.Add("Ja");
-                            }
+                        
+                    }
+                    
                     else {
                         rad.SubItems.Add("Nej");
+                        
                     };
-                    
+
+                    if(item.Begagnad == true)
+                    {
+                        item.Moms = item.Moms + 12.5;
+                        rad.SubItems.Add(item.Moms.ToString());
+                    }
+                    else
+                    {
+                        item.Moms = item.Moms + 25;
+                        rad.SubItems.Add(item.Moms.ToString());
+                    }
 
                     listArtikel.Items.Add(rad);
                 }
