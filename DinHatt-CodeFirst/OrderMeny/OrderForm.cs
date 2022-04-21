@@ -53,7 +53,7 @@ namespace DinHatt_CodeFirst
                     rad.SubItems.Add(item.Delivered.ToString());
                     rad.SubItems.Add(item.OrderDate.ToShortDateString());
                     rad.SubItems.Add(item.Moms.ToString());
-                    rad.SubItems.Add(item.ArtikelTd.ToString());
+                    rad.SubItems.Add(item.ArtikelTitle.ToString());
 
 
 

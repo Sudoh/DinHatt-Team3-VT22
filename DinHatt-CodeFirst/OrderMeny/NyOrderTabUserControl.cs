@@ -17,7 +17,7 @@ namespace DinHatt_CodeFirst.OrderMeny
 
         private double doSum = 0;
        private double priset = 0;
-
+        string allItems = "";
         public NyOrderTabUserControl()
         {
             InitializeComponent();
@@ -38,6 +38,8 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                 float momssats = FindMomsSats();
 
+                string allItems = Hamta();
+
                 using (var db = new DinHatt())
                 {
 
@@ -51,7 +53,7 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                         PrelimPrice = double.Parse(tbxPrice.Text),
 
-                        ArtikelTd = int.Parse(txbSökArtikel.Text),
+                        ArtikelTitle = allItems,
 
                         Payed = cbxPayed.Checked,
 
@@ -83,7 +85,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                     tbKundNamn.Clear();
                     txbSökArtikel.Clear();
                     lstbxArtikel.Items.Clear();
-                    tbxAntalLager.Clear();  
+                    tbxAntalLager.Clear();
+                    tbxTotPris.Clear();
 
 
 
@@ -116,6 +119,8 @@ namespace DinHatt_CodeFirst.OrderMeny
             return radionamn;
         }
 
+        
+
         private float FindMomsSats()
         {
             float prePris = 0;
@@ -142,6 +147,18 @@ namespace DinHatt_CodeFirst.OrderMeny
                 }
             }
 
+        }
+
+        private string Hamta()
+        {
+            foreach (var item in lstbxArtikel.Items)
+            {
+
+      
+                 allItems = string.Join(" , ", lstbxArtikel.Items.OfType<object>());
+
+            }
+            return allItems;
         }
 
         private void NyOrderTabUserControl_Load(object sender, EventArgs e)
@@ -180,6 +197,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                                where k.Id == ArtikelId
                                select k).ToList();
 
+               
+
                 foreach (var item in Artikel)
                 {
                     string antalILag = "";
@@ -207,8 +226,8 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                     }
 
-
                    
+
 
                 }
 
