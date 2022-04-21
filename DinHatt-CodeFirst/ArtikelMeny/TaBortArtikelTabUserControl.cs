@@ -64,7 +64,44 @@ namespace DinHatt_CodeFirst.ArtikelMeny
             {
                 int Id = int.Parse(visatabortarttxt.Text);
                 var artikel = (from a in db.Artiklar
-                            where a.Id == Id
+                               where a.Id == Id
+                               select a).ToList();
+
+                foreach (var item in artikel)
+                {
+                    tabortnamntxt.Text = item.Name;
+                    tabortpristxt.Text = Convert.ToString(item.Pris);
+                    tabortbildtxt.Text = item.BildNamn;
+                    tabortantaltxt.Text = Convert.ToString(item.AntalILager);
+                    tabortbegtxt.Text = Convert.ToString(item.Begagnad);
+                    tabortstorlektxt.Text = Convert.ToString(item.HeadSize);
+                    if
+                        (item.Begagnad == true)
+                    {
+                        tabortbegtxt.Text = "Ja";
+                    }
+                    else
+                    {
+                        tabortbegtxt.Text = "Nej";
+                    };
+
+                }
+
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void artikeluppdaterabtn_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int artikelID = int.Parse(visatabortarttxt.Text);
+                var artikel = (from a in db.Artiklar
+                            where a.Id == artikelID
                             select a).ToList();
 
                 foreach (var item in artikel)
@@ -84,16 +121,31 @@ namespace DinHatt_CodeFirst.ArtikelMeny
                     {
                         tabortbegtxt.Text = "Nej";
                     };
-                    //Hur fixar man storleken?
 
                 }
 
+                visatabortarttxt.Clear();
+                tabortnamntxt.Clear();
+                tabortstorlektxt.Clear();
+                tabortpristxt.Clear();
+                tabortbildtxt.Clear();
+                tabortantaltxt.Clear();
+                tabortbegtxt.Clear();
+                MessageBox.Show("Vald artikel är nu uppdaterad!");
+
+                db.SaveChanges();
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void rensabtn_Click(object sender, EventArgs e)
         {
-
+            visatabortarttxt.Clear();
+            tabortnamntxt.Clear();
+            tabortstorlektxt.Clear();
+            tabortpristxt.Clear();
+            tabortbildtxt.Clear();
+            tabortantaltxt.Clear();
+            tabortbegtxt.Clear();
         }
     }
 }
