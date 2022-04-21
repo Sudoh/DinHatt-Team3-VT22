@@ -73,6 +73,20 @@ namespace DinHatt_CodeFirst.OrderMeny
                     db.Ordrar.Add(nyOrder);
 
 
+                    //Uppdatera artikel lager saldo efter att ha lagt order
+                    int artikelID = int.Parse(txbSökArtikel.Text);
+                    var artikel = (from a in db.Artiklar
+                                   where a.Id == artikelID
+                                   select a).ToList();
+
+                    foreach (var item in artikel)
+                    {
+                        item.AntalILager = int.Parse(tbxAntalLager.Text);
+
+                    }
+
+                    db.SaveChanges();
+
 
                     tbxDescription.Clear();
                     tbxPrice.Clear();
@@ -90,7 +104,10 @@ namespace DinHatt_CodeFirst.OrderMeny
 
 
 
-                    db.SaveChanges();
+
+
+
+                    
 
                     MessageBox.Show("Du har skapat ny order!");
 
