@@ -49,6 +49,15 @@ namespace DinHatt_CodeFirst.ArtikelMeny
 
         private void btnNySparaNyArtikel_Click(object sender, EventArgs e)
         {
+            Random random = new Random();
+            string bildNamn = random.Next(1000, 9999).ToString() + ".jpg";
+            string bildMapp = "..\\..\\Bilder";
+            string pathstring = System.IO.Path.Combine(bildMapp, bildNamn);
+
+
+
+            File.Copy(txtNyBildNamn.Text, pathstring);
+
             using (var db = new DinHatt())
             {
                 int artikelID = int.Parse(txtSokArtikelId.Text);
@@ -60,7 +69,7 @@ namespace DinHatt_CodeFirst.ArtikelMeny
                 {
                     item.Name = txtNyArtikelNamn.Text;
                     item.Pris = Convert.ToDouble(txtNyPris.Text);
-                    item.BildNamn = txtNyBildNamn.Text;
+                    item.BildNamn = bildNamn;
                     item.AntalILager = int.Parse(txtNyAntalILager.Text);
                     item.Begagnad = chkNyBegagnad.Checked;
                     item.Description = txtNyBeskrivning.Text;
@@ -84,7 +93,16 @@ namespace DinHatt_CodeFirst.ArtikelMeny
 
         private void btnNyLaddaInBild_Click(object sender, EventArgs e)
         {
+            OpenFileDialog fileOpen = new OpenFileDialog();
+            fileOpen.Title = "Open Image file";
+            fileOpen.Filter = "JPG Files (*.jpg)| *.jpg";
 
+            if (fileOpen.ShowDialog() == DialogResult.OK)
+            {
+                picboxNyArtikelbild.Image = Image.FromFile(fileOpen.FileName);
+                txtNyBildNamn.Text = fileOpen.FileName;
+            }
+            fileOpen.Dispose();
         }
 
         private void btnTaBortArtikel_Click(object sender, EventArgs e)
@@ -111,6 +129,11 @@ namespace DinHatt_CodeFirst.ArtikelMeny
                 MessageBox.Show("Vald artikel är nu bortagen!");
 
             }
+        }
+
+        private void txtNyBildNamn_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

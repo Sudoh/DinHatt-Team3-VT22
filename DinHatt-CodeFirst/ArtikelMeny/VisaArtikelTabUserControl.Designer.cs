@@ -70,6 +70,7 @@
             this.txtNyBildNamn.Size = new System.Drawing.Size(138, 26);
             this.txtNyBildNamn.TabIndex = 26;
             this.txtNyBildNamn.Visible = false;
+            this.txtNyBildNamn.TextChanged += new System.EventHandler(this.txtNyBildNamn_TextChanged);
             // 
             // btnNyLaddaInBild
             // 
