@@ -15,7 +15,7 @@ namespace DinHatt_CodeFirst.OrderMeny
     {
         private int counter = 0;
 
-        private double doSum = 0;
+       
        private double priset = 0;
         string allItems = "";
         public NyOrderTabUserControl()
@@ -213,18 +213,20 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                          priset = double.Parse(tbxPrice.Text);
 
+                        double sum = double.Parse(tbxTotPris.Text);
 
                       //  doSum = double.Parse(tbxTotPris.Text);
 
-                        priset =priset+priset ;
-                        tbxTotPris.Text = priset.ToString();
+                        sum = priset + sum;
+                        tbxTotPris.Text = sum.ToString();
 
                         int antalILagret = 0;
                         antalILagret = int.Parse(antalILag);
                         tbxAntalLager.Text = Convert.ToString(item.AntalILager - 1);
 
-                        counter++;
-                       
+                        item.AntalILager = int.Parse(tbxAntalLager.Text);
+
+
 
                     }
 
