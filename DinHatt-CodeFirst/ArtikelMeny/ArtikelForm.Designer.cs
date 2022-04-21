@@ -41,10 +41,9 @@
             this.colBildNamn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colAntalILager = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colBegagnad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colMoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabNyArtikel = new System.Windows.Forms.TabPage();
             this.tabVisaArtikel = new System.Windows.Forms.TabPage();
-            this.tabTaBortArtikel = new System.Windows.Forms.TabPage();
-            this.colMoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabArtikel.SuspendLayout();
             this.tabAllaArtiklar.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +53,6 @@
             this.tabArtikel.Controls.Add(this.tabAllaArtiklar);
             this.tabArtikel.Controls.Add(this.tabNyArtikel);
             this.tabArtikel.Controls.Add(this.tabVisaArtikel);
-            this.tabArtikel.Controls.Add(this.tabTaBortArtikel);
             this.tabArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabArtikel.Location = new System.Drawing.Point(0, 0);
             this.tabArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -156,6 +154,11 @@
             this.colBegagnad.Text = "Begagnad";
             this.colBegagnad.Width = 112;
             // 
+            // colMoms
+            // 
+            this.colMoms.Text = "Moms %";
+            this.colMoms.Width = 79;
+            // 
             // tabNyArtikel
             // 
             this.tabNyArtikel.Location = new System.Drawing.Point(4, 29);
@@ -177,20 +180,6 @@
             this.tabVisaArtikel.TabIndex = 2;
             this.tabVisaArtikel.Text = "Visa Artikel";
             this.tabVisaArtikel.UseVisualStyleBackColor = true;
-            // 
-            // tabTaBortArtikel
-            // 
-            this.tabTaBortArtikel.Location = new System.Drawing.Point(4, 29);
-            this.tabTaBortArtikel.Name = "tabTaBortArtikel";
-            this.tabTaBortArtikel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTaBortArtikel.Size = new System.Drawing.Size(1138, 522);
-            this.tabTaBortArtikel.TabIndex = 3;
-            this.tabTaBortArtikel.Text = "Ta bort Artikel";
-            this.tabTaBortArtikel.UseVisualStyleBackColor = true;
-            // colMoms
-            // 
-            this.colMoms.Text = "Moms %";
-            this.colMoms.Width = 79;
             // 
             // Artikelform
             // 
@@ -229,7 +218,6 @@
         private System.Windows.Forms.ColumnHeader colAntalILager;
         private System.Windows.Forms.ColumnHeader colBegagnad;
         private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.TabPage tabTaBortArtikel;
         private System.Windows.Forms.ColumnHeader colMoms;
     }
 }
