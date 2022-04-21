@@ -49,7 +49,37 @@ namespace DinHatt_CodeFirst.ArtikelMeny
 
         private void btnNySparaNyArtikel_Click(object sender, EventArgs e)
         {
+            using (var db = new DinHatt())
+            {
+                int artikelID = int.Parse(txtSokArtikelId.Text);
+                var artikel = (from a in db.Artiklar
+                               where a.Id == artikelID
+                               select a).ToList();
 
+                foreach (var item in artikel)
+                {
+                    item.Name = txtNyArtikelNamn.Text;
+                    item.Pris = Convert.ToDouble(txtNyPris.Text);
+                    item.BildNamn = txtNyBildNamn.Text;
+                    item.AntalILager = int.Parse(txtNyAntalILager.Text);
+                    item.Begagnad = chkNyBegagnad.Checked;
+                    item.Description = txtNyBeskrivning.Text;
+                    //tabortstorlektxt.Text = Convert.ToString(item.HeadSize);
+
+                }
+
+                txtSokArtikelId.Clear();
+                txtNyArtikelNamn.Clear();
+                txtNyBeskrivning.Clear();
+                txtNyPris.Clear();
+                txtNyAntalILager.Clear();
+                chkNyBegagnad.Checked = false;
+                txtNyBildNamn.Clear();
+                picboxNyArtikelbild.Image = null;
+                MessageBox.Show("Vald artikel är nu uppdaterad!");
+
+                db.SaveChanges();
+            }
         }
 
         private void btnNyLaddaInBild_Click(object sender, EventArgs e)
