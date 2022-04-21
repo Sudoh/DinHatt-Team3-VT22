@@ -45,8 +45,8 @@
             this.btnSokArtikelId = new System.Windows.Forms.Button();
             this.txtSokArtikelId = new System.Windows.Forms.TextBox();
             this.grpbxVisaArtikel = new System.Windows.Forms.GroupBox();
-            this.grpboxSokArtikel = new System.Windows.Forms.GroupBox();
             this.btnTaBortArtikel = new System.Windows.Forms.Button();
+            this.grpboxSokArtikel = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxNyArtikelbild)).BeginInit();
             this.grpbxVisaArtikel.SuspendLayout();
             this.grpboxSokArtikel.SuspendLayout();
@@ -75,8 +75,9 @@
             this.btnNyLaddaInBild.Name = "btnNyLaddaInBild";
             this.btnNyLaddaInBild.Size = new System.Drawing.Size(151, 23);
             this.btnNyLaddaInBild.TabIndex = 21;
-            this.btnNyLaddaInBild.Text = "Uppdatera bild";
+            this.btnNyLaddaInBild.Text = "Byt bild";
             this.btnNyLaddaInBild.UseVisualStyleBackColor = true;
+            this.btnNyLaddaInBild.Click += new System.EventHandler(this.btnNyLaddaInBild_Click);
             // 
             // label4
             // 
@@ -214,6 +215,15 @@
             this.grpbxVisaArtikel.TabStop = false;
             this.grpbxVisaArtikel.Text = "Artikel";
             // 
+            // btnTaBortArtikel
+            // 
+            this.btnTaBortArtikel.Location = new System.Drawing.Point(182, 295);
+            this.btnTaBortArtikel.Name = "btnTaBortArtikel";
+            this.btnTaBortArtikel.Size = new System.Drawing.Size(151, 23);
+            this.btnTaBortArtikel.TabIndex = 28;
+            this.btnTaBortArtikel.Text = "Ta Bort Artikel";
+            this.btnTaBortArtikel.UseVisualStyleBackColor = true;
+            // 
             // grpboxSokArtikel
             // 
             this.grpboxSokArtikel.Controls.Add(this.txtSokArtikelId);
@@ -224,15 +234,6 @@
             this.grpboxSokArtikel.TabIndex = 31;
             this.grpboxSokArtikel.TabStop = false;
             this.grpboxSokArtikel.Text = "Sök Artikel";
-            // 
-            // btnTaBortArtikel
-            // 
-            this.btnTaBortArtikel.Location = new System.Drawing.Point(182, 295);
-            this.btnTaBortArtikel.Name = "btnTaBortArtikel";
-            this.btnTaBortArtikel.Size = new System.Drawing.Size(151, 23);
-            this.btnTaBortArtikel.TabIndex = 28;
-            this.btnTaBortArtikel.Text = "Ta Bort Artikel";
-            this.btnTaBortArtikel.UseVisualStyleBackColor = true;
             // 
             // VisaArtikelTabUserControl
             // 

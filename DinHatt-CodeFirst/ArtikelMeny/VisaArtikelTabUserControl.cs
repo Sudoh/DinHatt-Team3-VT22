@@ -51,5 +51,10 @@ namespace DinHatt_CodeFirst.ArtikelMeny
         {
 
         }
+
+        private void btnNyLaddaInBild_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
