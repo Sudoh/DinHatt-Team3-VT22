@@ -55,10 +55,10 @@
             this.tabOrder.Controls.Add(this.tabPage1);
             this.tabOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabOrder.Location = new System.Drawing.Point(0, 0);
-            this.tabOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabOrder.Name = "tabOrder";
             this.tabOrder.SelectedIndex = 0;
-            this.tabOrder.Size = new System.Drawing.Size(1352, 555);
+            this.tabOrder.Size = new System.Drawing.Size(1202, 444);
             this.tabOrder.TabIndex = 0;
             this.tabOrder.SelectedIndexChanged += new System.EventHandler(this.tabOrder_SelectedIndexChanged);
             // 
@@ -66,11 +66,11 @@
             // 
             this.tabAllaOrder.Controls.Add(this.btnLadda);
             this.tabAllaOrder.Controls.Add(this.listViewOrder);
-            this.tabAllaOrder.Location = new System.Drawing.Point(4, 29);
-            this.tabAllaOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabAllaOrder.Location = new System.Drawing.Point(4, 25);
+            this.tabAllaOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabAllaOrder.Name = "tabAllaOrder";
-            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAllaOrder.Size = new System.Drawing.Size(1344, 522);
+            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabAllaOrder.Size = new System.Drawing.Size(1194, 415);
             this.tabAllaOrder.TabIndex = 0;
             this.tabAllaOrder.Text = "Alla Order";
             this.tabAllaOrder.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             // btnLadda
             // 
             this.btnLadda.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnLadda.Location = new System.Drawing.Point(762, 201);
-            this.btnLadda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLadda.Location = new System.Drawing.Point(851, 233);
+            this.btnLadda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLadda.Name = "btnLadda";
-            this.btnLadda.Size = new System.Drawing.Size(106, 35);
+            this.btnLadda.Size = new System.Drawing.Size(94, 28);
             this.btnLadda.TabIndex = 2;
             this.btnLadda.Text = "Visa ordrar";
             this.btnLadda.UseVisualStyleBackColor = true;
@@ -93,20 +93,20 @@
             this.columnHeader1,
             this.colKund,
             this.colOrderbeställare,
-            this.colPrelimPrice,
+            this.ArtikelId,
             this.colDiscription,
+            this.colPrelimPrice,
             this.colPayed,
             this.colLeveransstatus,
             this.colDatum,
-            this.colMoms,
-            this.ArtikelId});
+            this.colMoms});
             this.listViewOrder.FullRowSelect = true;
             this.listViewOrder.GridLines = true;
             this.listViewOrder.HideSelection = false;
-            this.listViewOrder.Location = new System.Drawing.Point(4, 5);
+            this.listViewOrder.Location = new System.Drawing.Point(-2, 3);
             this.listViewOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listViewOrder.Name = "listViewOrder";
-            this.listViewOrder.Size = new System.Drawing.Size(1336, 512);
+            this.listViewOrder.Size = new System.Drawing.Size(1188, 410);
             this.listViewOrder.TabIndex = 0;
             this.listViewOrder.UseCompatibleStateImageBehavior = false;
             this.listViewOrder.View = System.Windows.Forms.View.Details;
@@ -137,7 +137,7 @@
             // 
             this.colDiscription.Text = "Order discription";
             this.colDiscription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDiscription.Width = 100;
+            this.colDiscription.Width = 119;
             // 
             // colPayed
             // 
@@ -165,36 +165,37 @@
             // ArtikelId
             // 
             this.ArtikelId.Text = "ArtikelId";
+            this.ArtikelId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ArtikelId.Width = 78;
             // 
             // tabNyOrder
             // 
-            this.tabNyOrder.Location = new System.Drawing.Point(4, 29);
-            this.tabNyOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabNyOrder.Location = new System.Drawing.Point(4, 25);
+            this.tabNyOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabNyOrder.Name = "tabNyOrder";
-            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabNyOrder.Size = new System.Drawing.Size(1344, 522);
+            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabNyOrder.Size = new System.Drawing.Size(1194, 415);
             this.tabNyOrder.TabIndex = 1;
             this.tabNyOrder.Text = "Ny Order";
             this.tabNyOrder.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1344, 522);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(1194, 415);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Arikel order";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // OrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1352, 555);
+            this.ClientSize = new System.Drawing.Size(1202, 444);
             this.Controls.Add(this.tabOrder);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "OrderForm";
             this.Text = "Order";
             this.TopMost = true;

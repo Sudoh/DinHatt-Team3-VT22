@@ -222,6 +222,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                         int antalILagret = 0;
                         antalILagret = int.Parse(antalILag);
                         tbxAntalLager.Text = Convert.ToString(item.AntalILager - 1);
+
+                        counter++;
                        
 
                     }
