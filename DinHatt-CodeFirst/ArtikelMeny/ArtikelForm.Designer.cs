@@ -44,8 +44,12 @@
             this.colMoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabNyArtikel = new System.Windows.Forms.TabPage();
             this.tabVisaArtikel = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabArtikel.SuspendLayout();
             this.tabAllaArtiklar.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabArtikel
@@ -55,22 +59,20 @@
             this.tabArtikel.Controls.Add(this.tabVisaArtikel);
             this.tabArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabArtikel.Location = new System.Drawing.Point(0, 0);
-            this.tabArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabArtikel.Name = "tabArtikel";
             this.tabArtikel.SelectedIndex = 0;
-            this.tabArtikel.Size = new System.Drawing.Size(1146, 555);
+            this.tabArtikel.Size = new System.Drawing.Size(909, 523);
             this.tabArtikel.TabIndex = 0;
             this.tabArtikel.SelectedIndexChanged += new System.EventHandler(this.tabArtikel_SelectedIndexChanged);
             // 
             // tabAllaArtiklar
             // 
-            this.tabAllaArtiklar.Controls.Add(this.btnVisaArtiklar);
-            this.tabAllaArtiklar.Controls.Add(this.listArtikel);
-            this.tabAllaArtiklar.Location = new System.Drawing.Point(4, 29);
-            this.tabAllaArtiklar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabAllaArtiklar.Controls.Add(this.groupBox2);
+            this.tabAllaArtiklar.Controls.Add(this.groupBox1);
+            this.tabAllaArtiklar.Location = new System.Drawing.Point(4, 22);
             this.tabAllaArtiklar.Name = "tabAllaArtiklar";
-            this.tabAllaArtiklar.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAllaArtiklar.Size = new System.Drawing.Size(1138, 522);
+            this.tabAllaArtiklar.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAllaArtiklar.Size = new System.Drawing.Size(901, 497);
             this.tabAllaArtiklar.TabIndex = 0;
             this.tabAllaArtiklar.Text = "Alla Artiklar";
             this.tabAllaArtiklar.UseVisualStyleBackColor = true;
@@ -78,9 +80,10 @@
             // 
             // btnVisaArtiklar
             // 
-            this.btnVisaArtiklar.Location = new System.Drawing.Point(973, 452);
+            this.btnVisaArtiklar.Location = new System.Drawing.Point(19, 18);
+            this.btnVisaArtiklar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVisaArtiklar.Name = "btnVisaArtiklar";
-            this.btnVisaArtiklar.Size = new System.Drawing.Size(146, 38);
+            this.btnVisaArtiklar.Size = new System.Drawing.Size(97, 25);
             this.btnVisaArtiklar.TabIndex = 1;
             this.btnVisaArtiklar.Text = "Visa Artiklar";
             this.btnVisaArtiklar.UseVisualStyleBackColor = true;
@@ -100,10 +103,12 @@
             this.colBegagnad,
             this.colMoms});
             this.listArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listArtikel.FullRowSelect = true;
             this.listArtikel.HideSelection = false;
-            this.listArtikel.Location = new System.Drawing.Point(4, 5);
+            this.listArtikel.Location = new System.Drawing.Point(3, 16);
+            this.listArtikel.Margin = new System.Windows.Forms.Padding(2);
             this.listArtikel.Name = "listArtikel";
-            this.listArtikel.Size = new System.Drawing.Size(1130, 512);
+            this.listArtikel.Size = new System.Drawing.Size(889, 420);
             this.listArtikel.TabIndex = 0;
             this.listArtikel.UseCompatibleStateImageBehavior = false;
             this.listArtikel.View = System.Windows.Forms.View.Details;
@@ -161,34 +166,53 @@
             // 
             // tabNyArtikel
             // 
-            this.tabNyArtikel.Location = new System.Drawing.Point(4, 29);
-            this.tabNyArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabNyArtikel.Location = new System.Drawing.Point(4, 22);
             this.tabNyArtikel.Name = "tabNyArtikel";
-            this.tabNyArtikel.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabNyArtikel.Size = new System.Drawing.Size(1138, 522);
+            this.tabNyArtikel.Padding = new System.Windows.Forms.Padding(3);
+            this.tabNyArtikel.Size = new System.Drawing.Size(901, 497);
             this.tabNyArtikel.TabIndex = 1;
             this.tabNyArtikel.Text = "Ny Artikel";
             this.tabNyArtikel.UseVisualStyleBackColor = true;
             // 
             // tabVisaArtikel
             // 
-            this.tabVisaArtikel.Location = new System.Drawing.Point(4, 29);
-            this.tabVisaArtikel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabVisaArtikel.Location = new System.Drawing.Point(4, 22);
             this.tabVisaArtikel.Name = "tabVisaArtikel";
-            this.tabVisaArtikel.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabVisaArtikel.Size = new System.Drawing.Size(1138, 522);
+            this.tabVisaArtikel.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVisaArtikel.Size = new System.Drawing.Size(901, 497);
             this.tabVisaArtikel.TabIndex = 2;
             this.tabVisaArtikel.Text = "Visa Artikel";
             this.tabVisaArtikel.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnVisaArtiklar);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(895, 52);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Artikelkontroll";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.listArtikel);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(3, 55);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(895, 439);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Artikellista";
+            // 
             // Artikelform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1146, 555);
+            this.ClientSize = new System.Drawing.Size(909, 523);
             this.Controls.Add(this.tabArtikel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Artikelform";
             this.ShowIcon = false;
             this.Text = "Artiklar";
@@ -197,6 +221,8 @@
             this.Load += new System.EventHandler(this.Artikelform_Load);
             this.tabArtikel.ResumeLayout(false);
             this.tabAllaArtiklar.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -219,5 +245,7 @@
         private System.Windows.Forms.ColumnHeader colBegagnad;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader colMoms;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

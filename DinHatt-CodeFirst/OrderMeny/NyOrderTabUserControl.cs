@@ -218,10 +218,14 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                 foreach (var item in Artikel)
                 {
-                    string antalILag = "";
-                    antalILag = tbxAntalLager.Text = item.AntalILager.ToString();
+                   
+               
                     lstbxArtikel.Items.Add(item.Name);
                   tbxPrice.Text = item.Pris.ToString();
+                    tbxTotPris.Text = item.Pris.ToString();
+                    tbxAntalLager.Text = (item.AntalILager - 1).ToString();
+                    
+                    //todo fixa lagersaldo 
 
 
 
@@ -237,8 +241,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                         sum = priset + sum;
                         tbxTotPris.Text = sum.ToString();
 
-                        int antalILagret = 0;
-                        antalILagret = int.Parse(antalILag);
+                     
+                    
                         tbxAntalLager.Text = Convert.ToString(item.AntalILager - 1);
 
                         item.AntalILager = int.Parse(tbxAntalLager.Text);
