@@ -122,6 +122,13 @@ namespace DinHatt_CodeFirst
 
 					break;
 
+                //Ta bort artikel tab
+                case 3:
+
+                    TaBortArtikelTabUserControl taBortArtikelTabUserControl = new TaBortArtikelTabUserControl();
+                    tabTaBortArtikel.Controls.Add(taBortArtikelTabUserControl);
+
+                    break;
 
             }
         }

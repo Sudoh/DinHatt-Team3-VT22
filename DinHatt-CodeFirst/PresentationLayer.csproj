@@ -100,6 +100,12 @@
     <Compile Include="ArtikelMeny\NyArtikelTabUserControl.Designer.cs">
       <DependentUpon>NyArtikelTabUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ArtikelMeny\TaBortArtikelTabUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArtikelMeny\TaBortArtikelTabUserControl.Designer.cs">
+      <DependentUpon>TaBortArtikelTabUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ArtikelMeny\VisaArtikelTabUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     <EmbeddedResource Include="ArtikelMeny\NyArtikelTabUserControl.resx">
       <DependentUpon>NyArtikelTabUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ArtikelMeny\TaBortArtikelTabUserControl.resx">
+      <DependentUpon>TaBortArtikelTabUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ArtikelMeny\VisaArtikelTabUserControl.resx">
       <DependentUpon>VisaArtikelTabUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +220,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="PresentationLayer_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Models.Artikel.datasource" />
     <None Include="Properties\DataSources\Models.Kund.datasource" />
     <None Include="Properties\DataSources\Program1.datasource" />
     <None Include="Properties\Settings.settings">
