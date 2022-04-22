@@ -36,12 +36,16 @@
             this.btnNyKundMeny = new System.Windows.Forms.Button();
             this.btnNyOrderMeny = new System.Windows.Forms.Button();
             this.pnlStart = new System.Windows.Forms.Panel();
+            this.btnMaterialMeny = new System.Windows.Forms.Button();
+            this.btnLeverantorMeny = new System.Windows.Forms.Button();
             this.pnlSystemKnappar.SuspendLayout();
             this.pnlExtraFunktioner.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSystemKnappar
             // 
+            this.pnlSystemKnappar.Controls.Add(this.btnLeverantorMeny);
+            this.pnlSystemKnappar.Controls.Add(this.btnMaterialMeny);
             this.pnlSystemKnappar.Controls.Add(this.pnlExtraFunktioner);
             this.pnlSystemKnappar.Controls.Add(this.btnArtikelMeny);
             this.pnlSystemKnappar.Controls.Add(this.btnNyKundMeny);
@@ -123,6 +127,26 @@
             this.pnlStart.Size = new System.Drawing.Size(784, 480);
             this.pnlStart.TabIndex = 1;
             // 
+            // btnMaterialMeny
+            // 
+            this.btnMaterialMeny.Location = new System.Drawing.Point(254, 13);
+            this.btnMaterialMeny.Name = "btnMaterialMeny";
+            this.btnMaterialMeny.Size = new System.Drawing.Size(75, 59);
+            this.btnMaterialMeny.TabIndex = 3;
+            this.btnMaterialMeny.Text = "Material";
+            this.btnMaterialMeny.UseVisualStyleBackColor = true;
+            this.btnMaterialMeny.Click += new System.EventHandler(this.btnMaterialMeny_Click);
+            // 
+            // btnLeverantorMeny
+            // 
+            this.btnLeverantorMeny.Location = new System.Drawing.Point(335, 13);
+            this.btnLeverantorMeny.Name = "btnLeverantorMeny";
+            this.btnLeverantorMeny.Size = new System.Drawing.Size(75, 59);
+            this.btnLeverantorMeny.TabIndex = 4;
+            this.btnLeverantorMeny.Text = "Leverantörer";
+            this.btnLeverantorMeny.UseVisualStyleBackColor = true;
+            this.btnLeverantorMeny.Click += new System.EventHandler(this.btnLeverantorMeny_Click);
+            // 
             // StartMenyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,6 +173,8 @@
         private System.Windows.Forms.Panel pnlExtraFunktioner;
         public System.Windows.Forms.Button btnStatistikMeny;
         private System.Windows.Forms.Panel pnlStart;
+        public System.Windows.Forms.Button btnLeverantorMeny;
+        public System.Windows.Forms.Button btnMaterialMeny;
     }
 }
 

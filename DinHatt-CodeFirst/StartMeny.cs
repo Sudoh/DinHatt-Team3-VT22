@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DinHatt_CodeFirst.LeverantorMeny;
+using DinHatt_CodeFirst.MaterialMeny;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -112,26 +114,50 @@ namespace DinHatt_CodeFirst
 
         }
 
-        private void btnInstall_Click(object sender, EventArgs e)
+        private void btnMaterialMeny_Click(object sender, EventArgs e)
         {
-            //Den här knappen gör inte så mycket, men det aktiverar databasen.
 
-            //using (var db = new DinHatt())
-            //{
+            if (Application.OpenForms.OfType<MaterialForm>().Count() == 1)
+            {
+                Application.OpenForms.OfType<MaterialForm>().First().BringToFront();
 
-            //    // Display all Blogs from the database
-            //    var query = (from b in db.Kunder
-            //                 orderby b.FNamn
-            //                 select b).ToList();
-
-            //    foreach (var item in query)
-            //    {
-            //        //   textBox1.Text = item.Namn;
-
-            //    }
+            }
+            else
+            {
 
 
-            //}
+            }
+            MaterialForm form = new MaterialForm
+            {
+                TopLevel = false,
+                AutoScroll = true
+            };
+            pnlStart.Controls.Add(form);
+            form.BringToFront();
+            form.Show();
+
+        }
+
+        private void btnLeverantorMeny_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<LeverantorForm>().Count() == 1)
+            {
+                Application.OpenForms.OfType<LeverantorForm>().First().BringToFront();
+
+            }
+            else
+            {
+
+
+            }
+            LeverantorForm form = new LeverantorForm
+            {
+                TopLevel = false,
+                AutoScroll = true
+            };
+            pnlStart.Controls.Add(form);
+            form.BringToFront();
+            form.Show();
 
         }
     }
