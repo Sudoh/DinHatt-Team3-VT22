@@ -30,14 +30,14 @@
         {
             this.grpbxLeverantorKontroll = new System.Windows.Forms.GroupBox();
             this.grpbxLeverantorList = new System.Windows.Forms.GroupBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabLeverantor = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnVisaLeverantorer = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvLeverantorer = new System.Windows.Forms.ListView();
             this.grpbxLeverantorKontroll.SuspendLayout();
             this.grpbxLeverantorList.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabLeverantor.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // 
             // grpbxLeverantorList
             // 
-            this.grpbxLeverantorList.Controls.Add(this.listView1);
+            this.grpbxLeverantorList.Controls.Add(this.lvLeverantorer);
             this.grpbxLeverantorList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpbxLeverantorList.Location = new System.Drawing.Point(3, 56);
             this.grpbxLeverantorList.Name = "grpbxLeverantorList";
@@ -63,16 +63,16 @@
             this.grpbxLeverantorList.TabStop = false;
             this.grpbxLeverantorList.Text = "Lista på leverantörer";
             // 
-            // tabControl1
+            // tabLeverantor
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 450);
-            this.tabControl1.TabIndex = 0;
+            this.tabLeverantor.Controls.Add(this.tabPage1);
+            this.tabLeverantor.Controls.Add(this.tabPage2);
+            this.tabLeverantor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabLeverantor.Location = new System.Drawing.Point(0, 0);
+            this.tabLeverantor.Name = "tabLeverantor";
+            this.tabLeverantor.SelectedIndex = 0;
+            this.tabLeverantor.Size = new System.Drawing.Size(800, 450);
+            this.tabLeverantor.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -105,30 +105,30 @@
             this.btnVisaLeverantorer.Text = "Hämta leverantörer";
             this.btnVisaLeverantorer.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // lvLeverantorer
             // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 16);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(780, 346);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvLeverantorer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvLeverantorer.FullRowSelect = true;
+            this.lvLeverantorer.GridLines = true;
+            this.lvLeverantorer.HideSelection = false;
+            this.lvLeverantorer.Location = new System.Drawing.Point(3, 16);
+            this.lvLeverantorer.Name = "lvLeverantorer";
+            this.lvLeverantorer.Size = new System.Drawing.Size(780, 346);
+            this.lvLeverantorer.TabIndex = 0;
+            this.lvLeverantorer.UseCompatibleStateImageBehavior = false;
+            this.lvLeverantorer.View = System.Windows.Forms.View.Details;
             // 
             // LeverantorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabLeverantor);
             this.Name = "LeverantorForm";
             this.Text = "LeverantorForm";
             this.grpbxLeverantorKontroll.ResumeLayout(false);
             this.grpbxLeverantorList.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.tabLeverantor.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -139,9 +139,9 @@
         private System.Windows.Forms.GroupBox grpbxLeverantorKontroll;
         private System.Windows.Forms.GroupBox grpbxLeverantorList;
         private System.Windows.Forms.Button btnVisaLeverantorer;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabLeverantor;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvLeverantorer;
     }
 }
