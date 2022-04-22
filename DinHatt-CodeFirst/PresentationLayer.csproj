@@ -131,6 +131,18 @@
     <Compile Include="KundMeny\VisaKundTabUserControl.Designer.cs">
       <DependentUpon>VisaKundTabUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="LeverantorMeny\LeverantorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeverantorMeny\LeverantorForm.Designer.cs">
+      <DependentUpon>LeverantorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialMeny\MaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialMeny\MaterialForm.Designer.cs">
+      <DependentUpon>MaterialForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderMeny\NyOrderTabUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KundMeny\VisaKundTabUserControl.resx">
       <DependentUpon>VisaKundTabUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeverantorMeny\LeverantorForm.resx">
+      <DependentUpon>LeverantorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderMeny\NyOrderTabUserControl.resx">
       <DependentUpon>NyOrderTabUserControl.cs</DependentUpon>
