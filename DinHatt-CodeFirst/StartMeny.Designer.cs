@@ -135,6 +135,7 @@
             this.btnMaterialMeny.TabIndex = 3;
             this.btnMaterialMeny.Text = "Material";
             this.btnMaterialMeny.UseVisualStyleBackColor = true;
+            this.btnMaterialMeny.Click += new System.EventHandler(this.btnMaterialMeny_Click);
             // 
             // btnLeverantorMeny
             // 
@@ -144,6 +145,7 @@
             this.btnLeverantorMeny.TabIndex = 4;
             this.btnLeverantorMeny.Text = "Leverantörer";
             this.btnLeverantorMeny.UseVisualStyleBackColor = true;
+            this.btnLeverantorMeny.Click += new System.EventHandler(this.btnLeverantorMeny_Click);
             // 
             // StartMenyForm
             // 
