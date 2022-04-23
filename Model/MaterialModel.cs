@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 namespace Models
 {
     public class MaterialModel
-    {
+    {   //Attribut i tabellen
+        public int Id { get; set; }
+        public string MaterialNamn { get; set; }
+        public double Langd { get; set; }
+
+        public double Bredd { get; set; }
+
+        public string Farg { get; set; }
+
     }
 }
