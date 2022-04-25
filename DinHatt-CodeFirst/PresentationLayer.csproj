@@ -137,6 +137,18 @@
     <Compile Include="LeverantorMeny\LeverantorForm.Designer.cs">
       <DependentUpon>LeverantorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LeverantorMeny\NyLeverantorTabUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LeverantorMeny\NyLeverantorTabUserControl.Designer.cs">
+      <DependentUpon>NyLeverantorTabUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeverantorMeny\VisaLeverantorTabUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LeverantorMeny\VisaLeverantorTabUserControl.Designer.cs">
+      <DependentUpon>VisaLeverantorTabUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MaterialMeny\MaterialForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +210,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LeverantorMeny\LeverantorForm.resx">
       <DependentUpon>LeverantorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeverantorMeny\NyLeverantorTabUserControl.resx">
+      <DependentUpon>NyLeverantorTabUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeverantorMeny\VisaLeverantorTabUserControl.resx">
+      <DependentUpon>VisaLeverantorTabUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MaterialMeny\MaterialForm.resx">
       <DependentUpon>MaterialForm.cs</DependentUpon>
