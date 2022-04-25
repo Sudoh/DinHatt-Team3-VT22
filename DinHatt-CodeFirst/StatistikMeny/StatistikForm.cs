@@ -76,9 +76,7 @@ namespace DinHatt_CodeFirst
             // Write each directory name to a file.
             using (StreamWriter sw = new StreamWriter("EkonomiExport.txt"))
             {
-
-         
-                
+               
                 sw.WriteLine("Antal Ordrar:");
                 sw.WriteLine(listViewOrder.Items.Count);
                 sw.WriteLine("Startdatum:");
