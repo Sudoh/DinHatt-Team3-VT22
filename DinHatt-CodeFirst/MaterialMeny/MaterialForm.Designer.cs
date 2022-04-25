@@ -326,6 +326,7 @@
             this.btnHamtaInfo.TabIndex = 1;
             this.btnHamtaInfo.Text = "Hämta information";
             this.btnHamtaInfo.UseVisualStyleBackColor = true;
+            this.btnHamtaInfo.Click += new System.EventHandler(this.btnHamtaInfo_Click);
             // 
             // groupBox2
             // 
@@ -382,6 +383,7 @@
             this.btnTaBort.TabIndex = 4;
             this.btnTaBort.Text = "Ta bort";
             this.btnTaBort.UseVisualStyleBackColor = true;
+            this.btnTaBort.Click += new System.EventHandler(this.btnTaBort_Click);
             // 
             // btnAndra
             // 
@@ -391,6 +393,7 @@
             this.btnAndra.TabIndex = 5;
             this.btnAndra.Text = "Ändra";
             this.btnAndra.UseVisualStyleBackColor = true;
+            this.btnAndra.Click += new System.EventHandler(this.btnAndra_Click);
             // 
             // label6
             // 

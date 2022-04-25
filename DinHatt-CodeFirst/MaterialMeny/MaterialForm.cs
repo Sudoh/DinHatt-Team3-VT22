@@ -79,5 +79,80 @@ namespace DinHatt_CodeFirst.MaterialMeny
         {
 
         }
+
+        private void btnHamtaInfo_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int MaterialID = int.Parse(txtMaterialId.Text);
+                var Material = (from m in db.Material
+                            where m.Id == MaterialID
+                            select m).ToList();
+
+                foreach (var item in Material)
+                {
+                    txtHanteraMaterial.Text = item.MaterialNamn;
+                    txtHanteraLangd.Text = Convert.ToString(item.Langd);
+                    txtHanteraBredd.Text = Convert.ToString(item.Bredd);
+                    txtHanteraFarg.Text = item.Farg;                  
+
+                }
+
+            }
+        }
+
+        private void btnAndra_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int MaterialID = int.Parse(txtMaterialId.Text);
+                var Material = (from m in db.Material
+                                where m.Id == MaterialID
+                                select m).ToList();
+
+                foreach (var item in Material)
+                {
+                    item.MaterialNamn = txtHanteraMaterial.Text;
+                    item.Langd = double.Parse(txtHanteraLangd.Text);
+                    item.Bredd = double.Parse(txtHanteraBredd.Text);
+                    item.Farg = txtHanteraFarg.Text;
+
+                }
+
+                txtHanteraMaterial.Clear();
+                txtHanteraLangd.Clear();
+                txtHanteraBredd.Clear();
+                txtHanteraFarg.Clear();
+
+                db.SaveChanges();
+
+                MessageBox.Show("Materialets information har uppdaterats!");
+            }
+        }
+
+        private void btnTaBort_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int MaterialID = int.Parse(txtMaterialId.Text);
+                var Material = db.Material.FirstOrDefault(m => m.Id == MaterialID);
+
+                if (Material != null)
+                {
+                    db.Material.Remove(Material);
+                    db.SaveChanges();
+                }
+
+                txtHanteraMaterial.Clear();
+                txtHanteraLangd.Clear();
+                txtHanteraBredd.Clear();
+                txtHanteraFarg.Clear();
+
+
+                MessageBox.Show("Materialet har tagits bort!");
+
+
+            }
+        }
     }
 }
