@@ -80,9 +80,9 @@ namespace DinHatt_CodeFirst
                 sw.WriteLine("Antal Ordrar:");
                 sw.WriteLine(listViewOrder.Items.Count);
                 sw.WriteLine("Startdatum:");
-                sw.WriteLine(dateTimeStart.Value.ToString());
+                sw.WriteLine(dateTimeStart.Value.Date.ToString());
                 sw.WriteLine("Slutdatum:");
-                sw.WriteLine(dateTimeSlut.Value.ToString());
+                sw.WriteLine(dateTimeSlut.Value.Date.ToString());
                 sw.WriteLine("Total Summa:");
                 sw.WriteLine(txtboxTotalBetal.Text);
                 sw.WriteLine("Totalmoms:");
