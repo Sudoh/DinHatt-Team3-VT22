@@ -29,12 +29,20 @@
         private void InitializeComponent()
         {
             this.grpbxLeverantorKontroll = new System.Windows.Forms.GroupBox();
+            this.btnVisaLeverantorer = new System.Windows.Forms.Button();
             this.grpbxLeverantorList = new System.Windows.Forms.GroupBox();
+            this.listLeverantor = new System.Windows.Forms.ListView();
+            this.colForeNr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colForeNamn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colForeAdress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colForePostNr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colForeOrt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colForeLand = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colForeTele = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colForeEpost = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabLeverantor = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnVisaLeverantorer = new System.Windows.Forms.Button();
-            this.lvLeverantorer = new System.Windows.Forms.ListView();
             this.grpbxLeverantorKontroll.SuspendLayout();
             this.grpbxLeverantorList.SuspendLayout();
             this.tabLeverantor.SuspendLayout();
@@ -52,9 +60,19 @@
             this.grpbxLeverantorKontroll.TabStop = false;
             this.grpbxLeverantorKontroll.Text = "Leverantörer";
             // 
+            // btnVisaLeverantorer
+            // 
+            this.btnVisaLeverantorer.Location = new System.Drawing.Point(6, 19);
+            this.btnVisaLeverantorer.Name = "btnVisaLeverantorer";
+            this.btnVisaLeverantorer.Size = new System.Drawing.Size(125, 23);
+            this.btnVisaLeverantorer.TabIndex = 0;
+            this.btnVisaLeverantorer.Text = "Hämta leverantörer";
+            this.btnVisaLeverantorer.UseVisualStyleBackColor = true;
+            this.btnVisaLeverantorer.Click += new System.EventHandler(this.btnVisaLeverantorer_Click);
+            // 
             // grpbxLeverantorList
             // 
-            this.grpbxLeverantorList.Controls.Add(this.lvLeverantorer);
+            this.grpbxLeverantorList.Controls.Add(this.listLeverantor);
             this.grpbxLeverantorList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpbxLeverantorList.Location = new System.Drawing.Point(3, 56);
             this.grpbxLeverantorList.Name = "grpbxLeverantorList";
@@ -63,8 +81,71 @@
             this.grpbxLeverantorList.TabStop = false;
             this.grpbxLeverantorList.Text = "Lista på leverantörer";
             // 
+            // listLeverantor
+            // 
+            this.listLeverantor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colForeNr,
+            this.colForeNamn,
+            this.colForeAdress,
+            this.colForePostNr,
+            this.colForeOrt,
+            this.colForeLand,
+            this.colForeTele,
+            this.colForeEpost});
+            this.listLeverantor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listLeverantor.FullRowSelect = true;
+            this.listLeverantor.GridLines = true;
+            this.listLeverantor.HideSelection = false;
+            this.listLeverantor.Location = new System.Drawing.Point(3, 16);
+            this.listLeverantor.Name = "listLeverantor";
+            this.listLeverantor.Size = new System.Drawing.Size(780, 346);
+            this.listLeverantor.TabIndex = 0;
+            this.listLeverantor.UseCompatibleStateImageBehavior = false;
+            this.listLeverantor.View = System.Windows.Forms.View.Details;
+            // 
+            // colForeNr
+            // 
+            this.colForeNr.Text = "Företagsnummer";
+            this.colForeNr.Width = 93;
+            // 
+            // colForeNamn
+            // 
+            this.colForeNamn.Text = "Företag";
+            this.colForeNamn.Width = 57;
+            // 
+            // colForeAdress
+            // 
+            this.colForeAdress.Text = "Adress";
+            this.colForeAdress.Width = 48;
+            // 
+            // colForePostNr
+            // 
+            this.colForePostNr.Text = "Postnummer";
+            this.colForePostNr.Width = 76;
+            // 
+            // colForeOrt
+            // 
+            this.colForeOrt.Text = "Ort";
+            this.colForeOrt.Width = 37;
+            // 
+            // colForeLand
+            // 
+            this.colForeLand.Text = "Land";
+            this.colForeLand.Width = 45;
+            // 
+            // colForeTele
+            // 
+            this.colForeTele.Text = "Telefonnummer";
+            this.colForeTele.Width = 92;
+            // 
+            // colForeEpost
+            // 
+            this.colForeEpost.Text = "ePost";
+            this.colForeEpost.Width = 48;
+            // 
             // tabLeverantor
             // 
+            this.tabLeverantor.AccessibleName = "";
             this.tabLeverantor.Controls.Add(this.tabPage1);
             this.tabLeverantor.Controls.Add(this.tabPage2);
             this.tabLeverantor.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -73,6 +154,7 @@
             this.tabLeverantor.SelectedIndex = 0;
             this.tabLeverantor.Size = new System.Drawing.Size(800, 450);
             this.tabLeverantor.TabIndex = 0;
+            this.tabLeverantor.Tag = "";
             // 
             // tabPage1
             // 
@@ -91,32 +173,10 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(786, 340);
+            this.tabPage2.Size = new System.Drawing.Size(792, 424);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // btnVisaLeverantorer
-            // 
-            this.btnVisaLeverantorer.Location = new System.Drawing.Point(6, 19);
-            this.btnVisaLeverantorer.Name = "btnVisaLeverantorer";
-            this.btnVisaLeverantorer.Size = new System.Drawing.Size(125, 23);
-            this.btnVisaLeverantorer.TabIndex = 0;
-            this.btnVisaLeverantorer.Text = "Hämta leverantörer";
-            this.btnVisaLeverantorer.UseVisualStyleBackColor = true;
-            // 
-            // lvLeverantorer
-            // 
-            this.lvLeverantorer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvLeverantorer.FullRowSelect = true;
-            this.lvLeverantorer.GridLines = true;
-            this.lvLeverantorer.HideSelection = false;
-            this.lvLeverantorer.Location = new System.Drawing.Point(3, 16);
-            this.lvLeverantorer.Name = "lvLeverantorer";
-            this.lvLeverantorer.Size = new System.Drawing.Size(780, 346);
-            this.lvLeverantorer.TabIndex = 0;
-            this.lvLeverantorer.UseCompatibleStateImageBehavior = false;
-            this.lvLeverantorer.View = System.Windows.Forms.View.Details;
             // 
             // LeverantorForm
             // 
@@ -142,6 +202,14 @@
         private System.Windows.Forms.TabControl tabLeverantor;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ListView lvLeverantorer;
+        private System.Windows.Forms.ListView listLeverantor;
+        private System.Windows.Forms.ColumnHeader colForeNr;
+        private System.Windows.Forms.ColumnHeader colForeNamn;
+        private System.Windows.Forms.ColumnHeader colForeAdress;
+        private System.Windows.Forms.ColumnHeader colForePostNr;
+        private System.Windows.Forms.ColumnHeader colForeOrt;
+        private System.Windows.Forms.ColumnHeader colForeLand;
+        private System.Windows.Forms.ColumnHeader colForeTele;
+        private System.Windows.Forms.ColumnHeader colForeEpost;
     }
 }

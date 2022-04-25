@@ -16,5 +16,7 @@ namespace DinHatt_CodeFirst
         public DbSet<Order> Ordrar { get; set; }
         public DbSet<Kund> Kunder { get; set; }
 
+        public DbSet<Leverantor> Leverantorer { get; set; }
+
     }
 }
