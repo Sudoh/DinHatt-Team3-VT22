@@ -214,6 +214,9 @@
     <EmbeddedResource Include="LeverantorMeny\NyLeverantorTabUserControl.resx">
       <DependentUpon>NyLeverantorTabUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LeverantorMeny\VisaLeverantorTabUserControl.resx">
+      <DependentUpon>VisaLeverantorTabUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MaterialMeny\MaterialForm.resx">
       <DependentUpon>MaterialForm.cs</DependentUpon>
     </EmbeddedResource>

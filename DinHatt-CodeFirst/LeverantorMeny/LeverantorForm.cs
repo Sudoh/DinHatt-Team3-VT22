@@ -74,5 +74,10 @@ namespace DinHatt_CodeFirst.LeverantorMeny
 
             }
         }
+
+        private void listLeverantor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

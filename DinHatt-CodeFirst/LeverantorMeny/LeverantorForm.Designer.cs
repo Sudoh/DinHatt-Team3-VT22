@@ -44,6 +44,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabNyLeverantor = new System.Windows.Forms.TabPage();
             this.tabVisaLeverantor = new System.Windows.Forms.TabPage();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.grpbxLeverantorKontroll.SuspendLayout();
             this.grpbxLeverantorList.SuspendLayout();
             this.tabLeverantor.SuspendLayout();
@@ -85,6 +86,7 @@
             // listLeverantor
             // 
             this.listLeverantor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
             this.colForeNr,
             this.colForeNamn,
             this.colForeAdress,
@@ -96,50 +98,60 @@
             this.listLeverantor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listLeverantor.FullRowSelect = true;
             this.listLeverantor.GridLines = true;
+            this.listLeverantor.HideSelection = false;
             this.listLeverantor.Location = new System.Drawing.Point(3, 16);
             this.listLeverantor.Name = "listLeverantor";
             this.listLeverantor.Size = new System.Drawing.Size(780, 346);
             this.listLeverantor.TabIndex = 0;
             this.listLeverantor.UseCompatibleStateImageBehavior = false;
             this.listLeverantor.View = System.Windows.Forms.View.Details;
+            this.listLeverantor.SelectedIndexChanged += new System.EventHandler(this.listLeverantor_SelectedIndexChanged);
             // 
             // colForeNr
             // 
+            this.colForeNr.DisplayIndex = 0;
             this.colForeNr.Text = "Företagsnummer";
             this.colForeNr.Width = 93;
             // 
             // colForeNamn
             // 
+            this.colForeNamn.DisplayIndex = 1;
             this.colForeNamn.Text = "Företag";
             this.colForeNamn.Width = 57;
             // 
             // colForeAdress
             // 
+            this.colForeAdress.DisplayIndex = 2;
             this.colForeAdress.Text = "Adress";
             this.colForeAdress.Width = 48;
             // 
             // colForePostNr
             // 
+            this.colForePostNr.DisplayIndex = 3;
             this.colForePostNr.Text = "Postnummer";
             this.colForePostNr.Width = 76;
             // 
             // colForeOrt
             // 
+            this.colForeOrt.DisplayIndex = 4;
             this.colForeOrt.Text = "Ort";
             this.colForeOrt.Width = 37;
             // 
             // colForeLand
             // 
+            this.colForeLand.DisplayIndex = 5;
             this.colForeLand.Text = "Land";
             this.colForeLand.Width = 45;
             // 
             // colForeTele
             // 
+            this.colForeTele.DisplayIndex = 6;
             this.colForeTele.Text = "Telefonnummer";
             this.colForeTele.Width = 92;
             // 
             // colForeEpost
             // 
+            this.colForeEpost.DisplayIndex = 7;
             this.colForeEpost.Text = "ePost";
             this.colForeEpost.Width = 48;
             // 
@@ -189,6 +201,10 @@
             this.tabVisaLeverantor.Text = "Visa Leverantör";
             this.tabVisaLeverantor.UseVisualStyleBackColor = true;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Width = 0;
+            // 
             // LeverantorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,5 +239,6 @@
         private System.Windows.Forms.ColumnHeader colForeTele;
         private System.Windows.Forms.ColumnHeader colForeEpost;
         private System.Windows.Forms.TabPage tabVisaLeverantor;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
