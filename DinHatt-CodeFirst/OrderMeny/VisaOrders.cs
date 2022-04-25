@@ -38,6 +38,7 @@ namespace DinHatt_CodeFirst.OrderMeny
                 tbxOrderDes.Clear();
                 tbxOrderId.Clear();
                 tbxTotalPrice.Clear();
+                ArtikelList.Items.Clear();
                 cbxSkickad.Checked=false;
                 cbxBetalad.Checked = false;
 
@@ -72,6 +73,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                         {
                             ArtikelList.Items[i].ToString();
                         }
+
+                        ArtikelList.Items.AddRange(item.ArtikelTitle.ToString().Split(','));
 
                         tbxOrderDes.Text = item.Description;
 
