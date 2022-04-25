@@ -35,6 +35,15 @@ namespace DinHatt_CodeFirst.MaterialMeny
                 db.Material.Add(nyttMaterial);
                 db.SaveChanges();
 
+
+                txtMaterial.Clear();
+                txtLangd.Clear();
+                txtBredd.Clear();
+                txtFarg.Clear();
+
+
+                MessageBox.Show("Materialet har lagts till!");
+
             }
         }
 
