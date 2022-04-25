@@ -48,6 +48,9 @@ namespace DinHatt_CodeFirst
 
                 foreach (var item in db.Ordrar)
                 {
+
+                    if (item.Aktiv == true)
+                    { 
                     ListViewItem rad = new ListViewItem();
 
 
@@ -68,6 +71,12 @@ namespace DinHatt_CodeFirst
 
 
                     listViewOrder.Items.Add(rad);
+
+                    }
+                    else
+                    {
+
+                    }
                 }
 
                 listViewOrder.EndUpdate();

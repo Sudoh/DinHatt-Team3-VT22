@@ -64,21 +64,27 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                 foreach (var item in Order)
                 {
-                    tbxOrderId.Text = item.Id.ToString();
-
-                    foreach (int i in ArtikelList.SelectedIndices)
+                    if (item.Aktiv == true)
                     {
-                        ArtikelList.Items[i].ToString();
+                        tbxOrderId.Text = item.Id.ToString();
+
+                        foreach (int i in ArtikelList.SelectedIndices)
+                        {
+                            ArtikelList.Items[i].ToString();
+                        }
+
+                        tbxOrderDes.Text = item.Description;
+
+                        tbxTotalPrice.Text = item.PrelimPrice.ToString();
+
+                        cbxBetalad.Checked = item.Payed;
+
+                        cbxSkickad.Checked = item.Delivered;
                     }
-
-                    tbxOrderDes.Text = item.Description;
-
-                    tbxTotalPrice.Text= item.PrelimPrice.ToString();
-
-                    cbxBetalad.Checked = item.Payed;
-
-                    cbxSkickad.Checked = item.Delivered;
-
+                    else
+                    {
+                        MessageBox.Show("Thier is no order to show!");
+                    }
 
 
 
