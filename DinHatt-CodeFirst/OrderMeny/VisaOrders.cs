@@ -32,6 +32,17 @@ namespace DinHatt_CodeFirst.OrderMeny
 
                 }
 
+                db.SaveChanges();
+
+                tbSökOrderId.Clear();
+                tbxOrderDes.Clear();
+                tbxOrderId.Clear();
+                tbxTotalPrice.Clear();
+                cbxSkickad.Checked=false;
+                cbxBetalad.Checked = false;
+
+                MessageBox.Show("Du har tagit bort order!");
+
 
             }
 
@@ -63,6 +74,10 @@ namespace DinHatt_CodeFirst.OrderMeny
                     tbxOrderDes.Text = item.Description;
 
                     tbxTotalPrice.Text= item.PrelimPrice.ToString();
+
+                    cbxBetalad.Checked = item.Payed;
+
+                    cbxSkickad.Checked = item.Delivered;
 
 
 

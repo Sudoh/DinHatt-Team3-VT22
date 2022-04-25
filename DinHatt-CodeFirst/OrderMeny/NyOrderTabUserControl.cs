@@ -43,8 +43,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                 using (var db = new DinHatt())
                 {
 
-                   
-                    
+
+
 
                     Order nyOrder = new Order()
                     {
@@ -66,6 +66,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                         KundId = Convert.ToInt32(txSökKund.Text),
 
                         Moms = momssats,
+
+                        Aktiv = true,
 
                     };
                     
