@@ -26,6 +26,13 @@ namespace DinHatt_CodeFirst
                     tabNyOrder.Controls.Add(nyOrderTabUserControl);
 
                     break;
+
+                case 2:
+
+                    VisaOrders visaOrders = new VisaOrders(); 
+                    tabVisaOrder.Controls.Add(visaOrders);
+
+                    break;
                 
             }
 
