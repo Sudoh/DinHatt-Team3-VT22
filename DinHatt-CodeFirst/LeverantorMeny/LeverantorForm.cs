@@ -45,5 +45,34 @@ namespace DinHatt_CodeFirst.LeverantorMeny
                 listLeverantor.Refresh();
             }
         }
+
+        private void tabLeverantor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch ((sender as TabControl).SelectedIndex)
+            {
+                //Alla Artiklar Tab
+                case 0:
+                    //Gör inget eftersom det är default tab som öppnas just nu.
+                    break;
+
+                //Ny Artikel Tab
+                case 1:
+
+                    NyLeverantorTabUserControl nyLeverantorUserControl = new NyLeverantorTabUserControl();
+                    tabNyLeverantor.Controls.Add(nyLeverantorUserControl);
+
+                    break;
+
+
+                //Visa Artikel tab
+                case 2:
+
+                    VisaLeverantorTabUserControl visaLeverantorTabUserControl = new VisaLeverantorTabUserControl();
+                    tabVisaLeverantor.Controls.Add(visaLeverantorTabUserControl);
+
+                    break;
+
+            }
+        }
     }
 }
