@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.pnlSystemKnappar = new System.Windows.Forms.Panel();
+            this.btnLeverantorMeny = new System.Windows.Forms.Button();
+            this.btnMaterialMeny = new System.Windows.Forms.Button();
             this.pnlExtraFunktioner = new System.Windows.Forms.Panel();
             this.btnStatistikMeny = new System.Windows.Forms.Button();
-            this.btnExportMeny = new System.Windows.Forms.Button();
             this.btnArtikelMeny = new System.Windows.Forms.Button();
             this.btnNyKundMeny = new System.Windows.Forms.Button();
             this.btnNyOrderMeny = new System.Windows.Forms.Button();
             this.pnlStart = new System.Windows.Forms.Panel();
-            this.btnMaterialMeny = new System.Windows.Forms.Button();
-            this.btnLeverantorMeny = new System.Windows.Forms.Button();
             this.pnlSystemKnappar.SuspendLayout();
             this.pnlExtraFunktioner.SuspendLayout();
             this.SuspendLayout();
@@ -56,35 +55,44 @@
             this.pnlSystemKnappar.Size = new System.Drawing.Size(784, 81);
             this.pnlSystemKnappar.TabIndex = 0;
             // 
+            // btnLeverantorMeny
+            // 
+            this.btnLeverantorMeny.Location = new System.Drawing.Point(335, 13);
+            this.btnLeverantorMeny.Name = "btnLeverantorMeny";
+            this.btnLeverantorMeny.Size = new System.Drawing.Size(75, 59);
+            this.btnLeverantorMeny.TabIndex = 4;
+            this.btnLeverantorMeny.Text = "Leverantörer";
+            this.btnLeverantorMeny.UseVisualStyleBackColor = true;
+            this.btnLeverantorMeny.Click += new System.EventHandler(this.btnLeverantorMeny_Click);
+            // 
+            // btnMaterialMeny
+            // 
+            this.btnMaterialMeny.Location = new System.Drawing.Point(254, 13);
+            this.btnMaterialMeny.Name = "btnMaterialMeny";
+            this.btnMaterialMeny.Size = new System.Drawing.Size(75, 59);
+            this.btnMaterialMeny.TabIndex = 3;
+            this.btnMaterialMeny.Text = "Material";
+            this.btnMaterialMeny.UseVisualStyleBackColor = true;
+            this.btnMaterialMeny.Click += new System.EventHandler(this.btnMaterialMeny_Click);
+            // 
             // pnlExtraFunktioner
             // 
             this.pnlExtraFunktioner.Controls.Add(this.btnStatistikMeny);
-            this.pnlExtraFunktioner.Controls.Add(this.btnExportMeny);
             this.pnlExtraFunktioner.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlExtraFunktioner.Location = new System.Drawing.Point(618, 0);
+            this.pnlExtraFunktioner.Location = new System.Drawing.Point(693, 0);
             this.pnlExtraFunktioner.Name = "pnlExtraFunktioner";
-            this.pnlExtraFunktioner.Size = new System.Drawing.Size(166, 81);
+            this.pnlExtraFunktioner.Size = new System.Drawing.Size(91, 81);
             this.pnlExtraFunktioner.TabIndex = 1;
             // 
             // btnStatistikMeny
             // 
-            this.btnStatistikMeny.Location = new System.Drawing.Point(3, 13);
+            this.btnStatistikMeny.Location = new System.Drawing.Point(3, 12);
             this.btnStatistikMeny.Name = "btnStatistikMeny";
             this.btnStatistikMeny.Size = new System.Drawing.Size(75, 59);
             this.btnStatistikMeny.TabIndex = 4;
             this.btnStatistikMeny.Text = "Statistik";
             this.btnStatistikMeny.UseVisualStyleBackColor = true;
             this.btnStatistikMeny.Click += new System.EventHandler(this.btnStatistikMeny_Click);
-            // 
-            // btnExportMeny
-            // 
-            this.btnExportMeny.Enabled = false;
-            this.btnExportMeny.Location = new System.Drawing.Point(84, 13);
-            this.btnExportMeny.Name = "btnExportMeny";
-            this.btnExportMeny.Size = new System.Drawing.Size(75, 59);
-            this.btnExportMeny.TabIndex = 3;
-            this.btnExportMeny.Text = "Export";
-            this.btnExportMeny.UseVisualStyleBackColor = true;
             // 
             // btnArtikelMeny
             // 
@@ -127,26 +135,6 @@
             this.pnlStart.Size = new System.Drawing.Size(784, 480);
             this.pnlStart.TabIndex = 1;
             // 
-            // btnMaterialMeny
-            // 
-            this.btnMaterialMeny.Location = new System.Drawing.Point(254, 13);
-            this.btnMaterialMeny.Name = "btnMaterialMeny";
-            this.btnMaterialMeny.Size = new System.Drawing.Size(75, 59);
-            this.btnMaterialMeny.TabIndex = 3;
-            this.btnMaterialMeny.Text = "Material";
-            this.btnMaterialMeny.UseVisualStyleBackColor = true;
-            this.btnMaterialMeny.Click += new System.EventHandler(this.btnMaterialMeny_Click);
-            // 
-            // btnLeverantorMeny
-            // 
-            this.btnLeverantorMeny.Location = new System.Drawing.Point(335, 13);
-            this.btnLeverantorMeny.Name = "btnLeverantorMeny";
-            this.btnLeverantorMeny.Size = new System.Drawing.Size(75, 59);
-            this.btnLeverantorMeny.TabIndex = 4;
-            this.btnLeverantorMeny.Text = "Leverantörer";
-            this.btnLeverantorMeny.UseVisualStyleBackColor = true;
-            this.btnLeverantorMeny.Click += new System.EventHandler(this.btnLeverantorMeny_Click);
-            // 
             // StartMenyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,7 +157,6 @@
         public System.Windows.Forms.Button btnNyOrderMeny;
         public System.Windows.Forms.Button btnArtikelMeny;
         public System.Windows.Forms.Button btnNyKundMeny;
-        public System.Windows.Forms.Button btnExportMeny;
         private System.Windows.Forms.Panel pnlExtraFunktioner;
         public System.Windows.Forms.Button btnStatistikMeny;
         private System.Windows.Forms.Panel pnlStart;
