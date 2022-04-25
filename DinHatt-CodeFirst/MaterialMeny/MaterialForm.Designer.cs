@@ -56,6 +56,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnHamtaInfo = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtHanteraMaterial = new System.Windows.Forms.TextBox();
+            this.txtHanteraLangd = new System.Windows.Forms.TextBox();
+            this.txtHanteraBredd = new System.Windows.Forms.TextBox();
+            this.txtHanteraFarg = new System.Windows.Forms.TextBox();
+            this.btnTaBort = new System.Windows.Forms.Button();
+            this.btnAndra = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabMaterial.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpbxMateriallista.SuspendLayout();
@@ -63,6 +73,7 @@
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMaterial
@@ -318,12 +329,104 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.btnAndra);
+            this.groupBox2.Controls.Add(this.btnTaBort);
+            this.groupBox2.Controls.Add(this.txtHanteraFarg);
+            this.groupBox2.Controls.Add(this.txtHanteraBredd);
+            this.groupBox2.Controls.Add(this.txtHanteraLangd);
+            this.groupBox2.Controls.Add(this.txtHanteraMaterial);
             this.groupBox2.Location = new System.Drawing.Point(151, 16);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(254, 282);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Material-information";
+            // 
+            // txtHanteraMaterial
+            // 
+            this.txtHanteraMaterial.Location = new System.Drawing.Point(69, 38);
+            this.txtHanteraMaterial.Name = "txtHanteraMaterial";
+            this.txtHanteraMaterial.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraMaterial.TabIndex = 0;
+            // 
+            // txtHanteraLangd
+            // 
+            this.txtHanteraLangd.Location = new System.Drawing.Point(69, 80);
+            this.txtHanteraLangd.Name = "txtHanteraLangd";
+            this.txtHanteraLangd.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraLangd.TabIndex = 1;
+            // 
+            // txtHanteraBredd
+            // 
+            this.txtHanteraBredd.Location = new System.Drawing.Point(69, 128);
+            this.txtHanteraBredd.Name = "txtHanteraBredd";
+            this.txtHanteraBredd.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraBredd.TabIndex = 2;
+            // 
+            // txtHanteraFarg
+            // 
+            this.txtHanteraFarg.Location = new System.Drawing.Point(69, 173);
+            this.txtHanteraFarg.Name = "txtHanteraFarg";
+            this.txtHanteraFarg.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraFarg.TabIndex = 3;
+            // 
+            // btnTaBort
+            // 
+            this.btnTaBort.Location = new System.Drawing.Point(82, 243);
+            this.btnTaBort.Name = "btnTaBort";
+            this.btnTaBort.Size = new System.Drawing.Size(75, 23);
+            this.btnTaBort.TabIndex = 4;
+            this.btnTaBort.Text = "Ta bort";
+            this.btnTaBort.UseVisualStyleBackColor = true;
+            // 
+            // btnAndra
+            // 
+            this.btnAndra.Location = new System.Drawing.Point(82, 214);
+            this.btnAndra.Name = "btnAndra";
+            this.btnAndra.Size = new System.Drawing.Size(75, 23);
+            this.btnAndra.TabIndex = 5;
+            this.btnAndra.Text = "Ändra";
+            this.btnAndra.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(89, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Material";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(89, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Längd (m)";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(89, 112);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Bredd (m)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(105, 157);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 13);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Färg";
             // 
             // MaterialForm
             // 
@@ -342,6 +445,8 @@
             this.groupBox1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -376,5 +481,15 @@
         private System.Windows.Forms.Button btnHamtaInfo;
         private System.Windows.Forms.TextBox txtMaterialId;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAndra;
+        private System.Windows.Forms.Button btnTaBort;
+        private System.Windows.Forms.TextBox txtHanteraFarg;
+        private System.Windows.Forms.TextBox txtHanteraBredd;
+        private System.Windows.Forms.TextBox txtHanteraLangd;
+        private System.Windows.Forms.TextBox txtHanteraMaterial;
     }
 }
