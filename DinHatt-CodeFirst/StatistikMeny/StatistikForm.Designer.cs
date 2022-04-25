@@ -44,6 +44,7 @@
             this.colDatum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label4 = new System.Windows.Forms.Label();
             this.txtboxMoms = new System.Windows.Forms.TextBox();
+            this.btnExport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -51,16 +52,18 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1146, 555);
+            this.listView1.Size = new System.Drawing.Size(764, 361);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // btnVisaStatistik
             // 
-            this.btnVisaStatistik.Location = new System.Drawing.Point(485, 142);
+            this.btnVisaStatistik.Location = new System.Drawing.Point(323, 92);
+            this.btnVisaStatistik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVisaStatistik.Name = "btnVisaStatistik";
-            this.btnVisaStatistik.Size = new System.Drawing.Size(137, 37);
+            this.btnVisaStatistik.Size = new System.Drawing.Size(91, 24);
             this.btnVisaStatistik.TabIndex = 1;
             this.btnVisaStatistik.Text = "Visa statistik";
             this.btnVisaStatistik.UseVisualStyleBackColor = true;
@@ -68,58 +71,63 @@
             // 
             // lblBetaldaOrdrar
             // 
-            this.lblBetaldaOrdrar.Location = new System.Drawing.Point(8, 9);
+            this.lblBetaldaOrdrar.Location = new System.Drawing.Point(5, 6);
+            this.lblBetaldaOrdrar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBetaldaOrdrar.Name = "lblBetaldaOrdrar";
-            this.lblBetaldaOrdrar.Size = new System.Drawing.Size(232, 23);
+            this.lblBetaldaOrdrar.Size = new System.Drawing.Size(155, 15);
             this.lblBetaldaOrdrar.TabIndex = 3;
             this.lblBetaldaOrdrar.Text = "Betalda och levererade ordrar";
             this.lblBetaldaOrdrar.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 352);
+            this.label1.Location = new System.Drawing.Point(8, 229);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 23);
+            this.label1.Size = new System.Drawing.Size(92, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Total summa";
             // 
             // txtboxTotalBetal
             // 
-            this.txtboxTotalBetal.Location = new System.Drawing.Point(173, 352);
-            this.txtboxTotalBetal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtboxTotalBetal.Location = new System.Drawing.Point(115, 229);
             this.txtboxTotalBetal.Multiline = true;
             this.txtboxTotalBetal.Name = "txtboxTotalBetal";
-            this.txtboxTotalBetal.Size = new System.Drawing.Size(128, 23);
+            this.txtboxTotalBetal.Size = new System.Drawing.Size(87, 16);
             this.txtboxTotalBetal.TabIndex = 5;
             // 
             // dateTimeStart
             // 
-            this.dateTimeStart.Location = new System.Drawing.Point(636, 45);
+            this.dateTimeStart.Location = new System.Drawing.Point(424, 29);
+            this.dateTimeStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimeStart.Name = "dateTimeStart";
-            this.dateTimeStart.Size = new System.Drawing.Size(200, 26);
+            this.dateTimeStart.Size = new System.Drawing.Size(135, 20);
             this.dateTimeStart.TabIndex = 6;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(481, 45);
+            this.label2.Location = new System.Drawing.Point(321, 29);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 23);
+            this.label2.Size = new System.Drawing.Size(97, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "Startdatum";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(481, 90);
+            this.label3.Location = new System.Drawing.Point(321, 58);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 23);
+            this.label3.Size = new System.Drawing.Size(97, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Slutdatum";
             // 
             // dateTimeSlut
             // 
-            this.dateTimeSlut.Location = new System.Drawing.Point(636, 90);
+            this.dateTimeSlut.Location = new System.Drawing.Point(424, 58);
+            this.dateTimeSlut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimeSlut.Name = "dateTimeSlut";
-            this.dateTimeSlut.Size = new System.Drawing.Size(200, 26);
+            this.dateTimeSlut.Size = new System.Drawing.Size(135, 20);
             this.dateTimeSlut.TabIndex = 9;
             // 
             // listViewOrder
@@ -132,9 +140,10 @@
             this.listViewOrder.FullRowSelect = true;
             this.listViewOrder.GridLines = true;
             this.listViewOrder.HideSelection = false;
-            this.listViewOrder.Location = new System.Drawing.Point(12, 45);
+            this.listViewOrder.Location = new System.Drawing.Point(8, 29);
+            this.listViewOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewOrder.Name = "listViewOrder";
-            this.listViewOrder.Size = new System.Drawing.Size(453, 288);
+            this.listViewOrder.Size = new System.Drawing.Size(303, 189);
             this.listViewOrder.TabIndex = 10;
             this.listViewOrder.UseCompatibleStateImageBehavior = false;
             this.listViewOrder.View = System.Windows.Forms.View.Details;
@@ -162,26 +171,38 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(12, 398);
+            this.label4.Location = new System.Drawing.Point(8, 259);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 23);
+            this.label4.Size = new System.Drawing.Size(92, 15);
             this.label4.TabIndex = 11;
             this.label4.Text = "Total moms";
             // 
             // txtboxMoms
             // 
-            this.txtboxMoms.Location = new System.Drawing.Point(173, 395);
-            this.txtboxMoms.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtboxMoms.Location = new System.Drawing.Point(115, 257);
             this.txtboxMoms.Multiline = true;
             this.txtboxMoms.Name = "txtboxMoms";
-            this.txtboxMoms.Size = new System.Drawing.Size(128, 23);
+            this.txtboxMoms.Size = new System.Drawing.Size(87, 16);
             this.txtboxMoms.TabIndex = 12;
+            // 
+            // btnExport
+            // 
+            this.btnExport.Enabled = false;
+            this.btnExport.Location = new System.Drawing.Point(316, 195);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(127, 23);
+            this.btnExport.TabIndex = 13;
+            this.btnExport.Text = "Exportera till fil";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // StatistikForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 555);
+            this.ClientSize = new System.Drawing.Size(764, 361);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.txtboxMoms);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listViewOrder);
@@ -194,7 +215,6 @@
             this.Controls.Add(this.lblBetaldaOrdrar);
             this.Controls.Add(this.btnVisaStatistik);
             this.Controls.Add(this.listView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "StatistikForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -223,5 +243,6 @@
         private System.Windows.Forms.ColumnHeader colDatum;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtboxMoms;
+        private System.Windows.Forms.Button btnExport;
     }
 }

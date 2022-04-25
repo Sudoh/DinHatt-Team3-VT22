@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.IO;
+using System.Windows.Forms;
 
 namespace DinHatt_CodeFirst
 {
@@ -31,7 +32,7 @@ namespace DinHatt_CodeFirst
 
         private void btnVisaStatistik_Click(object sender, System.EventArgs e)
         {
-            
+            btnExport.Enabled = true;
             listViewOrder.BeginUpdate();
             listViewOrder.Items.Clear();
 
@@ -66,6 +67,33 @@ namespace DinHatt_CodeFirst
                 listViewOrder.EndUpdate();
                 listViewOrder.Refresh();
             }
+        }
+
+        private void btnExport_Click(object sender, System.EventArgs e)
+        {
+            DirectoryInfo[] cDirs = new DirectoryInfo(@"c:\").GetDirectories();
+
+            // Write each directory name to a file.
+            using (StreamWriter sw = new StreamWriter("EkonomiExport.txt"))
+            {
+
+         
+                
+                sw.WriteLine("Antal Ordrar:");
+                sw.WriteLine(listViewOrder.Items.Count);
+                sw.WriteLine("Startdatum:");
+                sw.WriteLine(dateTimeStart.Value.ToString());
+                sw.WriteLine("Slutdatum:");
+                sw.WriteLine(dateTimeSlut.Value.ToString());
+                sw.WriteLine("Total Summa:");
+                sw.WriteLine(txtboxTotalBetal.Text);
+                sw.WriteLine("Totalmoms:");
+                sw.WriteLine(txtboxMoms.Text);
+            
+            }
+
+            btnExport.Enabled = false;
+
         }
     }
 }
