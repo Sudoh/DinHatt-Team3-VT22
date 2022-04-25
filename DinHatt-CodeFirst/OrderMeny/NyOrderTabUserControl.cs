@@ -260,5 +260,10 @@ namespace DinHatt_CodeFirst.OrderMeny
 
             }
         }
+
+        private void tbxDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
