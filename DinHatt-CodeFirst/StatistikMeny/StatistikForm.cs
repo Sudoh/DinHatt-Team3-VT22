@@ -13,5 +13,25 @@ namespace DinHatt_CodeFirst
         {
 
         }
+
+        private void label1_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnVisaStatistik_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
