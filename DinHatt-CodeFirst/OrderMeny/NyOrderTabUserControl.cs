@@ -102,14 +102,14 @@ namespace DinHatt_CodeFirst.OrderMeny
                     txbSökArtikel.Clear();
                     lstbxArtikel.Items.Clear();
                     tbxAntalLager.Clear();
-                    tbxTotPris.Clear();
+                    tbxTotPris.Text = 0.ToString();
 
 
 
 
 
 
-                    
+
 
                     MessageBox.Show("Du har skapat ny order!");
 
@@ -225,7 +225,7 @@ namespace DinHatt_CodeFirst.OrderMeny
                     lstbxArtikel.Items.Add(item.Name);
                   tbxPrice.Text = item.Pris.ToString();
                     tbxTotPris.Text = item.Pris.ToString();
-                    tbxAntalLager.Text = (item.AntalILager - 1).ToString();
+                    tbxAntalLager.Text = (item.AntalILager).ToString();
                     
                     //todo fixa lagersaldo 
 

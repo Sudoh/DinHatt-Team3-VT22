@@ -69,11 +69,6 @@ namespace DinHatt_CodeFirst.OrderMeny
                     {
                         tbxOrderId.Text = item.Id.ToString();
 
-                        foreach (int i in ArtikelList.SelectedIndices)
-                        {
-                            ArtikelList.Items[i].ToString();
-                        }
-
                         ArtikelList.Items.AddRange(item.ArtikelTitle.ToString().Split(','));
 
                         tbxOrderDes.Text = item.Description;
@@ -98,5 +93,33 @@ namespace DinHatt_CodeFirst.OrderMeny
                 }
             }
         }
-    }
+
+        private void btnÄndraOrder_Click(object sender, EventArgs e)
+        {
+            using (var db = new DinHatt())
+            {
+                int OrderId = int.Parse(tbSökOrderId.Text);
+                var Order = (from k in db.Ordrar
+                             where k.Id == OrderId
+                             select k).ToList();
+
+
+
+                foreach (var item in Order)
+                {
+
+                    item.Description = tbxOrderDes.Text;
+                    item.Payed = cbxBetalad.Checked;
+                    item.Delivered = cbxSkickad.Checked;
+                    item.PrelimPrice = int.Parse(tbxTotalPrice.Text);
+                  
+
+                }
+
+                db.SaveChanges();
+            }
+
+            
+        }
+            }
 }

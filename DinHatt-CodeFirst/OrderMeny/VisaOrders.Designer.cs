@@ -159,6 +159,7 @@
             this.btnÄndraOrder.TabIndex = 15;
             this.btnÄndraOrder.Text = "Ändra order";
             this.btnÄndraOrder.UseVisualStyleBackColor = false;
+            this.btnÄndraOrder.Click += new System.EventHandler(this.btnÄndraOrder_Click);
             // 
             // ArtikelList
             // 
