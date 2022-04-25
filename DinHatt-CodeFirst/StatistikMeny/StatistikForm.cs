@@ -31,7 +31,41 @@ namespace DinHatt_CodeFirst
 
         private void btnVisaStatistik_Click(object sender, System.EventArgs e)
         {
+            
+            listViewOrder.BeginUpdate();
+            listViewOrder.Items.Clear();
 
+            using (var db = new DinHatt())
+            {
+                double summa = 0;
+                double moms = 0;
+
+                foreach (var item in db.Ordrar)
+                {
+                    ListViewItem rad = new ListViewItem();
+                    
+                    if (item.OrderDate >= dateTimeStart.Value.Date && item.OrderDate <= dateTimeSlut.Value.Date && item.Delivered == true && item.Payed == true)
+                    {
+
+                        rad.SubItems.Add(item.Id.ToString());
+                        rad.SubItems.Add(item.PrelimPrice.ToString());
+                        rad.SubItems.Add(item.OrderDate.ToShortDateString());
+
+                        summa = summa + item.PrelimPrice;
+                        moms = moms + (item.Moms * 0.2);
+
+
+
+
+
+                        listViewOrder.Items.Add(rad);
+                    }
+                }
+                txtboxMoms.Text = moms.ToString();
+                txtboxTotalBetal.Text = summa.ToString();
+                listViewOrder.EndUpdate();
+                listViewOrder.Refresh();
+            }
         }
     }
 }
