@@ -71,7 +71,6 @@ namespace DinHatt_CodeFirst
 
         private void btnExport_Click(object sender, System.EventArgs e)
         {
-            DirectoryInfo[] cDirs = new DirectoryInfo(@"c:\").GetDirectories();
 
             // Write each directory name to a file.
             using (StreamWriter sw = new StreamWriter("EkonomiExport.txt"))
