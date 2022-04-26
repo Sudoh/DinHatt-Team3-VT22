@@ -108,6 +108,7 @@
             this.tbxDescription.Size = new System.Drawing.Size(349, 120);
             this.tbxDescription.TabIndex = 5;
             this.tbxDescription.Text = "";
+            this.tbxDescription.TextChanged += new System.EventHandler(this.tbxDescription_TextChanged);
             // 
             // tbxPrice
             // 

@@ -43,8 +43,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                 using (var db = new DinHatt())
                 {
 
-                   
-                    
+
+
 
                     Order nyOrder = new Order()
                     {
@@ -66,6 +66,8 @@ namespace DinHatt_CodeFirst.OrderMeny
                         KundId = Convert.ToInt32(txSökKund.Text),
 
                         Moms = momssats,
+
+                        Aktiv = true,
 
                     };
                     
@@ -100,14 +102,14 @@ namespace DinHatt_CodeFirst.OrderMeny
                     txbSökArtikel.Clear();
                     lstbxArtikel.Items.Clear();
                     tbxAntalLager.Clear();
-                    tbxTotPris.Clear();
+                    tbxTotPris.Text = 0.ToString();
 
 
 
 
 
 
-                    
+
 
                     MessageBox.Show("Du har skapat ny order!");
 
@@ -223,7 +225,7 @@ namespace DinHatt_CodeFirst.OrderMeny
                     lstbxArtikel.Items.Add(item.Name);
                   tbxPrice.Text = item.Pris.ToString();
                     tbxTotPris.Text = item.Pris.ToString();
-                    tbxAntalLager.Text = (item.AntalILager - 1).ToString();
+                    tbxAntalLager.Text = (item.AntalILager).ToString();
                     
                     //todo fixa lagersaldo 
 
@@ -259,6 +261,11 @@ namespace DinHatt_CodeFirst.OrderMeny
 
 
             }
+        }
+
+        private void tbxDescription_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

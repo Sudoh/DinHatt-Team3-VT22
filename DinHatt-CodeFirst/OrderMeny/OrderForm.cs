@@ -26,6 +26,13 @@ namespace DinHatt_CodeFirst
                     tabNyOrder.Controls.Add(nyOrderTabUserControl);
 
                     break;
+
+                case 2:
+
+                    VisaOrders visaOrders = new VisaOrders(); 
+                    tabVisaOrder.Controls.Add(visaOrders);
+
+                    break;
                 
             }
 
@@ -41,6 +48,9 @@ namespace DinHatt_CodeFirst
 
                 foreach (var item in db.Ordrar)
                 {
+
+                    if (item.Aktiv == true)
+                    { 
                     ListViewItem rad = new ListViewItem();
 
 
@@ -50,10 +60,12 @@ namespace DinHatt_CodeFirst
                     rad.SubItems.Add(item.Description.ToString());
                     rad.SubItems.Add(item.PrelimPrice.ToString());
                     rad.SubItems.Add(item.Payed.ToString());
-                    //rad.SubItems.Add(item.Canceled.ToString());
-                    rad.SubItems.Add(item.Delivered.ToString());
-                    rad.SubItems.Add(item.OrderDate.ToShortDateString());
+                        rad.SubItems.Add(item.Fakturerad.ToString());
+
+                        rad.SubItems.Add(item.Delivered.ToString());
+                        rad.SubItems.Add(item.OrderDate.ToShortDateString());
                     rad.SubItems.Add(item.Moms.ToString());
+
                     
 
 
@@ -61,6 +73,12 @@ namespace DinHatt_CodeFirst
 
 
                     listViewOrder.Items.Add(rad);
+
+                    }
+                    else
+                    {
+
+                    }
                 }
 
                 listViewOrder.EndUpdate();
@@ -70,6 +88,11 @@ namespace DinHatt_CodeFirst
 
 
         private void OrderForm_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void listViewOrder_SelectedIndexChanged(object sender, System.EventArgs e)
         {
 
         }
