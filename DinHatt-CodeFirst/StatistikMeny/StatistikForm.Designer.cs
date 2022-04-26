@@ -52,7 +52,7 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(764, 361);
             this.listView1.TabIndex = 0;
@@ -61,7 +61,7 @@
             // btnVisaStatistik
             // 
             this.btnVisaStatistik.Location = new System.Drawing.Point(323, 92);
-            this.btnVisaStatistik.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVisaStatistik.Margin = new System.Windows.Forms.Padding(2);
             this.btnVisaStatistik.Name = "btnVisaStatistik";
             this.btnVisaStatistik.Size = new System.Drawing.Size(91, 24);
             this.btnVisaStatistik.TabIndex = 1;
@@ -77,7 +77,6 @@
             this.lblBetaldaOrdrar.Size = new System.Drawing.Size(155, 15);
             this.lblBetaldaOrdrar.TabIndex = 3;
             this.lblBetaldaOrdrar.Text = "Betalda och levererade ordrar";
-            this.lblBetaldaOrdrar.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label1
             // 
@@ -99,7 +98,7 @@
             // dateTimeStart
             // 
             this.dateTimeStart.Location = new System.Drawing.Point(424, 29);
-            this.dateTimeStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimeStart.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeStart.Name = "dateTimeStart";
             this.dateTimeStart.Size = new System.Drawing.Size(135, 20);
             this.dateTimeStart.TabIndex = 6;
@@ -125,7 +124,7 @@
             // dateTimeSlut
             // 
             this.dateTimeSlut.Location = new System.Drawing.Point(424, 58);
-            this.dateTimeSlut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimeSlut.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeSlut.Name = "dateTimeSlut";
             this.dateTimeSlut.Size = new System.Drawing.Size(135, 20);
             this.dateTimeSlut.TabIndex = 9;
@@ -141,7 +140,7 @@
             this.listViewOrder.GridLines = true;
             this.listViewOrder.HideSelection = false;
             this.listViewOrder.Location = new System.Drawing.Point(8, 29);
-            this.listViewOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listViewOrder.Margin = new System.Windows.Forms.Padding(2);
             this.listViewOrder.Name = "listViewOrder";
             this.listViewOrder.Size = new System.Drawing.Size(303, 189);
             this.listViewOrder.TabIndex = 10;
@@ -219,7 +218,6 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "StatistikForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StatistikForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
