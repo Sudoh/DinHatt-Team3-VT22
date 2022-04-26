@@ -38,6 +38,8 @@ namespace Models
 
         public bool Aktiv { get; set; }
 
+        public bool Fakturerad { get; set; }    
+
 
         public Order()
         {

@@ -46,6 +46,7 @@
             this.btnLadda = new System.Windows.Forms.Button();
             this.tabNyOrder = new System.Windows.Forms.TabPage();
             this.tabVisaOrder = new System.Windows.Forms.TabPage();
+            this.colFak = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabOrder.SuspendLayout();
             this.tabAllaOrder.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -102,6 +103,7 @@
             this.colDiscription,
             this.colTotalPrice,
             this.colPayed,
+            this.colFak,
             this.colLeveransstatus,
             this.colDatum,
             this.colMoms});
@@ -115,6 +117,7 @@
             this.listViewOrder.TabIndex = 0;
             this.listViewOrder.UseCompatibleStateImageBehavior = false;
             this.listViewOrder.View = System.Windows.Forms.View.Details;
+            this.listViewOrder.SelectedIndexChanged += new System.EventHandler(this.listViewOrder_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -128,27 +131,27 @@
             // 
             // colOrderbeställare
             // 
-            this.colOrderbeställare.Text = "Order beställare";
+            this.colOrderbeställare.Text = "Beställare";
             this.colOrderbeställare.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colOrderbeställare.Width = 88;
             // 
             // ArtikelId
             // 
-            this.ArtikelId.Text = "ArtikelId";
+            this.ArtikelId.Text = "ArtikelID";
             this.ArtikelId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ArtikelId.Width = 142;
+            this.ArtikelId.Width = 68;
             // 
             // colDiscription
             // 
-            this.colDiscription.Text = "SpecialOrder discription";
+            this.colDiscription.Text = "Beskrivning";
             this.colDiscription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDiscription.Width = 152;
+            this.colDiscription.Width = 80;
             // 
             // colTotalPrice
             // 
-            this.colTotalPrice.Text = "TotalPrice";
+            this.colTotalPrice.Text = "Total pris";
             this.colTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colTotalPrice.Width = 107;
+            this.colTotalPrice.Width = 64;
             // 
             // colPayed
             // 
@@ -158,18 +161,20 @@
             // 
             // colLeveransstatus
             // 
+            this.colLeveransstatus.DisplayIndex = 7;
             this.colLeveransstatus.Text = "Leveransstatus";
             this.colLeveransstatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colLeveransstatus.Width = 86;
             // 
             // colDatum
             // 
-            this.colDatum.Text = "OrderDatum";
+            this.colDatum.Text = "Datum";
             this.colDatum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDatum.Width = 108;
+            this.colDatum.Width = 59;
             // 
             // colMoms
             // 
+            this.colMoms.DisplayIndex = 9;
             this.colMoms.Text = "Moms";
             this.colMoms.Width = 50;
             // 
@@ -213,11 +218,16 @@
             // 
             this.tabVisaOrder.Location = new System.Drawing.Point(4, 29);
             this.tabVisaOrder.Name = "tabVisaOrder";
-            this.tabVisaOrder.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabVisaOrder.Padding = new System.Windows.Forms.Padding(3);
             this.tabVisaOrder.Size = new System.Drawing.Size(1894, 802);
             this.tabVisaOrder.TabIndex = 2;
             this.tabVisaOrder.Text = "Visa order";
             this.tabVisaOrder.UseVisualStyleBackColor = true;
+            // 
+            // colFak
+            // 
+            this.colFak.Text = "Fakturerad";
+            this.colFak.Width = 80;
             // 
             // OrderForm
             // 
@@ -258,5 +268,6 @@
         private System.Windows.Forms.ColumnHeader ArtikelId;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ColumnHeader colFak;
     }
 }
