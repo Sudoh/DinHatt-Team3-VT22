@@ -62,9 +62,9 @@ namespace DinHatt_CodeFirst
                 sw.WriteLine(dateTimeStart.Value.Date.ToString());
                 sw.WriteLine("Slutdatum:");
                 sw.WriteLine(dateTimeSlut.Value.Date.ToString());
-                sw.WriteLine("Total Summa:");
+                sw.WriteLine("Total Summa (kr):");
                 sw.WriteLine(txtboxTotalBetal.Text);
-                sw.WriteLine("Totalmoms:");
+                sw.WriteLine("Total moms (kr):");
                 sw.WriteLine(txtboxMoms.Text);
             
             }

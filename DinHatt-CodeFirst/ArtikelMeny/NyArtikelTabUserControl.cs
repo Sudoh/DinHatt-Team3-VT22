@@ -25,11 +25,12 @@ namespace DinHatt_CodeFirst.ArtikelMeny
             Random random = new Random();
             string bildNamn = random.Next(1000,9999).ToString()+".jpg";
             string bildMapp = "..\\..\\Bilder";
-            string pathstring = System.IO.Path.Combine(bildMapp, bildNamn);
+            string pathstring = Path.Combine(bildMapp, bildNamn);
 
    
 
             File.Copy(txtBildNamn.Text,pathstring);
+            
            
 
             using (var db = new DinHatt())
@@ -68,11 +69,6 @@ namespace DinHatt_CodeFirst.ArtikelMeny
             }
             fileOpen.Dispose();
 
-        }
-
-        private void saveArtikelBild_FileOk(object sender, CancelEventArgs e)
-        {
-           
         }
 
         private void txtBeskrivning_TextChanged(object sender, EventArgs e)
