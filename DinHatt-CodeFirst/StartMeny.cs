@@ -93,24 +93,24 @@ namespace DinHatt_CodeFirst
 
         private void btnStatistikMeny_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms.OfType<Artikelform>().Count() == 1)
+            if (Application.OpenForms.OfType<StatistikForm>().Count() == 1)
             {
-                Application.OpenForms.OfType<Artikelform>().First().BringToFront();
+                Application.OpenForms.OfType<StatistikForm>().First().BringToFront();
 
             }
             else
             {
-
+                StatistikForm statistikForm = new StatistikForm
+                {
+                    TopLevel = false,
+                    AutoScroll = true
+                };
+                pnlStart.Controls.Add(statistikForm);
+                statistikForm.BringToFront();
+                statistikForm.Show();
 
             }
-            StatistikForm statistikForm = new StatistikForm
-            {
-                TopLevel = false,
-                AutoScroll = true
-            };
-            pnlStart.Controls.Add(statistikForm);
-            statistikForm.BringToFront();
-            statistikForm.Show();
+      
 
         }
 
