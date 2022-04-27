@@ -32,6 +32,7 @@
             this.btnVisaLeverantorer = new System.Windows.Forms.Button();
             this.grpbxLeverantorList = new System.Windows.Forms.GroupBox();
             this.listLeverantor = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colForeNr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colForeNamn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colForeAdress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -44,7 +45,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabNyLeverantor = new System.Windows.Forms.TabPage();
             this.tabVisaLeverantor = new System.Windows.Forms.TabPage();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.grpbxLeverantorKontroll.SuspendLayout();
             this.grpbxLeverantorList.SuspendLayout();
             this.tabLeverantor.SuspendLayout();
@@ -57,7 +57,7 @@
             this.grpbxLeverantorKontroll.Dock = System.Windows.Forms.DockStyle.Top;
             this.grpbxLeverantorKontroll.Location = new System.Drawing.Point(3, 3);
             this.grpbxLeverantorKontroll.Name = "grpbxLeverantorKontroll";
-            this.grpbxLeverantorKontroll.Size = new System.Drawing.Size(786, 53);
+            this.grpbxLeverantorKontroll.Size = new System.Drawing.Size(692, 53);
             this.grpbxLeverantorKontroll.TabIndex = 0;
             this.grpbxLeverantorKontroll.TabStop = false;
             this.grpbxLeverantorKontroll.Text = "Leverantörer";
@@ -78,7 +78,7 @@
             this.grpbxLeverantorList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpbxLeverantorList.Location = new System.Drawing.Point(3, 56);
             this.grpbxLeverantorList.Name = "grpbxLeverantorList";
-            this.grpbxLeverantorList.Size = new System.Drawing.Size(786, 365);
+            this.grpbxLeverantorList.Size = new System.Drawing.Size(692, 330);
             this.grpbxLeverantorList.TabIndex = 1;
             this.grpbxLeverantorList.TabStop = false;
             this.grpbxLeverantorList.Text = "Lista på leverantörer";
@@ -101,57 +101,53 @@
             this.listLeverantor.HideSelection = false;
             this.listLeverantor.Location = new System.Drawing.Point(3, 16);
             this.listLeverantor.Name = "listLeverantor";
-            this.listLeverantor.Size = new System.Drawing.Size(780, 346);
+            this.listLeverantor.Size = new System.Drawing.Size(686, 311);
             this.listLeverantor.TabIndex = 0;
             this.listLeverantor.UseCompatibleStateImageBehavior = false;
             this.listLeverantor.View = System.Windows.Forms.View.Details;
             this.listLeverantor.SelectedIndexChanged += new System.EventHandler(this.listLeverantor_SelectedIndexChanged);
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Width = 0;
+            // 
             // colForeNr
             // 
-            this.colForeNr.DisplayIndex = 0;
             this.colForeNr.Text = "Företagsnummer";
             this.colForeNr.Width = 93;
             // 
             // colForeNamn
             // 
-            this.colForeNamn.DisplayIndex = 1;
             this.colForeNamn.Text = "Företag";
             this.colForeNamn.Width = 57;
             // 
             // colForeAdress
             // 
-            this.colForeAdress.DisplayIndex = 2;
             this.colForeAdress.Text = "Adress";
             this.colForeAdress.Width = 48;
             // 
             // colForePostNr
             // 
-            this.colForePostNr.DisplayIndex = 3;
             this.colForePostNr.Text = "Postnummer";
             this.colForePostNr.Width = 76;
             // 
             // colForeOrt
             // 
-            this.colForeOrt.DisplayIndex = 4;
             this.colForeOrt.Text = "Ort";
             this.colForeOrt.Width = 37;
             // 
             // colForeLand
             // 
-            this.colForeLand.DisplayIndex = 5;
             this.colForeLand.Text = "Land";
             this.colForeLand.Width = 45;
             // 
             // colForeTele
             // 
-            this.colForeTele.DisplayIndex = 6;
             this.colForeTele.Text = "Telefonnummer";
             this.colForeTele.Width = 92;
             // 
             // colForeEpost
             // 
-            this.colForeEpost.DisplayIndex = 7;
             this.colForeEpost.Text = "ePost";
             this.colForeEpost.Width = 48;
             // 
@@ -165,7 +161,7 @@
             this.tabLeverantor.Location = new System.Drawing.Point(0, 0);
             this.tabLeverantor.Name = "tabLeverantor";
             this.tabLeverantor.SelectedIndex = 0;
-            this.tabLeverantor.Size = new System.Drawing.Size(800, 450);
+            this.tabLeverantor.Size = new System.Drawing.Size(706, 415);
             this.tabLeverantor.TabIndex = 0;
             this.tabLeverantor.Tag = "";
             this.tabLeverantor.SelectedIndexChanged += new System.EventHandler(this.tabLeverantor_SelectedIndexChanged);
@@ -177,7 +173,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 424);
+            this.tabPage1.Size = new System.Drawing.Size(698, 389);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Leverantör";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -201,15 +197,11 @@
             this.tabVisaLeverantor.Text = "Visa Leverantör";
             this.tabVisaLeverantor.UseVisualStyleBackColor = true;
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Width = 0;
-            // 
             // LeverantorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(706, 415);
             this.Controls.Add(this.tabLeverantor);
             this.Name = "LeverantorForm";
             this.Text = "LeverantorForm";

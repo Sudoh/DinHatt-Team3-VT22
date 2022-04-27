@@ -56,16 +56,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnHamtaInfo = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtHanteraMaterial = new System.Windows.Forms.TextBox();
-            this.txtHanteraLangd = new System.Windows.Forms.TextBox();
-            this.txtHanteraBredd = new System.Windows.Forms.TextBox();
-            this.txtHanteraFarg = new System.Windows.Forms.TextBox();
-            this.btnTaBort = new System.Windows.Forms.Button();
-            this.btnAndra = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnAndra = new System.Windows.Forms.Button();
+            this.btnTaBort = new System.Windows.Forms.Button();
+            this.txtHanteraFarg = new System.Windows.Forms.TextBox();
+            this.txtHanteraBredd = new System.Windows.Forms.TextBox();
+            this.txtHanteraLangd = new System.Windows.Forms.TextBox();
+            this.txtHanteraMaterial = new System.Windows.Forms.TextBox();
             this.tabMaterial.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpbxMateriallista.SuspendLayout();
@@ -85,7 +85,7 @@
             this.tabMaterial.Location = new System.Drawing.Point(0, 0);
             this.tabMaterial.Name = "tabMaterial";
             this.tabMaterial.SelectedIndex = 0;
-            this.tabMaterial.Size = new System.Drawing.Size(800, 450);
+            this.tabMaterial.Size = new System.Drawing.Size(629, 392);
             this.tabMaterial.TabIndex = 0;
             // 
             // tabPage1
@@ -94,8 +94,8 @@
             this.tabPage1.Controls.Add(this.grpbxMaterialKontroll);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 424);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(621, 366);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Material";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             this.grpbxMateriallista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpbxMateriallista.Location = new System.Drawing.Point(3, 57);
             this.grpbxMateriallista.Name = "grpbxMateriallista";
-            this.grpbxMateriallista.Size = new System.Drawing.Size(786, 364);
+            this.grpbxMateriallista.Size = new System.Drawing.Size(615, 306);
             this.grpbxMateriallista.TabIndex = 1;
             this.grpbxMateriallista.TabStop = false;
             this.grpbxMateriallista.Text = "Materiallista";
@@ -126,7 +126,7 @@
             this.lvMaterial.HideSelection = false;
             this.lvMaterial.Location = new System.Drawing.Point(3, 16);
             this.lvMaterial.Name = "lvMaterial";
-            this.lvMaterial.Size = new System.Drawing.Size(780, 345);
+            this.lvMaterial.Size = new System.Drawing.Size(609, 287);
             this.lvMaterial.TabIndex = 0;
             this.lvMaterial.UseCompatibleStateImageBehavior = false;
             this.lvMaterial.View = System.Windows.Forms.View.Details;
@@ -167,7 +167,7 @@
             this.grpbxMaterialKontroll.Dock = System.Windows.Forms.DockStyle.Top;
             this.grpbxMaterialKontroll.Location = new System.Drawing.Point(3, 3);
             this.grpbxMaterialKontroll.Name = "grpbxMaterialKontroll";
-            this.grpbxMaterialKontroll.Size = new System.Drawing.Size(786, 54);
+            this.grpbxMaterialKontroll.Size = new System.Drawing.Size(615, 54);
             this.grpbxMaterialKontroll.TabIndex = 0;
             this.grpbxMaterialKontroll.TabStop = false;
             this.grpbxMaterialKontroll.Text = "Material";
@@ -187,7 +187,7 @@
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(792, 424);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Lägg Till Material";
@@ -205,9 +205,9 @@
             this.groupBox1.Controls.Add(this.txtLangd);
             this.groupBox1.Controls.Add(this.txtMaterial);
             this.groupBox1.Location = new System.Drawing.Point(7, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(304, 293);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -294,9 +294,9 @@
             this.tabPage3.Controls.Add(this.btnHamtaInfo);
             this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(792, 424);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Hantera Material";
@@ -347,43 +347,41 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Material-information";
             // 
-            // txtHanteraMaterial
+            // label9
             // 
-            this.txtHanteraMaterial.Location = new System.Drawing.Point(69, 38);
-            this.txtHanteraMaterial.Name = "txtHanteraMaterial";
-            this.txtHanteraMaterial.Size = new System.Drawing.Size(100, 20);
-            this.txtHanteraMaterial.TabIndex = 0;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(105, 157);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 13);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Färg";
             // 
-            // txtHanteraLangd
+            // label8
             // 
-            this.txtHanteraLangd.Location = new System.Drawing.Point(69, 80);
-            this.txtHanteraLangd.Name = "txtHanteraLangd";
-            this.txtHanteraLangd.Size = new System.Drawing.Size(100, 20);
-            this.txtHanteraLangd.TabIndex = 1;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(89, 112);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Bredd (m)";
             // 
-            // txtHanteraBredd
+            // label7
             // 
-            this.txtHanteraBredd.Location = new System.Drawing.Point(69, 128);
-            this.txtHanteraBredd.Name = "txtHanteraBredd";
-            this.txtHanteraBredd.Size = new System.Drawing.Size(100, 20);
-            this.txtHanteraBredd.TabIndex = 2;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(89, 64);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Längd (m)";
             // 
-            // txtHanteraFarg
+            // label6
             // 
-            this.txtHanteraFarg.Location = new System.Drawing.Point(69, 173);
-            this.txtHanteraFarg.Name = "txtHanteraFarg";
-            this.txtHanteraFarg.Size = new System.Drawing.Size(100, 20);
-            this.txtHanteraFarg.TabIndex = 3;
-            // 
-            // btnTaBort
-            // 
-            this.btnTaBort.Location = new System.Drawing.Point(82, 243);
-            this.btnTaBort.Name = "btnTaBort";
-            this.btnTaBort.Size = new System.Drawing.Size(75, 23);
-            this.btnTaBort.TabIndex = 4;
-            this.btnTaBort.Text = "Ta bort";
-            this.btnTaBort.UseVisualStyleBackColor = true;
-            this.btnTaBort.Click += new System.EventHandler(this.btnTaBort_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(89, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Material";
             // 
             // btnAndra
             // 
@@ -395,47 +393,49 @@
             this.btnAndra.UseVisualStyleBackColor = true;
             this.btnAndra.Click += new System.EventHandler(this.btnAndra_Click);
             // 
-            // label6
+            // btnTaBort
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(89, 22);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Material";
+            this.btnTaBort.Location = new System.Drawing.Point(82, 243);
+            this.btnTaBort.Name = "btnTaBort";
+            this.btnTaBort.Size = new System.Drawing.Size(75, 23);
+            this.btnTaBort.TabIndex = 4;
+            this.btnTaBort.Text = "Ta bort";
+            this.btnTaBort.UseVisualStyleBackColor = true;
+            this.btnTaBort.Click += new System.EventHandler(this.btnTaBort_Click);
             // 
-            // label7
+            // txtHanteraFarg
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(89, 64);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Längd (m)";
+            this.txtHanteraFarg.Location = new System.Drawing.Point(69, 173);
+            this.txtHanteraFarg.Name = "txtHanteraFarg";
+            this.txtHanteraFarg.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraFarg.TabIndex = 3;
             // 
-            // label8
+            // txtHanteraBredd
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(89, 112);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Bredd (m)";
+            this.txtHanteraBredd.Location = new System.Drawing.Point(69, 128);
+            this.txtHanteraBredd.Name = "txtHanteraBredd";
+            this.txtHanteraBredd.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraBredd.TabIndex = 2;
             // 
-            // label9
+            // txtHanteraLangd
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(105, 157);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Färg";
+            this.txtHanteraLangd.Location = new System.Drawing.Point(69, 80);
+            this.txtHanteraLangd.Name = "txtHanteraLangd";
+            this.txtHanteraLangd.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraLangd.TabIndex = 1;
+            // 
+            // txtHanteraMaterial
+            // 
+            this.txtHanteraMaterial.Location = new System.Drawing.Point(69, 38);
+            this.txtHanteraMaterial.Name = "txtHanteraMaterial";
+            this.txtHanteraMaterial.Size = new System.Drawing.Size(100, 20);
+            this.txtHanteraMaterial.TabIndex = 0;
             // 
             // MaterialForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(629, 392);
             this.Controls.Add(this.tabMaterial);
             this.Name = "MaterialForm";
             this.Text = "MaterialForm";

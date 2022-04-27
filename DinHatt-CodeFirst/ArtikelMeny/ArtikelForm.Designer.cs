@@ -61,7 +61,7 @@
             this.tabArtikel.Location = new System.Drawing.Point(0, 0);
             this.tabArtikel.Name = "tabArtikel";
             this.tabArtikel.SelectedIndex = 0;
-            this.tabArtikel.Size = new System.Drawing.Size(909, 523);
+            this.tabArtikel.Size = new System.Drawing.Size(860, 481);
             this.tabArtikel.TabIndex = 0;
             this.tabArtikel.SelectedIndexChanged += new System.EventHandler(this.tabArtikel_SelectedIndexChanged);
             // 
@@ -72,7 +72,7 @@
             this.tabAllaArtiklar.Location = new System.Drawing.Point(4, 22);
             this.tabAllaArtiklar.Name = "tabAllaArtiklar";
             this.tabAllaArtiklar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAllaArtiklar.Size = new System.Drawing.Size(901, 497);
+            this.tabAllaArtiklar.Size = new System.Drawing.Size(852, 455);
             this.tabAllaArtiklar.TabIndex = 0;
             this.tabAllaArtiklar.Text = "Alla Artiklar";
             this.tabAllaArtiklar.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 55);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(895, 439);
+            this.groupBox2.Size = new System.Drawing.Size(846, 397);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Artikellista";
@@ -109,7 +109,7 @@
             this.listArtikel.Location = new System.Drawing.Point(3, 16);
             this.listArtikel.Margin = new System.Windows.Forms.Padding(2);
             this.listArtikel.Name = "listArtikel";
-            this.listArtikel.Size = new System.Drawing.Size(889, 420);
+            this.listArtikel.Size = new System.Drawing.Size(840, 378);
             this.listArtikel.TabIndex = 0;
             this.listArtikel.UseCompatibleStateImageBehavior = false;
             this.listArtikel.View = System.Windows.Forms.View.Details;
@@ -171,7 +171,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(895, 52);
+            this.groupBox1.Size = new System.Drawing.Size(846, 52);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Artikelkontroll";
@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(909, 523);
+            this.ClientSize = new System.Drawing.Size(860, 481);
             this.Controls.Add(this.tabArtikel);
             this.Name = "Artikelform";
             this.ShowIcon = false;

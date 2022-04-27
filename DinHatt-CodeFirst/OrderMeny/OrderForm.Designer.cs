@@ -39,6 +39,7 @@
             this.colDiscription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTotalPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPayed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colFak = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colLeveransstatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colDatum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colMoms = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -46,7 +47,6 @@
             this.btnLadda = new System.Windows.Forms.Button();
             this.tabNyOrder = new System.Windows.Forms.TabPage();
             this.tabVisaOrder = new System.Windows.Forms.TabPage();
-            this.colFak = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabOrder.SuspendLayout();
             this.tabAllaOrder.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -60,10 +60,9 @@
             this.tabOrder.Controls.Add(this.tabVisaOrder);
             this.tabOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabOrder.Location = new System.Drawing.Point(0, 0);
-            this.tabOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabOrder.Name = "tabOrder";
             this.tabOrder.SelectedIndex = 0;
-            this.tabOrder.Size = new System.Drawing.Size(1902, 835);
+            this.tabOrder.Size = new System.Drawing.Size(725, 435);
             this.tabOrder.TabIndex = 0;
             this.tabOrder.SelectedIndexChanged += new System.EventHandler(this.tabOrder_SelectedIndexChanged);
             // 
@@ -71,11 +70,10 @@
             // 
             this.tabAllaOrder.Controls.Add(this.groupBox2);
             this.tabAllaOrder.Controls.Add(this.groupBox1);
-            this.tabAllaOrder.Location = new System.Drawing.Point(4, 29);
-            this.tabAllaOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabAllaOrder.Location = new System.Drawing.Point(4, 22);
             this.tabAllaOrder.Name = "tabAllaOrder";
-            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabAllaOrder.Size = new System.Drawing.Size(1894, 802);
+            this.tabAllaOrder.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAllaOrder.Size = new System.Drawing.Size(717, 409);
             this.tabAllaOrder.TabIndex = 0;
             this.tabAllaOrder.Text = "Alla Order";
             this.tabAllaOrder.UseVisualStyleBackColor = true;
@@ -84,11 +82,9 @@
             // 
             this.groupBox2.Controls.Add(this.listViewOrder);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(4, 94);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Location = new System.Drawing.Point(3, 61);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(1886, 703);
+            this.groupBox2.Size = new System.Drawing.Size(711, 345);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Orderlista";
@@ -111,9 +107,10 @@
             this.listViewOrder.FullRowSelect = true;
             this.listViewOrder.GridLines = true;
             this.listViewOrder.HideSelection = false;
-            this.listViewOrder.Location = new System.Drawing.Point(4, 24);
+            this.listViewOrder.Location = new System.Drawing.Point(3, 16);
+            this.listViewOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewOrder.Name = "listViewOrder";
-            this.listViewOrder.Size = new System.Drawing.Size(1878, 674);
+            this.listViewOrder.Size = new System.Drawing.Size(705, 326);
             this.listViewOrder.TabIndex = 0;
             this.listViewOrder.UseCompatibleStateImageBehavior = false;
             this.listViewOrder.View = System.Windows.Forms.View.Details;
@@ -122,7 +119,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "-";
-            this.columnHeader1.Width = 13;
+            this.columnHeader1.Width = 0;
             // 
             // colKund
             // 
@@ -159,9 +156,13 @@
             this.colPayed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colPayed.Width = 70;
             // 
+            // colFak
+            // 
+            this.colFak.Text = "Fakturerad";
+            this.colFak.Width = 80;
+            // 
             // colLeveransstatus
             // 
-            this.colLeveransstatus.DisplayIndex = 7;
             this.colLeveransstatus.Text = "Leveransstatus";
             this.colLeveransstatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colLeveransstatus.Width = 86;
@@ -174,7 +175,6 @@
             // 
             // colMoms
             // 
-            this.colMoms.DisplayIndex = 9;
             this.colMoms.Text = "Moms";
             this.colMoms.Width = 50;
             // 
@@ -182,11 +182,9 @@
             // 
             this.groupBox1.Controls.Add(this.btnLadda);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(4, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(1886, 89);
+            this.groupBox1.Size = new System.Drawing.Size(711, 58);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Orderkontroll";
@@ -194,10 +192,9 @@
             // btnLadda
             // 
             this.btnLadda.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnLadda.Location = new System.Drawing.Point(9, 29);
-            this.btnLadda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLadda.Location = new System.Drawing.Point(6, 19);
             this.btnLadda.Name = "btnLadda";
-            this.btnLadda.Size = new System.Drawing.Size(105, 35);
+            this.btnLadda.Size = new System.Drawing.Size(70, 23);
             this.btnLadda.TabIndex = 2;
             this.btnLadda.Text = "Visa ordrar";
             this.btnLadda.UseVisualStyleBackColor = true;
@@ -205,37 +202,31 @@
             // 
             // tabNyOrder
             // 
-            this.tabNyOrder.Location = new System.Drawing.Point(4, 29);
-            this.tabNyOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabNyOrder.Location = new System.Drawing.Point(4, 22);
             this.tabNyOrder.Name = "tabNyOrder";
-            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabNyOrder.Size = new System.Drawing.Size(1894, 802);
+            this.tabNyOrder.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabNyOrder.Size = new System.Drawing.Size(1260, 517);
             this.tabNyOrder.TabIndex = 1;
             this.tabNyOrder.Text = "Ny Order";
             this.tabNyOrder.UseVisualStyleBackColor = true;
             // 
             // tabVisaOrder
             // 
-            this.tabVisaOrder.Location = new System.Drawing.Point(4, 29);
+            this.tabVisaOrder.Location = new System.Drawing.Point(4, 22);
+            this.tabVisaOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabVisaOrder.Name = "tabVisaOrder";
-            this.tabVisaOrder.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVisaOrder.Size = new System.Drawing.Size(1894, 802);
+            this.tabVisaOrder.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabVisaOrder.Size = new System.Drawing.Size(1260, 517);
             this.tabVisaOrder.TabIndex = 2;
             this.tabVisaOrder.Text = "Visa order";
             this.tabVisaOrder.UseVisualStyleBackColor = true;
             // 
-            // colFak
-            // 
-            this.colFak.Text = "Fakturerad";
-            this.colFak.Width = 80;
-            // 
             // OrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1902, 835);
+            this.ClientSize = new System.Drawing.Size(725, 435);
             this.Controls.Add(this.tabOrder);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "OrderForm";
             this.Text = "Order";
             this.TopMost = true;

@@ -30,7 +30,7 @@
         {
             this.tabKunder = new System.Windows.Forms.TabControl();
             this.tabKundLista = new System.Windows.Forms.TabPage();
-            this.btnLadda = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listKunder = new System.Windows.Forms.ListView();
             this.colCheck = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -42,6 +42,8 @@
             this.colLand = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTele = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colEpost = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnLadda = new System.Windows.Forms.Button();
             this.tabNyKund = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -62,14 +64,12 @@
             this.txtOrt = new System.Windows.Forms.TextBox();
             this.txtPostnr = new System.Windows.Forms.TextBox();
             this.tabSokKund = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabKunder.SuspendLayout();
             this.tabKundLista.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tabNyKund.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabKunder
@@ -81,7 +81,7 @@
             this.tabKunder.Location = new System.Drawing.Point(0, 0);
             this.tabKunder.Name = "tabKunder";
             this.tabKunder.SelectedIndex = 0;
-            this.tabKunder.Size = new System.Drawing.Size(764, 361);
+            this.tabKunder.Size = new System.Drawing.Size(633, 361);
             this.tabKunder.TabIndex = 0;
             this.tabKunder.SelectedIndexChanged += new System.EventHandler(this.tabKunder_SelectedIndexChanged);
             // 
@@ -92,21 +92,21 @@
             this.tabKundLista.Location = new System.Drawing.Point(4, 22);
             this.tabKundLista.Name = "tabKundLista";
             this.tabKundLista.Padding = new System.Windows.Forms.Padding(3);
-            this.tabKundLista.Size = new System.Drawing.Size(756, 335);
+            this.tabKundLista.Size = new System.Drawing.Size(625, 335);
             this.tabKundLista.TabIndex = 0;
             this.tabKundLista.Text = "Kunder";
             this.tabKundLista.UseVisualStyleBackColor = true;
             // 
-            // btnLadda
+            // groupBox3
             // 
-            this.btnLadda.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btnLadda.Location = new System.Drawing.Point(7, 19);
-            this.btnLadda.Name = "btnLadda";
-            this.btnLadda.Size = new System.Drawing.Size(89, 23);
-            this.btnLadda.TabIndex = 1;
-            this.btnLadda.Text = "Ladda Kunder";
-            this.btnLadda.UseVisualStyleBackColor = true;
-            this.btnLadda.Click += new System.EventHandler(this.button1_Click);
+            this.groupBox3.Controls.Add(this.listKunder);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Location = new System.Drawing.Point(3, 54);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(619, 278);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Kunder";
             // 
             // listKunder
             // 
@@ -128,7 +128,7 @@
             this.listKunder.Location = new System.Drawing.Point(3, 16);
             this.listKunder.MultiSelect = false;
             this.listKunder.Name = "listKunder";
-            this.listKunder.Size = new System.Drawing.Size(744, 259);
+            this.listKunder.Size = new System.Drawing.Size(613, 259);
             this.listKunder.TabIndex = 0;
             this.listKunder.UseCompatibleStateImageBehavior = false;
             this.listKunder.View = System.Windows.Forms.View.Details;
@@ -173,6 +173,28 @@
             // colEpost
             // 
             this.colEpost.Text = "ePost";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnLadda);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(619, 51);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Kundkontroll";
+            // 
+            // btnLadda
+            // 
+            this.btnLadda.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnLadda.Location = new System.Drawing.Point(7, 19);
+            this.btnLadda.Name = "btnLadda";
+            this.btnLadda.Size = new System.Drawing.Size(89, 23);
+            this.btnLadda.TabIndex = 1;
+            this.btnLadda.Text = "Ladda Kunder";
+            this.btnLadda.UseVisualStyleBackColor = true;
+            this.btnLadda.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabNyKund
             // 
@@ -360,43 +382,21 @@
             this.tabSokKund.Text = "Sök Kund";
             this.tabSokKund.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnLadda);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox2.Location = new System.Drawing.Point(3, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(750, 51);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kundkontroll";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.listKunder);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(3, 54);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(750, 278);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Kunder";
-            // 
             // KundForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 361);
+            this.ClientSize = new System.Drawing.Size(633, 361);
             this.Controls.Add(this.tabKunder);
             this.Name = "KundForm";
             this.Text = "Kunder";
             this.tabKunder.ResumeLayout(false);
             this.tabKundLista.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.tabNyKund.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
