@@ -104,6 +104,7 @@
             this.colMoms});
             this.listArtikel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listArtikel.FullRowSelect = true;
+            this.listArtikel.GridLines = true;
             this.listArtikel.HideSelection = false;
             this.listArtikel.Location = new System.Drawing.Point(3, 16);
             this.listArtikel.Margin = new System.Windows.Forms.Padding(2);
@@ -177,7 +178,7 @@
             // 
             // btnVisaArtiklar
             // 
-            this.btnVisaArtiklar.Location = new System.Drawing.Point(19, 18);
+            this.btnVisaArtiklar.Location = new System.Drawing.Point(5, 18);
             this.btnVisaArtiklar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVisaArtiklar.Name = "btnVisaArtiklar";
             this.btnVisaArtiklar.Size = new System.Drawing.Size(97, 25);

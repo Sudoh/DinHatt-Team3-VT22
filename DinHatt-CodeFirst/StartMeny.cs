@@ -124,17 +124,17 @@ namespace DinHatt_CodeFirst
             }
             else
             {
-
+                MaterialForm form = new MaterialForm
+                {
+                    TopLevel = false,
+                    AutoScroll = true
+                };
+                pnlStart.Controls.Add(form);
+                form.BringToFront();
+                form.Show();
 
             }
-            MaterialForm form = new MaterialForm
-            {
-                TopLevel = false,
-                AutoScroll = true
-            };
-            pnlStart.Controls.Add(form);
-            form.BringToFront();
-            form.Show();
+
 
         }
 
